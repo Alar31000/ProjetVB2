@@ -7,6 +7,7 @@ Public Class Login
     Private connectionString = String.Empty
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Location = New Point((Width / 2), (Height / 2))
         'La connection de la base de donnees
         connectionString = String.Format("Data Source={0};Version=3;",
                                          Directory.GetCurrentDirectory() & "\" & "usersDb.db")

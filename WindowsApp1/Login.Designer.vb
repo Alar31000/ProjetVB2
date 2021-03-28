@@ -35,14 +35,14 @@ Partial Class Login
         '
         'TextBoxUtilisateur
         '
-        Me.TextBoxUtilisateur.Location = New System.Drawing.Point(302, 165)
+        Me.TextBoxUtilisateur.Location = New System.Drawing.Point(315, 165)
         Me.TextBoxUtilisateur.Name = "TextBoxUtilisateur"
         Me.TextBoxUtilisateur.Size = New System.Drawing.Size(208, 22)
         Me.TextBoxUtilisateur.TabIndex = 0
         '
         'TextBoxMotDePasse
         '
-        Me.TextBoxMotDePasse.Location = New System.Drawing.Point(302, 207)
+        Me.TextBoxMotDePasse.Location = New System.Drawing.Point(315, 207)
         Me.TextBoxMotDePasse.MaxLength = 327678
         Me.TextBoxMotDePasse.Name = "TextBoxMotDePasse"
         Me.TextBoxMotDePasse.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
@@ -52,7 +52,7 @@ Partial Class Login
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(170, 168)
+        Me.Label1.Location = New System.Drawing.Point(183, 168)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(115, 17)
         Me.Label1.TabIndex = 2
@@ -61,7 +61,7 @@ Partial Class Login
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(170, 210)
+        Me.Label2.Location = New System.Drawing.Point(183, 210)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(94, 17)
         Me.Label2.TabIndex = 3
@@ -69,7 +69,7 @@ Partial Class Login
         '
         'ButtonOk
         '
-        Me.ButtonOk.Location = New System.Drawing.Point(316, 255)
+        Me.ButtonOk.Location = New System.Drawing.Point(329, 255)
         Me.ButtonOk.Name = "ButtonOk"
         Me.ButtonOk.Size = New System.Drawing.Size(86, 29)
         Me.ButtonOk.TabIndex = 4
@@ -78,7 +78,7 @@ Partial Class Login
         '
         'ButtonAnnuler
         '
-        Me.ButtonAnnuler.Location = New System.Drawing.Point(426, 255)
+        Me.ButtonAnnuler.Location = New System.Drawing.Point(439, 255)
         Me.ButtonAnnuler.Name = "ButtonAnnuler"
         Me.ButtonAnnuler.Size = New System.Drawing.Size(84, 29)
         Me.ButtonAnnuler.TabIndex = 5
@@ -88,7 +88,7 @@ Partial Class Login
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(50, 35)
+        Me.PictureBox1.Location = New System.Drawing.Point(63, 35)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(608, 100)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
