@@ -160,13 +160,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-
     <EmbeddedResource Include="CreerUnNouveauContrat.resx">
       <DependentUpon>CreerUnNouveauContrat.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Equipements.resx">
       <DependentUpon>Equipements.vb</DependentUpon>
-
+    </EmbeddedResource>
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.vb</DependentUpon>
     </EmbeddedResource>
