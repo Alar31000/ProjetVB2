@@ -92,6 +92,20 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+
+    <Compile Include="CreerUnNouveauContrat.Designer.vb">
+      <DependentUpon>CreerUnNouveauContrat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreerUnNouveauContrat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Equipements.Designer.vb">
+      <DependentUpon>Equipements.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Equipements.vb">
+      <SubType>Form</SubType>
+    </Compile>
+
     <Compile Include="About.Designer.vb">
       <DependentUpon>About.vb</DependentUpon>
     </Compile>
@@ -102,6 +116,7 @@
       <DependentUpon>Whoarewe.vb</DependentUpon>
     </Compile>
     <Compile Include="Whoarewe.vb" />
+
     <Compile Include="PagePrincipale.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -131,13 +146,33 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Payment.Designer.vb">
+      <DependentUpon>Payment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Services.Designer.vb">
+      <DependentUpon>Services.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Services.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+
+    <EmbeddedResource Include="CreerUnNouveauContrat.resx">
+      <DependentUpon>CreerUnNouveauContrat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Equipements.resx">
+      <DependentUpon>Equipements.vb</DependentUpon>
+
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Whoarewe.resx">
       <DependentUpon>Whoarewe.vb</DependentUpon>
+
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
@@ -150,6 +185,12 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment.resx">
+      <DependentUpon>Payment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Services.resx">
+      <DependentUpon>Services.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
