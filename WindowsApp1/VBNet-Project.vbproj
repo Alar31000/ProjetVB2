@@ -110,22 +110,7 @@
     <Compile Include="About.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmEquipements.Designer.vb">
-      <DependentUpon>FrmEquipements.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmEquipements.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmFactures.Designer.vb">
-      <DependentUpon>FrmFactures.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmFactures.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmPayement.Designer.vb">
-      <DependentUpon>FrmPayement.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmPayement.vb">
+
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Whoarewe.Designer.vb">
@@ -184,14 +169,7 @@
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmEquipements.resx">
-      <DependentUpon>FrmEquipements.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmFactures.resx">
-      <DependentUpon>FrmFactures.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmPayement.resx">
-      <DependentUpon>FrmPayement.vb</DependentUpon>
+
     </EmbeddedResource>
     <EmbeddedResource Include="Whoarewe.resx">
       <DependentUpon>Whoarewe.vb</DependentUpon>
