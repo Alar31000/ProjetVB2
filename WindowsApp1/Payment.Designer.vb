@@ -30,25 +30,25 @@ Partial Class Payment
         Me.TextBoxCVV = New System.Windows.Forms.TextBox()
         Me.LabelCvv = New System.Windows.Forms.Label()
         Me.GroupBoxFacture = New System.Windows.Forms.GroupBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.LabelFacture = New System.Windows.Forms.Label()
-        Me.LabelNIP = New System.Windows.Forms.Label()
-        Me.GroupBoxPrélèvement = New System.Windows.Forms.GroupBox()
-        Me.TextBoxNCompte = New System.Windows.Forms.TextBox()
-        Me.LabelNumeroCompte = New System.Windows.Forms.Label()
-        Me.TextBoxNIP = New System.Windows.Forms.TextBox()
-        Me.GroupBoxChèque = New System.Windows.Forms.GroupBox()
-        Me.LabelInstitution = New System.Windows.Forms.Label()
         Me.TextBoxNComptec = New System.Windows.Forms.TextBox()
-        Me.LabelSuccursale = New System.Windows.Forms.Label()
         Me.LabelComptec = New System.Windows.Forms.Label()
-        Me.TextBoxNInstitution = New System.Windows.Forms.TextBox()
+        Me.LabelInstitution = New System.Windows.Forms.Label()
+        Me.TextBoxNCompte = New System.Windows.Forms.TextBox()
+        Me.LabelSuccursale = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.CheckBoxChèque = New System.Windows.Forms.CheckBox()
+        Me.CheckBoxCarte = New System.Windows.Forms.CheckBox()
+        Me.CheckBoxPrélèvement = New System.Windows.Forms.CheckBox()
+        Me.LabelFacture = New System.Windows.Forms.Label()
         Me.TextBoxNSuccursale = New System.Windows.Forms.TextBox()
+        Me.TextBoxNInstitution = New System.Windows.Forms.TextBox()
+        Me.TextBoxNIP = New System.Windows.Forms.TextBox()
+        Me.LabelNIP = New System.Windows.Forms.Label()
+        Me.LabelNumeroCompte = New System.Windows.Forms.Label()
+        Me.GroupBoxPrélèvement = New System.Windows.Forms.GroupBox()
+        Me.GroupBoxChèque = New System.Windows.Forms.GroupBox()
         Me.GroupBoxCarte = New System.Windows.Forms.GroupBox()
         Me.GroupBoxPayement = New System.Windows.Forms.GroupBox()
-        Me.CheckBoxPrélèvement = New System.Windows.Forms.CheckBox()
-        Me.CheckBoxCarte = New System.Windows.Forms.CheckBox()
-        Me.CheckBoxChèque = New System.Windows.Forms.CheckBox()
         Me.GroupBoxFacture.SuspendLayout()
         Me.GroupBoxPrélèvement.SuspendLayout()
         Me.GroupBoxChèque.SuspendLayout()
@@ -59,7 +59,7 @@ Partial Class Payment
         'ButtonPaye
         '
         Me.ButtonPaye.Font = New System.Drawing.Font("Segoe UI", 12.0!)
-        Me.ButtonPaye.Location = New System.Drawing.Point(6, 167)
+        Me.ButtonPaye.Location = New System.Drawing.Point(33, 172)
         Me.ButtonPaye.Name = "ButtonPaye"
         Me.ButtonPaye.Size = New System.Drawing.Size(133, 27)
         Me.ButtonPaye.TabIndex = 0
@@ -116,7 +116,7 @@ Partial Class Payment
         '
         Me.LabelCvv.AutoSize = True
         Me.LabelCvv.Font = New System.Drawing.Font("Segoe UI", 12.0!)
-        Me.LabelCvv.Location = New System.Drawing.Point(12, 134)
+        Me.LabelCvv.Location = New System.Drawing.Point(38, 136)
         Me.LabelCvv.Name = "LabelCvv"
         Me.LabelCvv.Size = New System.Drawing.Size(40, 21)
         Me.LabelCvv.TabIndex = 11
@@ -138,52 +138,42 @@ Partial Class Payment
         Me.GroupBoxFacture.ForeColor = System.Drawing.Color.Navy
         Me.GroupBoxFacture.Location = New System.Drawing.Point(1, 1)
         Me.GroupBoxFacture.Name = "GroupBoxFacture"
-        Me.GroupBoxFacture.Size = New System.Drawing.Size(811, 460)
+        Me.GroupBoxFacture.Size = New System.Drawing.Size(811, 458)
         Me.GroupBoxFacture.TabIndex = 12
         Me.GroupBoxFacture.TabStop = False
         Me.GroupBoxFacture.Text = "Payment de la Facture"
         '
-        'Button1
+        'TextBoxNComptec
         '
-        Me.Button1.Location = New System.Drawing.Point(16, 335)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(123, 34)
-        Me.Button1.TabIndex = 25
-        Me.Button1.Text = "Quitter"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.TextBoxNComptec.Location = New System.Drawing.Point(230, 128)
+        Me.TextBoxNComptec.Name = "TextBoxNComptec"
+        Me.TextBoxNComptec.Size = New System.Drawing.Size(86, 35)
+        Me.TextBoxNComptec.TabIndex = 26
+        Me.TextBoxNComptec.Visible = False
         '
-        'LabelFacture
+        'LabelComptec
         '
-        Me.LabelFacture.AutoSize = True
-        Me.LabelFacture.ForeColor = System.Drawing.Color.Red
-        Me.LabelFacture.Location = New System.Drawing.Point(0, 63)
-        Me.LabelFacture.Name = "LabelFacture"
-        Me.LabelFacture.Size = New System.Drawing.Size(805, 30)
-        Me.LabelFacture.TabIndex = 17
-        Me.LabelFacture.Text = "Nous sommes désolé, cette option sera développée dans la prochaine version."
+        Me.LabelComptec.AutoSize = True
+        Me.LabelComptec.Font = New System.Drawing.Font("Segoe UI", 12.0!)
+        Me.LabelComptec.ForeColor = System.Drawing.Color.Navy
+        Me.LabelComptec.Location = New System.Drawing.Point(23, 134)
+        Me.LabelComptec.Name = "LabelComptec"
+        Me.LabelComptec.Size = New System.Drawing.Size(145, 21)
+        Me.LabelComptec.TabIndex = 0
+        Me.LabelComptec.Text = "Numéro de compte"
+        Me.LabelComptec.Visible = False
         '
-        'LabelNIP
+        'LabelInstitution
         '
-        Me.LabelNIP.AutoSize = True
-        Me.LabelNIP.Font = New System.Drawing.Font("Segoe UI", 12.0!)
-        Me.LabelNIP.Location = New System.Drawing.Point(471, 205)
-        Me.LabelNIP.Name = "LabelNIP"
-        Me.LabelNIP.Size = New System.Drawing.Size(35, 21)
-        Me.LabelNIP.TabIndex = 7
-        Me.LabelNIP.Text = "NIP"
-        Me.LabelNIP.Visible = False
-        '
-        'GroupBoxPrélèvement
-        '
-        Me.GroupBoxPrélèvement.Controls.Add(Me.TextBoxNCompte)
-        Me.GroupBoxPrélèvement.Controls.Add(Me.LabelNumeroCompte)
-        Me.GroupBoxPrélèvement.Controls.Add(Me.TextBoxNIP)
-        Me.GroupBoxPrélèvement.Location = New System.Drawing.Point(423, 132)
-        Me.GroupBoxPrélèvement.Name = "GroupBoxPrélèvement"
-        Me.GroupBoxPrélèvement.Size = New System.Drawing.Size(361, 108)
-        Me.GroupBoxPrélèvement.TabIndex = 18
-        Me.GroupBoxPrélèvement.TabStop = False
-        Me.GroupBoxPrélèvement.Visible = False
+        Me.LabelInstitution.AutoSize = True
+        Me.LabelInstitution.Font = New System.Drawing.Font("Segoe UI", 12.0!)
+        Me.LabelInstitution.ForeColor = System.Drawing.Color.Navy
+        Me.LabelInstitution.Location = New System.Drawing.Point(23, 87)
+        Me.LabelInstitution.Name = "LabelInstitution"
+        Me.LabelInstitution.Size = New System.Drawing.Size(155, 21)
+        Me.LabelInstitution.TabIndex = 1
+        Me.LabelInstitution.Text = "Numéro d'institution"
+        Me.LabelInstitution.Visible = False
         '
         'TextBoxNCompte
         '
@@ -193,61 +183,6 @@ Partial Class Payment
         Me.TextBoxNCompte.TabIndex = 14
         Me.TextBoxNCompte.Visible = False
         Me.TextBoxNCompte.WordWrap = False
-        '
-        'LabelNumeroCompte
-        '
-        Me.LabelNumeroCompte.AutoSize = True
-        Me.LabelNumeroCompte.Font = New System.Drawing.Font("Segoe UI", 12.0!)
-        Me.LabelNumeroCompte.Location = New System.Drawing.Point(6, 35)
-        Me.LabelNumeroCompte.Name = "LabelNumeroCompte"
-        Me.LabelNumeroCompte.Size = New System.Drawing.Size(145, 21)
-        Me.LabelNumeroCompte.TabIndex = 8
-        Me.LabelNumeroCompte.Text = "Numéro de compte"
-        Me.LabelNumeroCompte.Visible = False
-        '
-        'TextBoxNIP
-        '
-        Me.TextBoxNIP.Location = New System.Drawing.Point(225, 63)
-        Me.TextBoxNIP.Margin = New System.Windows.Forms.Padding(1)
-        Me.TextBoxNIP.Name = "TextBoxNIP"
-        Me.TextBoxNIP.Size = New System.Drawing.Size(86, 35)
-        Me.TextBoxNIP.TabIndex = 12
-        Me.TextBoxNIP.Visible = False
-        '
-        'GroupBoxChèque
-        '
-        Me.GroupBoxChèque.Controls.Add(Me.LabelInstitution)
-        Me.GroupBoxChèque.Controls.Add(Me.TextBoxNComptec)
-        Me.GroupBoxChèque.Controls.Add(Me.LabelSuccursale)
-        Me.GroupBoxChèque.Controls.Add(Me.LabelComptec)
-        Me.GroupBoxChèque.Controls.Add(Me.TextBoxNInstitution)
-        Me.GroupBoxChèque.Controls.Add(Me.TextBoxNSuccursale)
-        Me.GroupBoxChèque.Location = New System.Drawing.Point(414, 248)
-        Me.GroupBoxChèque.Name = "GroupBoxChèque"
-        Me.GroupBoxChèque.Size = New System.Drawing.Size(356, 178)
-        Me.GroupBoxChèque.TabIndex = 19
-        Me.GroupBoxChèque.TabStop = False
-        Me.GroupBoxChèque.Visible = False
-        '
-        'LabelInstitution
-        '
-        Me.LabelInstitution.AutoSize = True
-        Me.LabelInstitution.Font = New System.Drawing.Font("Segoe UI", 12.0!)
-        Me.LabelInstitution.ForeColor = System.Drawing.Color.Navy
-        Me.LabelInstitution.Location = New System.Drawing.Point(12, 85)
-        Me.LabelInstitution.Name = "LabelInstitution"
-        Me.LabelInstitution.Size = New System.Drawing.Size(155, 21)
-        Me.LabelInstitution.TabIndex = 1
-        Me.LabelInstitution.Text = "Numéro d'institution"
-        Me.LabelInstitution.Visible = False
-        '
-        'TextBoxNComptec
-        '
-        Me.TextBoxNComptec.Location = New System.Drawing.Point(234, 126)
-        Me.TextBoxNComptec.Name = "TextBoxNComptec"
-        Me.TextBoxNComptec.Size = New System.Drawing.Size(86, 35)
-        Me.TextBoxNComptec.TabIndex = 26
-        Me.TextBoxNComptec.Visible = False
         '
         'LabelSuccursale
         '
@@ -261,33 +196,137 @@ Partial Class Payment
         Me.LabelSuccursale.Text = "Numéro de succursale"
         Me.LabelSuccursale.Visible = False
         '
-        'LabelComptec
+        'Button1
         '
-        Me.LabelComptec.AutoSize = True
-        Me.LabelComptec.Font = New System.Drawing.Font("Segoe UI", 12.0!)
-        Me.LabelComptec.ForeColor = System.Drawing.Color.Navy
-        Me.LabelComptec.Location = New System.Drawing.Point(12, 132)
-        Me.LabelComptec.Name = "LabelComptec"
-        Me.LabelComptec.Size = New System.Drawing.Size(145, 21)
-        Me.LabelComptec.TabIndex = 0
-        Me.LabelComptec.Text = "Numéro de compte"
-        Me.LabelComptec.Visible = False
+        Me.Button1.Location = New System.Drawing.Point(6, 339)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(123, 34)
+        Me.Button1.TabIndex = 25
+        Me.Button1.Text = "Quitter"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'CheckBoxChèque
+        '
+        Me.CheckBoxChèque.AutoSize = True
+        Me.CheckBoxChèque.Font = New System.Drawing.Font("Segoe UI", 12.0!)
+        Me.CheckBoxChèque.ForeColor = System.Drawing.Color.Black
+        Me.CheckBoxChèque.Location = New System.Drawing.Point(6, 65)
+        Me.CheckBoxChèque.Name = "CheckBoxChèque"
+        Me.CheckBoxChèque.Size = New System.Drawing.Size(145, 25)
+        Me.CheckBoxChèque.TabIndex = 23
+        Me.CheckBoxChèque.Text = "Chèque bancaire"
+        Me.CheckBoxChèque.UseVisualStyleBackColor = True
+        Me.CheckBoxChèque.Visible = False
+        '
+        'CheckBoxCarte
+        '
+        Me.CheckBoxCarte.AutoSize = True
+        Me.CheckBoxCarte.Font = New System.Drawing.Font("Segoe UI", 12.0!)
+        Me.CheckBoxCarte.ForeColor = System.Drawing.Color.Black
+        Me.CheckBoxCarte.Location = New System.Drawing.Point(6, 40)
+        Me.CheckBoxCarte.Name = "CheckBoxCarte"
+        Me.CheckBoxCarte.Size = New System.Drawing.Size(109, 25)
+        Me.CheckBoxCarte.TabIndex = 22
+        Me.CheckBoxCarte.Text = "Carte credit"
+        Me.CheckBoxCarte.UseVisualStyleBackColor = True
+        Me.CheckBoxCarte.Visible = False
+        '
+        'CheckBoxPrélèvement
+        '
+        Me.CheckBoxPrélèvement.AutoSize = True
+        Me.CheckBoxPrélèvement.Font = New System.Drawing.Font("Segoe UI", 12.0!)
+        Me.CheckBoxPrélèvement.ForeColor = System.Drawing.Color.Black
+        Me.CheckBoxPrélèvement.Location = New System.Drawing.Point(6, 20)
+        Me.CheckBoxPrélèvement.Name = "CheckBoxPrélèvement"
+        Me.CheckBoxPrélèvement.Size = New System.Drawing.Size(208, 25)
+        Me.CheckBoxPrélèvement.TabIndex = 21
+        Me.CheckBoxPrélèvement.Text = "Prélèvement automatique"
+        Me.CheckBoxPrélèvement.UseVisualStyleBackColor = True
+        Me.CheckBoxPrélèvement.Visible = False
+        '
+        'LabelFacture
+        '
+        Me.LabelFacture.AutoSize = True
+        Me.LabelFacture.ForeColor = System.Drawing.Color.Red
+        Me.LabelFacture.Location = New System.Drawing.Point(0, 63)
+        Me.LabelFacture.Name = "LabelFacture"
+        Me.LabelFacture.Size = New System.Drawing.Size(805, 30)
+        Me.LabelFacture.TabIndex = 17
+        Me.LabelFacture.Text = "Nous sommes désolé, cette option sera développée dans la prochaine version."
+        '
+        'TextBoxNSuccursale
+        '
+        Me.TextBoxNSuccursale.Location = New System.Drawing.Point(230, 28)
+        Me.TextBoxNSuccursale.Name = "TextBoxNSuccursale"
+        Me.TextBoxNSuccursale.Size = New System.Drawing.Size(86, 35)
+        Me.TextBoxNSuccursale.TabIndex = 15
+        Me.TextBoxNSuccursale.Visible = False
         '
         'TextBoxNInstitution
         '
-        Me.TextBoxNInstitution.Location = New System.Drawing.Point(234, 75)
+        Me.TextBoxNInstitution.Location = New System.Drawing.Point(230, 77)
         Me.TextBoxNInstitution.Name = "TextBoxNInstitution"
         Me.TextBoxNInstitution.Size = New System.Drawing.Size(86, 35)
         Me.TextBoxNInstitution.TabIndex = 15
         Me.TextBoxNInstitution.Visible = False
         '
-        'TextBoxNSuccursale
+        'TextBoxNIP
         '
-        Me.TextBoxNSuccursale.Location = New System.Drawing.Point(234, 30)
-        Me.TextBoxNSuccursale.Name = "TextBoxNSuccursale"
-        Me.TextBoxNSuccursale.Size = New System.Drawing.Size(86, 35)
-        Me.TextBoxNSuccursale.TabIndex = 15
-        Me.TextBoxNSuccursale.Visible = False
+        Me.TextBoxNIP.Location = New System.Drawing.Point(225, 63)
+        Me.TextBoxNIP.Margin = New System.Windows.Forms.Padding(1)
+        Me.TextBoxNIP.Name = "TextBoxNIP"
+        Me.TextBoxNIP.Size = New System.Drawing.Size(86, 35)
+        Me.TextBoxNIP.TabIndex = 12
+        Me.TextBoxNIP.Visible = False
+        '
+        'LabelNIP
+        '
+        Me.LabelNIP.AutoSize = True
+        Me.LabelNIP.Font = New System.Drawing.Font("Segoe UI", 12.0!)
+        Me.LabelNIP.Location = New System.Drawing.Point(471, 205)
+        Me.LabelNIP.Name = "LabelNIP"
+        Me.LabelNIP.Size = New System.Drawing.Size(35, 21)
+        Me.LabelNIP.TabIndex = 7
+        Me.LabelNIP.Text = "NIP"
+        Me.LabelNIP.Visible = False
+        '
+        'LabelNumeroCompte
+        '
+        Me.LabelNumeroCompte.AutoSize = True
+        Me.LabelNumeroCompte.Font = New System.Drawing.Font("Segoe UI", 12.0!)
+        Me.LabelNumeroCompte.Location = New System.Drawing.Point(6, 35)
+        Me.LabelNumeroCompte.Name = "LabelNumeroCompte"
+        Me.LabelNumeroCompte.Size = New System.Drawing.Size(145, 21)
+        Me.LabelNumeroCompte.TabIndex = 8
+        Me.LabelNumeroCompte.Text = "Numéro de compte"
+        Me.LabelNumeroCompte.Visible = False
+        '
+        'GroupBoxPrélèvement
+        '
+        Me.GroupBoxPrélèvement.Controls.Add(Me.TextBoxNCompte)
+        Me.GroupBoxPrélèvement.Controls.Add(Me.LabelNumeroCompte)
+        Me.GroupBoxPrélèvement.Controls.Add(Me.TextBoxNIP)
+        Me.GroupBoxPrélèvement.Location = New System.Drawing.Point(423, 132)
+        Me.GroupBoxPrélèvement.Name = "GroupBoxPrélèvement"
+        Me.GroupBoxPrélèvement.Size = New System.Drawing.Size(361, 108)
+        Me.GroupBoxPrélèvement.TabIndex = 18
+        Me.GroupBoxPrélèvement.TabStop = False
+        Me.GroupBoxPrélèvement.Visible = False
+        '
+        'GroupBoxChèque
+        '
+        Me.GroupBoxChèque.Controls.Add(Me.LabelInstitution)
+        Me.GroupBoxChèque.Controls.Add(Me.TextBoxNComptec)
+        Me.GroupBoxChèque.Controls.Add(Me.LabelSuccursale)
+        Me.GroupBoxChèque.Controls.Add(Me.LabelComptec)
+        Me.GroupBoxChèque.Controls.Add(Me.TextBoxNInstitution)
+        Me.GroupBoxChèque.Controls.Add(Me.TextBoxNSuccursale)
+        Me.GroupBoxChèque.Location = New System.Drawing.Point(387, 246)
+        Me.GroupBoxChèque.Name = "GroupBoxChèque"
+        Me.GroupBoxChèque.Size = New System.Drawing.Size(356, 178)
+        Me.GroupBoxChèque.TabIndex = 19
+        Me.GroupBoxChèque.TabStop = False
+        Me.GroupBoxChèque.Visible = False
         '
         'GroupBoxCarte
         '
@@ -297,7 +336,7 @@ Partial Class Payment
         Me.GroupBoxCarte.Controls.Add(Me.LabelCvv)
         Me.GroupBoxCarte.Controls.Add(Me.LabelDateEx)
         Me.GroupBoxCarte.Controls.Add(Me.LabelNumeroCarte)
-        Me.GroupBoxCarte.Location = New System.Drawing.Point(167, 250)
+        Me.GroupBoxCarte.Location = New System.Drawing.Point(135, 248)
         Me.GroupBoxCarte.Name = "GroupBoxCarte"
         Me.GroupBoxCarte.Size = New System.Drawing.Size(246, 176)
         Me.GroupBoxCarte.TabIndex = 20
@@ -316,50 +355,11 @@ Partial Class Payment
         Me.GroupBoxPayement.TabStop = False
         Me.GroupBoxPayement.Visible = False
         '
-        'CheckBoxPrélèvement
-        '
-        Me.CheckBoxPrélèvement.AutoSize = True
-        Me.CheckBoxPrélèvement.Font = New System.Drawing.Font("Segoe UI", 12.0!)
-        Me.CheckBoxPrélèvement.ForeColor = System.Drawing.Color.Black
-        Me.CheckBoxPrélèvement.Location = New System.Drawing.Point(6, 20)
-        Me.CheckBoxPrélèvement.Name = "CheckBoxPrélèvement"
-        Me.CheckBoxPrélèvement.Size = New System.Drawing.Size(208, 25)
-        Me.CheckBoxPrélèvement.TabIndex = 21
-        Me.CheckBoxPrélèvement.Text = "Prélèvement automatique"
-        Me.CheckBoxPrélèvement.UseVisualStyleBackColor = True
-        Me.CheckBoxPrélèvement.Visible = False
-        '
-        'CheckBoxCarte
-        '
-        Me.CheckBoxCarte.AutoSize = True
-        Me.CheckBoxCarte.Font = New System.Drawing.Font("Segoe UI", 12.0!)
-        Me.CheckBoxCarte.ForeColor = System.Drawing.Color.Black
-        Me.CheckBoxCarte.Location = New System.Drawing.Point(6, 40)
-        Me.CheckBoxCarte.Name = "CheckBoxCarte"
-        Me.CheckBoxCarte.Size = New System.Drawing.Size(109, 25)
-        Me.CheckBoxCarte.TabIndex = 22
-        Me.CheckBoxCarte.Text = "Carte credit"
-        Me.CheckBoxCarte.UseVisualStyleBackColor = True
-        Me.CheckBoxCarte.Visible = False
-        '
-        'CheckBoxChèque
-        '
-        Me.CheckBoxChèque.AutoSize = True
-        Me.CheckBoxChèque.Font = New System.Drawing.Font("Segoe UI", 12.0!)
-        Me.CheckBoxChèque.ForeColor = System.Drawing.Color.Black
-        Me.CheckBoxChèque.Location = New System.Drawing.Point(6, 65)
-        Me.CheckBoxChèque.Name = "CheckBoxChèque"
-        Me.CheckBoxChèque.Size = New System.Drawing.Size(145, 25)
-        Me.CheckBoxChèque.TabIndex = 23
-        Me.CheckBoxChèque.Text = "Chèque bancaire"
-        Me.CheckBoxChèque.UseVisualStyleBackColor = True
-        Me.CheckBoxChèque.Visible = False
-        '
         'Payment
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(823, 487)
+        Me.ClientSize = New System.Drawing.Size(833, 452)
         Me.Controls.Add(Me.GroupBoxFacture)
         Me.Name = "Payment"
         Me.Text = "Payment"

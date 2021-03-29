@@ -110,7 +110,10 @@
     <Compile Include="About.vb">
       <SubType>Form</SubType>
     </Compile>
-
+    <Compile Include="Modifier le contrat.Designer.vb">
+      <DependentUpon>Modifier le contrat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modifier le contrat.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Whoarewe.Designer.vb">
@@ -169,7 +172,8 @@
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.vb</DependentUpon>
     </EmbeddedResource>
-
+    <EmbeddedResource Include="Modifier le contrat.resx">
+      <DependentUpon>Modifier le contrat.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Whoarewe.resx">
       <DependentUpon>Whoarewe.vb</DependentUpon>
