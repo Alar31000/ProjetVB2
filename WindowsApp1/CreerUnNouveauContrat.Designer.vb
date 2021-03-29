@@ -269,98 +269,47 @@ Partial Class CreerUnNouveauContrat
         '
         'btnImprimer
         '
-        Me.btnImprimer.Location = New System.Drawing.Point(539, 328)
-        Me.btnImprimer.Name = "btnImprimer"
-        Me.btnImprimer.Size = New System.Drawing.Size(61, 27)
-        Me.btnImprimer.TabIndex = 27
-        Me.btnImprimer.Text = "Imprimer"
-        Me.btnImprimer.UseVisualStyleBackColor = True
+
         '
         'btnOK
         '
-        Me.btnOK.Location = New System.Drawing.Point(471, 328)
-        Me.btnOK.Name = "btnOK"
-        Me.btnOK.Size = New System.Drawing.Size(52, 27)
-        Me.btnOK.TabIndex = 26
-        Me.btnOK.Text = "OK"
-        Me.btnOK.UseVisualStyleBackColor = True
+
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(65, 19)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(247, 20)
-        Me.TextBox3.TabIndex = 4
+
         '
         'Label6
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(8, 22)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(29, 13)
-        Me.Label6.TabIndex = 5
-        Me.Label6.Text = "Nom"
+
         '
         'Label7
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(8, 55)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(43, 13)
-        Me.Label7.TabIndex = 6
-        Me.Label7.Text = "Prénom"
+
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(65, 52)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(247, 20)
-        Me.TextBox2.TabIndex = 7
+
         '
         'Label8
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(8, 87)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(51, 13)
-        Me.Label8.TabIndex = 8
-        Me.Label8.Text = "Addresse"
+
         '
         'Label9
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(8, 118)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(26, 13)
-        Me.Label9.TabIndex = 9
-        Me.Label9.Text = "Ville"
+
         '
         'Label10
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(9, 156)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(58, 13)
-        Me.Label10.TabIndex = 10
-        Me.Label10.Text = "Télephone"
+
         '
         'Label11
         '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(8, 193)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(32, 13)
-        Me.Label11.TabIndex = 11
-        Me.Label11.Text = "Email"
+
         '
         'Label12
         '
-        Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(5, 227)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(64, 13)
-        Me.Label12.TabIndex = 12
-        Me.Label12.Text = "No Employé"
+
         '
         'Label13
         '
@@ -373,170 +322,43 @@ Partial Class CreerUnNouveauContrat
         '
         'Label14
         '
-        Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(177, 160)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(24, 13)
-        Me.Label14.TabIndex = 14
-        Me.Label14.Text = "Fax"
+
         '
         'Label15
         '
-        Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(169, 118)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(64, 13)
-        Me.Label15.TabIndex = 15
-        Me.Label15.Text = "Code Postal"
+
         '
         'TextBox7
         '
-        Me.TextBox7.Location = New System.Drawing.Point(65, 82)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(247, 20)
-        Me.TextBox7.TabIndex = 16
+
         '
         'TextBox8
         '
-        Me.TextBox8.Location = New System.Drawing.Point(65, 115)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(99, 20)
-        Me.TextBox8.TabIndex = 17
+
         '
         'TextBox9
         '
-        Me.TextBox9.Location = New System.Drawing.Point(68, 153)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(86, 20)
-        Me.TextBox9.TabIndex = 18
+
         '
         'TextBox10
         '
-        Me.TextBox10.Location = New System.Drawing.Point(68, 191)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(245, 20)
-        Me.TextBox10.TabIndex = 19
+
         '
         'TextBox11
         '
-        Me.TextBox11.Location = New System.Drawing.Point(68, 224)
-        Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.Size = New System.Drawing.Size(86, 20)
-        Me.TextBox11.TabIndex = 20
+
         '
         'TextBox12
         '
-        Me.TextBox12.Location = New System.Drawing.Point(68, 258)
-        Me.TextBox12.Name = "TextBox12"
-        Me.TextBox12.Size = New System.Drawing.Size(245, 20)
-        Me.TextBox12.TabIndex = 21
+
         '
         'TextBox13
         '
-        Me.TextBox13.Location = New System.Drawing.Point(233, 115)
-        Me.TextBox13.Name = "TextBox13"
-        Me.TextBox13.Size = New System.Drawing.Size(79, 20)
-        Me.TextBox13.TabIndex = 22
+
         '
         'TextBox14
         '
-        Me.TextBox14.Location = New System.Drawing.Point(203, 157)
-        Me.TextBox14.Name = "TextBox14"
-        Me.TextBox14.Size = New System.Drawing.Size(109, 20)
-        Me.TextBox14.TabIndex = 23
+
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.TextBox14)
-        Me.GroupBox1.Controls.Add(Me.TextBox13)
-        Me.GroupBox1.Controls.Add(Me.TextBox12)
-        Me.GroupBox1.Controls.Add(Me.TextBox11)
-        Me.GroupBox1.Controls.Add(Me.TextBox10)
-        Me.GroupBox1.Controls.Add(Me.TextBox9)
-        Me.GroupBox1.Controls.Add(Me.TextBox8)
-        Me.GroupBox1.Controls.Add(Me.TextBox7)
-        Me.GroupBox1.Controls.Add(Me.Label15)
-        Me.GroupBox1.Controls.Add(Me.Label14)
-        Me.GroupBox1.Controls.Add(Me.Label13)
-        Me.GroupBox1.Controls.Add(Me.Label12)
-        Me.GroupBox1.Controls.Add(Me.Label11)
-        Me.GroupBox1.Controls.Add(Me.Label10)
-        Me.GroupBox1.Controls.Add(Me.Label9)
-        Me.GroupBox1.Controls.Add(Me.Label8)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
-        Me.GroupBox1.Controls.Add(Me.Label7)
-        Me.GroupBox1.Controls.Add(Me.Label6)
-        Me.GroupBox1.Controls.Add(Me.TextBox3)
-        Me.GroupBox1.Location = New System.Drawing.Point(19, 10)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(327, 294)
-        Me.GroupBox1.TabIndex = 24
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Identification Client"
-        '
-        'CreerUnNouveauContrat
-        '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(757, 360)
-        Me.Controls.Add(Me.btnAide)
-        Me.Controls.Add(Me.btnAnnuler)
-        Me.Controls.Add(Me.GroupBox2)
-        Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.btnImprimer)
-        Me.Controls.Add(Me.btnOK)
-        Me.Name = "CreerUnNouveauContrat"
-        Me.Text = "CreerUnNouveauContrat"
-        Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox2.PerformLayout()
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
-        Me.ResumeLayout(False)
-
-    End Sub
-
-    Friend WithEvents btnAide As Button
-    Friend WithEvents btnAnnuler As Button
-    Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents txtBoxFraisMensuel As TextBox
-    Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents btnService As Button
-    Friend WithEvents btnLocationEquipement As Button
-    Friend WithEvents TextBox16 As TextBox
-    Friend WithEvents TextBox15 As TextBox
-    Friend WithEvents ComboBox2 As ComboBox
-    Friend WithEvents Label21 As Label
-    Friend WithEvents Label19 As Label
-    Friend WithEvents Label18 As Label
-    Friend WithEvents Label16 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents btnImprimer As Button
-    Friend WithEvents btnOK As Button
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Label7 As Label
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Label9 As Label
-    Friend WithEvents Label10 As Label
-    Friend WithEvents Label11 As Label
-    Friend WithEvents Label12 As Label
-    Friend WithEvents Label13 As Label
-    Friend WithEvents Label14 As Label
-    Friend WithEvents Label15 As Label
-    Friend WithEvents TextBox7 As TextBox
-    Friend WithEvents TextBox8 As TextBox
-    Friend WithEvents TextBox9 As TextBox
-    Friend WithEvents TextBox10 As TextBox
-    Friend WithEvents TextBox11 As TextBox
-    Friend WithEvents TextBox12 As TextBox
-    Friend WithEvents TextBox13 As TextBox
-    Friend WithEvents TextBox14 As TextBox
-    Friend WithEvents GroupBox1 As GroupBox
-End Class

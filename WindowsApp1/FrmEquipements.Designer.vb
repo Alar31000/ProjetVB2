@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Equipements
+Partial Class FrmEquipements
     Inherits System.Windows.Forms.Form
 
     'Form remplace la méthode Dispose pour nettoyer la liste des composants.
@@ -22,8 +22,6 @@ Partial Class Equipements
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Calendar1 = New System.Windows.Forms.MonthCalendar()
         Me.GroupBoxEquipement = New System.Windows.Forms.GroupBox()
         Me.ListBox4 = New System.Windows.Forms.ListBox()
         Me.MonthCalendar1 = New System.Windows.Forms.MonthCalendar()
@@ -33,6 +31,8 @@ Partial Class Equipements
         Me.ButtonClendar = New System.Windows.Forms.Button()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Calendar1 = New System.Windows.Forms.MonthCalendar()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.ListBox3 = New System.Windows.Forms.ListBox()
         Me.Labelstok = New System.Windows.Forms.Label()
@@ -57,21 +57,6 @@ Partial Class Equipements
         Me.LabelMicroOrdi = New System.Windows.Forms.Label()
         Me.GroupBoxEquipement.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(32, 397)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(145, 21)
-        Me.Label7.TabIndex = 42
-        Me.Label7.Text = "Date d'acquisition"
-        '
-        'Calendar1
-        '
-        Me.Calendar1.Location = New System.Drawing.Point(239, 418)
-        Me.Calendar1.Name = "Calendar1"
-        Me.Calendar1.TabIndex = 43
         '
         'GroupBoxEquipement
         '
@@ -109,10 +94,10 @@ Partial Class Equipements
         Me.GroupBoxEquipement.Controls.Add(Me.LabelMicroOrdi)
         Me.GroupBoxEquipement.Font = New System.Drawing.Font("Segoe UI", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBoxEquipement.ForeColor = System.Drawing.Color.Navy
-        Me.GroupBoxEquipement.Location = New System.Drawing.Point(12, 3)
+        Me.GroupBoxEquipement.Location = New System.Drawing.Point(3, -1)
         Me.GroupBoxEquipement.Name = "GroupBoxEquipement"
-        Me.GroupBoxEquipement.Size = New System.Drawing.Size(1214, 664)
-        Me.GroupBoxEquipement.TabIndex = 44
+        Me.GroupBoxEquipement.Size = New System.Drawing.Size(905, 643)
+        Me.GroupBoxEquipement.TabIndex = 45
         Me.GroupBoxEquipement.TabStop = False
         Me.GroupBoxEquipement.Text = "Equipements"
         '
@@ -177,6 +162,21 @@ Partial Class Equipements
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(115, 29)
         Me.TextBox1.TabIndex = 41
+        '
+        'Calendar1
+        '
+        Me.Calendar1.Location = New System.Drawing.Point(239, 418)
+        Me.Calendar1.Name = "Calendar1"
+        Me.Calendar1.TabIndex = 43
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(32, 397)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(145, 21)
+        Me.Label7.TabIndex = 42
+        Me.Label7.Text = "Date d'acquisition"
         '
         'Label6
         '
@@ -390,24 +390,31 @@ Partial Class Equipements
         Me.LabelMicroOrdi.TabIndex = 19
         Me.LabelMicroOrdi.Text = "Micro-ordinateur"
         '
-        'Equipements
+        'FrmEquipements
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(917, 658)
+        Me.ClientSize = New System.Drawing.Size(913, 638)
         Me.Controls.Add(Me.GroupBoxEquipement)
-        Me.Name = "Equipements"
-        Me.Text = "Equipements"
+        Me.Name = "FrmEquipements"
+        Me.Text = "FrmEquipements"
         Me.GroupBoxEquipement.ResumeLayout(False)
         Me.GroupBoxEquipement.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Calendar1 As MonthCalendar
     Friend WithEvents GroupBoxEquipement As GroupBox
+    Friend WithEvents ListBox4 As ListBox
+    Friend WithEvents MonthCalendar1 As MonthCalendar
+    Friend WithEvents Button1 As Button
+    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents Label8 As Label
+    Friend WithEvents ButtonClendar As Button
+    Friend WithEvents TextBox2 As TextBox
     Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Calendar1 As MonthCalendar
+    Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents ListBox3 As ListBox
     Friend WithEvents Labelstok As Label
@@ -430,11 +437,4 @@ Partial Class Equipements
     Friend WithEvents LabelInternet As Label
     Friend WithEvents LabelModem As Label
     Friend WithEvents LabelMicroOrdi As Label
-    Friend WithEvents ButtonClendar As Button
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents Label8 As Label
-    Friend WithEvents MonthCalendar1 As MonthCalendar
-    Friend WithEvents Button1 As Button
-    Friend WithEvents ListBox4 As ListBox
 End Class

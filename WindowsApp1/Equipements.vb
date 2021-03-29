@@ -3,7 +3,7 @@
 
     End Sub
 
-    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBoxEquipement.Enter
+    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -11,7 +11,7 @@
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles ButtonCalculate.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
 
         'declaration des variable
         Dim prix1 As Decimal
@@ -21,25 +21,25 @@
         'attribut des valeurs entrées par utilisateur
         prix1 = Val(TextBoxMOrdi.Text)
         prix2 = Val(TextBoxModem.Text)
-        prix3 = Val(TextBoxInternet.Text)
+        ' prix3 = Val(TextBoxInternet.Text)
 
         'Appelle se la procedure calculer
         calculer(prix1, prix2, prix3)
     End Sub
 
-    Private Sub LabelMOrdinateurCost_Click(sender As Object, e As EventArgs) Handles LabelMOrdinateurCost.Click
+    Private Sub LabelMOrdinateurCost_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub LabelModemCost_Click(sender As Object, e As EventArgs) Handles LabelModemCost.Click
+    Private Sub LabelModemCost_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub LabelInternetCost_Click(sender As Object, e As EventArgs) Handles LabelInternetCost.Click
+    Private Sub LabelInternetCost_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub ButtonFacture_Click(sender As Object, e As EventArgs) Handles ButtonFacture.Click
+    Private Sub ButtonFacture_Click(sender As Object, e As EventArgs)
         If CheckBoxLouer.Checked = False Then
             MsgBox("veuillez cocher la case louer") 'message box si le case louer n'est pas coché
         Else
@@ -48,7 +48,7 @@
         End If
     End Sub
 
-    Private Sub ButtonQuitter_Click(sender As Object, e As EventArgs) 
+    Private Sub ButtonQuitter_Click(sender As Object, e As EventArgs)
         'quitter la fenêtre
         End
     End Sub
@@ -77,13 +77,41 @@
         LabelTotal.Text = String.Format("{0:c}", total)
 
     End Sub
-    Private Sub LabelTotal_Click(sender As Object, e As EventArgs) Handles LabelTotal.Click
+    Private Sub LabelTotal_Click(sender As Object, e As EventArgs)
         'Calculer()
 
         'pour affichier la resultat du calcule
     End Sub
 
     Private Sub Equipements_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub MonthCalendar1_DateChanged(sender As Object, e As DateRangeEventArgs) Handles Calendar1.DateChanged
+
+    End Sub
+
+    Private Sub GroupBoxEquipement_Enter(sender As Object, e As EventArgs) Handles GroupBoxEquipement.Enter
+
+    End Sub
+
+    Private Sub ButtonClendar_Click(sender As Object, e As EventArgs) Handles ButtonClendar.Click
+        Calendar1.Visible = True
+    End Sub
+
+    Private Sub LabelInternet_Click(sender As Object, e As EventArgs) Handles LabelInternet.Click
+
+    End Sub
+
+    Private Sub ButtonCalculate_Click(sender As Object, e As EventArgs) Handles ButtonCalculate.Click
+
+    End Sub
+
+    Private Sub ButtonFacture_Click_1(sender As Object, e As EventArgs) Handles ButtonFacture.Click
 
     End Sub
 End Class
