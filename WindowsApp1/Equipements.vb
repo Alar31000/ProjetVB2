@@ -21,7 +21,7 @@
         'attribut des valeurs entrées par utilisateur
         prix1 = Val(TextBoxMOrdi.Text)
         prix2 = Val(TextBoxModem.Text)
-        prix3 = Val(TextBoxInternet.Text)
+        ' prix3 = Val(TextBoxInternet.Text)
 
         'Appelle se la procedure calculer
         calculer(prix1, prix2, prix3)
@@ -104,6 +104,14 @@
     End Sub
 
     Private Sub LabelInternet_Click(sender As Object, e As EventArgs) Handles LabelInternet.Click
+
+    End Sub
+
+    Private Sub ButtonCalculate_Click(sender As Object, e As EventArgs) Handles ButtonCalculate.Click
+
+    End Sub
+
+    Private Sub ButtonFacture_Click_1(sender As Object, e As EventArgs) Handles ButtonFacture.Click
 
     End Sub
 End Class

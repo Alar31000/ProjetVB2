@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Payment
+Partial Class FrmPayement
     Inherits System.Windows.Forms.Form
 
     'Form remplace la méthode Dispose pour nettoyer la liste des composants.
@@ -22,16 +22,10 @@ Partial Class Payment
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.ButtonPaye = New System.Windows.Forms.Button()
-        Me.TextBoxNumeroCarte = New System.Windows.Forms.TextBox()
-        Me.TextBoxDateEx = New System.Windows.Forms.TextBox()
-        Me.LabelNumeroCarte = New System.Windows.Forms.Label()
-        Me.LabelDateEx = New System.Windows.Forms.Label()
-        Me.TextBoxCVV = New System.Windows.Forms.TextBox()
-        Me.LabelCvv = New System.Windows.Forms.Label()
         Me.GroupBoxFacture = New System.Windows.Forms.GroupBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.LabelFacture = New System.Windows.Forms.Label()
+        Me.ButtonPaye = New System.Windows.Forms.Button()
         Me.LabelNIP = New System.Windows.Forms.Label()
         Me.GroupBoxPrélèvement = New System.Windows.Forms.GroupBox()
         Me.TextBoxNCompte = New System.Windows.Forms.TextBox()
@@ -45,6 +39,12 @@ Partial Class Payment
         Me.TextBoxNInstitution = New System.Windows.Forms.TextBox()
         Me.TextBoxNSuccursale = New System.Windows.Forms.TextBox()
         Me.GroupBoxCarte = New System.Windows.Forms.GroupBox()
+        Me.TextBoxNumeroCarte = New System.Windows.Forms.TextBox()
+        Me.TextBoxDateEx = New System.Windows.Forms.TextBox()
+        Me.TextBoxCVV = New System.Windows.Forms.TextBox()
+        Me.LabelCvv = New System.Windows.Forms.Label()
+        Me.LabelDateEx = New System.Windows.Forms.Label()
+        Me.LabelNumeroCarte = New System.Windows.Forms.Label()
         Me.GroupBoxPayement = New System.Windows.Forms.GroupBox()
         Me.CheckBoxPrélèvement = New System.Windows.Forms.CheckBox()
         Me.CheckBoxCarte = New System.Windows.Forms.CheckBox()
@@ -55,73 +55,6 @@ Partial Class Payment
         Me.GroupBoxCarte.SuspendLayout()
         Me.GroupBoxPayement.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'ButtonPaye
-        '
-        Me.ButtonPaye.Font = New System.Drawing.Font("Segoe UI", 12.0!)
-        Me.ButtonPaye.Location = New System.Drawing.Point(6, 167)
-        Me.ButtonPaye.Name = "ButtonPaye"
-        Me.ButtonPaye.Size = New System.Drawing.Size(133, 27)
-        Me.ButtonPaye.TabIndex = 0
-        Me.ButtonPaye.Text = "Payer Maintenant"
-        Me.ButtonPaye.UseVisualStyleBackColor = True
-        '
-        'TextBoxNumeroCarte
-        '
-        Me.TextBoxNumeroCarte.Location = New System.Drawing.Point(147, 26)
-        Me.TextBoxNumeroCarte.Name = "TextBoxNumeroCarte"
-        Me.TextBoxNumeroCarte.Size = New System.Drawing.Size(86, 35)
-        Me.TextBoxNumeroCarte.TabIndex = 2
-        Me.TextBoxNumeroCarte.Visible = False
-        '
-        'TextBoxDateEx
-        '
-        Me.TextBoxDateEx.Location = New System.Drawing.Point(147, 71)
-        Me.TextBoxDateEx.Name = "TextBoxDateEx"
-        Me.TextBoxDateEx.Size = New System.Drawing.Size(86, 35)
-        Me.TextBoxDateEx.TabIndex = 3
-        Me.TextBoxDateEx.Visible = False
-        '
-        'LabelNumeroCarte
-        '
-        Me.LabelNumeroCarte.AutoSize = True
-        Me.LabelNumeroCarte.Font = New System.Drawing.Font("Segoe UI", 12.0!)
-        Me.LabelNumeroCarte.Location = New System.Drawing.Point(7, 40)
-        Me.LabelNumeroCarte.Name = "LabelNumeroCarte"
-        Me.LabelNumeroCarte.Size = New System.Drawing.Size(127, 21)
-        Me.LabelNumeroCarte.TabIndex = 5
-        Me.LabelNumeroCarte.Text = "Numéro de carte"
-        Me.LabelNumeroCarte.Visible = False
-        '
-        'LabelDateEx
-        '
-        Me.LabelDateEx.AutoSize = True
-        Me.LabelDateEx.Font = New System.Drawing.Font("Segoe UI", 12.0!)
-        Me.LabelDateEx.Location = New System.Drawing.Point(7, 85)
-        Me.LabelDateEx.Name = "LabelDateEx"
-        Me.LabelDateEx.Size = New System.Drawing.Size(128, 21)
-        Me.LabelDateEx.TabIndex = 6
-        Me.LabelDateEx.Text = "Date d'expiration"
-        Me.LabelDateEx.Visible = False
-        '
-        'TextBoxCVV
-        '
-        Me.TextBoxCVV.Location = New System.Drawing.Point(147, 122)
-        Me.TextBoxCVV.Name = "TextBoxCVV"
-        Me.TextBoxCVV.Size = New System.Drawing.Size(86, 35)
-        Me.TextBoxCVV.TabIndex = 10
-        Me.TextBoxCVV.Visible = False
-        '
-        'LabelCvv
-        '
-        Me.LabelCvv.AutoSize = True
-        Me.LabelCvv.Font = New System.Drawing.Font("Segoe UI", 12.0!)
-        Me.LabelCvv.Location = New System.Drawing.Point(12, 134)
-        Me.LabelCvv.Name = "LabelCvv"
-        Me.LabelCvv.Size = New System.Drawing.Size(40, 21)
-        Me.LabelCvv.TabIndex = 11
-        Me.LabelCvv.Text = "CVV"
-        Me.LabelCvv.Visible = False
         '
         'GroupBoxFacture
         '
@@ -136,10 +69,10 @@ Partial Class Payment
         Me.GroupBoxFacture.Controls.Add(Me.GroupBoxPayement)
         Me.GroupBoxFacture.Font = New System.Drawing.Font("Segoe UI Black", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
         Me.GroupBoxFacture.ForeColor = System.Drawing.Color.Navy
-        Me.GroupBoxFacture.Location = New System.Drawing.Point(1, 1)
+        Me.GroupBoxFacture.Location = New System.Drawing.Point(12, 9)
         Me.GroupBoxFacture.Name = "GroupBoxFacture"
         Me.GroupBoxFacture.Size = New System.Drawing.Size(811, 460)
-        Me.GroupBoxFacture.TabIndex = 12
+        Me.GroupBoxFacture.TabIndex = 13
         Me.GroupBoxFacture.TabStop = False
         Me.GroupBoxFacture.Text = "Payment de la Facture"
         '
@@ -161,6 +94,16 @@ Partial Class Payment
         Me.LabelFacture.Size = New System.Drawing.Size(805, 30)
         Me.LabelFacture.TabIndex = 17
         Me.LabelFacture.Text = "Nous sommes désolé, cette option sera développée dans la prochaine version."
+        '
+        'ButtonPaye
+        '
+        Me.ButtonPaye.Font = New System.Drawing.Font("Segoe UI", 12.0!)
+        Me.ButtonPaye.Location = New System.Drawing.Point(6, 167)
+        Me.ButtonPaye.Name = "ButtonPaye"
+        Me.ButtonPaye.Size = New System.Drawing.Size(133, 27)
+        Me.ButtonPaye.TabIndex = 0
+        Me.ButtonPaye.Text = "Payer Maintenant"
+        Me.ButtonPaye.UseVisualStyleBackColor = True
         '
         'LabelNIP
         '
@@ -304,6 +247,63 @@ Partial Class Payment
         Me.GroupBoxCarte.TabStop = False
         Me.GroupBoxCarte.Visible = False
         '
+        'TextBoxNumeroCarte
+        '
+        Me.TextBoxNumeroCarte.Location = New System.Drawing.Point(147, 26)
+        Me.TextBoxNumeroCarte.Name = "TextBoxNumeroCarte"
+        Me.TextBoxNumeroCarte.Size = New System.Drawing.Size(86, 35)
+        Me.TextBoxNumeroCarte.TabIndex = 2
+        Me.TextBoxNumeroCarte.Visible = False
+        '
+        'TextBoxDateEx
+        '
+        Me.TextBoxDateEx.Location = New System.Drawing.Point(147, 71)
+        Me.TextBoxDateEx.Name = "TextBoxDateEx"
+        Me.TextBoxDateEx.Size = New System.Drawing.Size(86, 35)
+        Me.TextBoxDateEx.TabIndex = 3
+        Me.TextBoxDateEx.Visible = False
+        '
+        'TextBoxCVV
+        '
+        Me.TextBoxCVV.Location = New System.Drawing.Point(147, 122)
+        Me.TextBoxCVV.Name = "TextBoxCVV"
+        Me.TextBoxCVV.Size = New System.Drawing.Size(86, 35)
+        Me.TextBoxCVV.TabIndex = 10
+        Me.TextBoxCVV.Visible = False
+        '
+        'LabelCvv
+        '
+        Me.LabelCvv.AutoSize = True
+        Me.LabelCvv.Font = New System.Drawing.Font("Segoe UI", 12.0!)
+        Me.LabelCvv.Location = New System.Drawing.Point(12, 134)
+        Me.LabelCvv.Name = "LabelCvv"
+        Me.LabelCvv.Size = New System.Drawing.Size(40, 21)
+        Me.LabelCvv.TabIndex = 11
+        Me.LabelCvv.Text = "CVV"
+        Me.LabelCvv.Visible = False
+        '
+        'LabelDateEx
+        '
+        Me.LabelDateEx.AutoSize = True
+        Me.LabelDateEx.Font = New System.Drawing.Font("Segoe UI", 12.0!)
+        Me.LabelDateEx.Location = New System.Drawing.Point(7, 85)
+        Me.LabelDateEx.Name = "LabelDateEx"
+        Me.LabelDateEx.Size = New System.Drawing.Size(128, 21)
+        Me.LabelDateEx.TabIndex = 6
+        Me.LabelDateEx.Text = "Date d'expiration"
+        Me.LabelDateEx.Visible = False
+        '
+        'LabelNumeroCarte
+        '
+        Me.LabelNumeroCarte.AutoSize = True
+        Me.LabelNumeroCarte.Font = New System.Drawing.Font("Segoe UI", 12.0!)
+        Me.LabelNumeroCarte.Location = New System.Drawing.Point(7, 40)
+        Me.LabelNumeroCarte.Name = "LabelNumeroCarte"
+        Me.LabelNumeroCarte.Size = New System.Drawing.Size(127, 21)
+        Me.LabelNumeroCarte.TabIndex = 5
+        Me.LabelNumeroCarte.Text = "Numéro de carte"
+        Me.LabelNumeroCarte.Visible = False
+        '
         'GroupBoxPayement
         '
         Me.GroupBoxPayement.Controls.Add(Me.CheckBoxPrélèvement)
@@ -355,14 +355,14 @@ Partial Class Payment
         Me.CheckBoxChèque.UseVisualStyleBackColor = True
         Me.CheckBoxChèque.Visible = False
         '
-        'Payment
+        'FrmPayement
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(823, 487)
+        Me.ClientSize = New System.Drawing.Size(820, 474)
         Me.Controls.Add(Me.GroupBoxFacture)
-        Me.Name = "Payment"
-        Me.Text = "Payment"
+        Me.Name = "FrmPayement"
+        Me.Text = "FrmPayement"
         Me.GroupBoxFacture.ResumeLayout(False)
         Me.GroupBoxFacture.PerformLayout()
         Me.GroupBoxPrélèvement.ResumeLayout(False)
@@ -378,31 +378,31 @@ Partial Class Payment
 
     End Sub
 
+    Friend WithEvents GroupBoxFacture As GroupBox
+    Friend WithEvents Button1 As Button
+    Friend WithEvents LabelFacture As Label
     Friend WithEvents ButtonPaye As Button
+    Friend WithEvents LabelNIP As Label
+    Friend WithEvents GroupBoxPrélèvement As GroupBox
+    Friend WithEvents TextBoxNCompte As TextBox
+    Friend WithEvents LabelNumeroCompte As Label
+    Friend WithEvents TextBoxNIP As TextBox
+    Friend WithEvents GroupBoxChèque As GroupBox
+    Friend WithEvents LabelInstitution As Label
+    Friend WithEvents TextBoxNComptec As TextBox
+    Friend WithEvents LabelSuccursale As Label
+    Friend WithEvents LabelComptec As Label
+    Friend WithEvents TextBoxNInstitution As TextBox
+    Friend WithEvents TextBoxNSuccursale As TextBox
+    Friend WithEvents GroupBoxCarte As GroupBox
     Friend WithEvents TextBoxNumeroCarte As TextBox
     Friend WithEvents TextBoxDateEx As TextBox
-    Friend WithEvents LabelNumeroCarte As Label
-    Friend WithEvents LabelDateEx As Label
     Friend WithEvents TextBoxCVV As TextBox
     Friend WithEvents LabelCvv As Label
-    Friend WithEvents GroupBoxFacture As GroupBox
-    Friend WithEvents LabelFacture As Label
-    Friend WithEvents TextBoxNSuccursale As TextBox
-    Friend WithEvents TextBoxNInstitution As TextBox
-    Friend WithEvents TextBoxNCompte As TextBox
-    Friend WithEvents TextBoxNIP As TextBox
-    Friend WithEvents LabelSuccursale As Label
-    Friend WithEvents LabelNIP As Label
-    Friend WithEvents LabelInstitution As Label
-    Friend WithEvents LabelComptec As Label
-    Friend WithEvents LabelNumeroCompte As Label
-    Friend WithEvents GroupBoxPrélèvement As GroupBox
-    Friend WithEvents GroupBoxChèque As GroupBox
-    Friend WithEvents GroupBoxCarte As GroupBox
-    Friend WithEvents CheckBoxChèque As CheckBox
-    Friend WithEvents CheckBoxCarte As CheckBox
-    Friend WithEvents CheckBoxPrélèvement As CheckBox
+    Friend WithEvents LabelDateEx As Label
+    Friend WithEvents LabelNumeroCarte As Label
     Friend WithEvents GroupBoxPayement As GroupBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents TextBoxNComptec As TextBox
+    Friend WithEvents CheckBoxPrélèvement As CheckBox
+    Friend WithEvents CheckBoxCarte As CheckBox
+    Friend WithEvents CheckBoxChèque As CheckBox
 End Class
