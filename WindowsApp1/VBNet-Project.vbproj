@@ -110,6 +110,12 @@
     <Compile Include="About.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmFacture.Designer.vb">
+      <DependentUpon>FrmFacture.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFacture.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Modifier le contrat.Designer.vb">
       <DependentUpon>Modifier le contrat.vb</DependentUpon>
     </Compile>
