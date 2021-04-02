@@ -22,11 +22,6 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.GBoxRecherche = New System.Windows.Forms.GroupBox()
-        Me.LblNumContratAModifier = New System.Windows.Forms.Label()
-        Me.LblMessage = New System.Windows.Forms.Label()
-        Me.TxtBoxNumCnt = New System.Windows.Forms.TextBox()
-        Me.BtnRechercher = New System.Windows.Forms.Button()
         Me.BtnMQuitter = New System.Windows.Forms.Button()
         Me.BtnMNSearch = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
@@ -52,62 +47,15 @@ Partial Class Form1
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.GBoxRecherche.SuspendLayout()
+        Me.BtnRechercher = New System.Windows.Forms.Button()
+        Me.TxtBoxNumCnt = New System.Windows.Forms.TextBox()
+        Me.LblMessage = New System.Windows.Forms.Label()
+        Me.LblNumContratAModifier = New System.Windows.Forms.Label()
+        Me.GBoxRecherche = New System.Windows.Forms.GroupBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
+        Me.GBoxRecherche.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'GBoxRecherche
-        '
-        Me.GBoxRecherche.BackColor = System.Drawing.Color.LightGray
-        Me.GBoxRecherche.Controls.Add(Me.LblNumContratAModifier)
-        Me.GBoxRecherche.Controls.Add(Me.LblMessage)
-        Me.GBoxRecherche.Controls.Add(Me.TxtBoxNumCnt)
-        Me.GBoxRecherche.Controls.Add(Me.BtnRechercher)
-        Me.GBoxRecherche.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GBoxRecherche.Location = New System.Drawing.Point(2, -27)
-        Me.GBoxRecherche.Name = "GBoxRecherche"
-        Me.GBoxRecherche.Size = New System.Drawing.Size(796, 103)
-        Me.GBoxRecherche.TabIndex = 51
-        Me.GBoxRecherche.TabStop = False
-        Me.GBoxRecherche.Text = "Recherche du contrat"
-        '
-        'LblNumContratAModifier
-        '
-        Me.LblNumContratAModifier.AutoSize = True
-        Me.LblNumContratAModifier.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblNumContratAModifier.Location = New System.Drawing.Point(405, 43)
-        Me.LblNumContratAModifier.Name = "LblNumContratAModifier"
-        Me.LblNumContratAModifier.Size = New System.Drawing.Size(136, 18)
-        Me.LblNumContratAModifier.TabIndex = 21
-        Me.LblNumContratAModifier.Text = "Numéro du contrat "
-        '
-        'LblMessage
-        '
-        Me.LblMessage.AutoSize = True
-        Me.LblMessage.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblMessage.Location = New System.Drawing.Point(303, 101)
-        Me.LblMessage.Name = "LblMessage"
-        Me.LblMessage.Size = New System.Drawing.Size(0, 13)
-        Me.LblMessage.TabIndex = 44
-        '
-        'TxtBoxNumCnt
-        '
-        Me.TxtBoxNumCnt.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtBoxNumCnt.Location = New System.Drawing.Point(605, 37)
-        Me.TxtBoxNumCnt.Name = "TxtBoxNumCnt"
-        Me.TxtBoxNumCnt.Size = New System.Drawing.Size(191, 24)
-        Me.TxtBoxNumCnt.TabIndex = 22
-        '
-        'BtnRechercher
-        '
-        Me.BtnRechercher.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnRechercher.Location = New System.Drawing.Point(605, 78)
-        Me.BtnRechercher.Name = "BtnRechercher"
-        Me.BtnRechercher.Size = New System.Drawing.Size(117, 23)
-        Me.BtnRechercher.TabIndex = 34
-        Me.BtnRechercher.Text = "Rechercher"
-        Me.BtnRechercher.UseVisualStyleBackColor = True
         '
         'BtnMQuitter
         '
@@ -365,6 +313,58 @@ Partial Class Form1
         Me.TextBox2.Size = New System.Drawing.Size(149, 24)
         Me.TextBox2.TabIndex = 46
         '
+        'BtnRechercher
+        '
+        Me.BtnRechercher.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnRechercher.Location = New System.Drawing.Point(605, 78)
+        Me.BtnRechercher.Name = "BtnRechercher"
+        Me.BtnRechercher.Size = New System.Drawing.Size(117, 23)
+        Me.BtnRechercher.TabIndex = 34
+        Me.BtnRechercher.Text = "Rechercher"
+        Me.BtnRechercher.UseVisualStyleBackColor = True
+        '
+        'TxtBoxNumCnt
+        '
+        Me.TxtBoxNumCnt.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtBoxNumCnt.Location = New System.Drawing.Point(605, 37)
+        Me.TxtBoxNumCnt.Name = "TxtBoxNumCnt"
+        Me.TxtBoxNumCnt.Size = New System.Drawing.Size(191, 24)
+        Me.TxtBoxNumCnt.TabIndex = 22
+        '
+        'LblMessage
+        '
+        Me.LblMessage.AutoSize = True
+        Me.LblMessage.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblMessage.Location = New System.Drawing.Point(303, 101)
+        Me.LblMessage.Name = "LblMessage"
+        Me.LblMessage.Size = New System.Drawing.Size(0, 13)
+        Me.LblMessage.TabIndex = 44
+        '
+        'LblNumContratAModifier
+        '
+        Me.LblNumContratAModifier.AutoSize = True
+        Me.LblNumContratAModifier.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblNumContratAModifier.Location = New System.Drawing.Point(405, 43)
+        Me.LblNumContratAModifier.Name = "LblNumContratAModifier"
+        Me.LblNumContratAModifier.Size = New System.Drawing.Size(136, 18)
+        Me.LblNumContratAModifier.TabIndex = 21
+        Me.LblNumContratAModifier.Text = "Numéro du contrat "
+        '
+        'GBoxRecherche
+        '
+        Me.GBoxRecherche.BackColor = System.Drawing.Color.LightGray
+        Me.GBoxRecherche.Controls.Add(Me.LblNumContratAModifier)
+        Me.GBoxRecherche.Controls.Add(Me.LblMessage)
+        Me.GBoxRecherche.Controls.Add(Me.TxtBoxNumCnt)
+        Me.GBoxRecherche.Controls.Add(Me.BtnRechercher)
+        Me.GBoxRecherche.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GBoxRecherche.Location = New System.Drawing.Point(2, -27)
+        Me.GBoxRecherche.Name = "GBoxRecherche"
+        Me.GBoxRecherche.Size = New System.Drawing.Size(796, 103)
+        Me.GBoxRecherche.TabIndex = 51
+        Me.GBoxRecherche.TabStop = False
+        Me.GBoxRecherche.Text = "Recherche du contrat"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -377,20 +377,14 @@ Partial Class Form1
         Me.Controls.Add(Me.BtnMNSearch)
         Me.Name = "Form1"
         Me.Text = "Form1"
-        Me.GBoxRecherche.ResumeLayout(False)
-        Me.GBoxRecherche.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
+        Me.GBoxRecherche.ResumeLayout(False)
+        Me.GBoxRecherche.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents GBoxRecherche As GroupBox
-    Friend WithEvents LblNumContratAModifier As Label
-    Friend WithEvents LblMessage As Label
-    Friend WithEvents TxtBoxNumCnt As TextBox
-    Friend WithEvents BtnRechercher As Button
     Friend WithEvents BtnMQuitter As Button
     Friend WithEvents BtnMNSearch As Button
     Friend WithEvents GroupBox1 As GroupBox
@@ -416,4 +410,9 @@ Partial Class Form1
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents BtnRechercher As Button
+    Friend WithEvents TxtBoxNumCnt As TextBox
+    Friend WithEvents LblMessage As Label
+    Friend WithEvents LblNumContratAModifier As Label
+    Friend WithEvents GBoxRecherche As GroupBox
 End Class
