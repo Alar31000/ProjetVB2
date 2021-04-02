@@ -19,35 +19,47 @@
 
     End Sub
 
-    Private Sub LblMLocation_Click(sender As Object, e As EventArgs) Handles LblMLocation.Click
+    Private Sub LblMLocation_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub TBoxMLocation_TextChanged(sender As Object, e As EventArgs) Handles TBoxMLocation.TextChanged
+    Private Sub TBoxMLocation_TextChanged(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub TBoxMDO_TextChanged(sender As Object, e As EventArgs) Handles TBoxMDO.TextChanged
+    Private Sub TBoxMDO_TextChanged(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub LblMDF_Click(sender As Object, e As EventArgs) Handles LblMDF.Click
+    Private Sub LblMDF_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub LblMNumCnt_Click(sender As Object, e As EventArgs) Handles LblMNumCnt.Click
+    Private Sub LblMNumCnt_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub LblMNC_Click(sender As Object, e As EventArgs) Handles LblMNC.Click
+    Private Sub LblMNC_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub TBoxMService_TextChanged(sender As Object, e As EventArgs) Handles TBoxMService.TextChanged
+    Private Sub TBoxMService_TextChanged(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub TBoxMTCnt_TextChanged(sender As Object, e As EventArgs) Handles TBoxMTCnt.TextChanged
+    Private Sub TBoxMTCnt_TextChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub GroupBox2_Enter(sender As Object, e As EventArgs) Handles GroupBox2.Enter
+
+    End Sub
+
+    Private Sub LblMDO_Click(sender As Object, e As EventArgs) Handles LblMDO.Click
+
+    End Sub
+
+    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
 
     End Sub
 End Class
