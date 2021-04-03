@@ -22,26 +22,61 @@ Partial Class Résilier_Contrat
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.Num_Contrat = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Nom = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Prénom = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Type_Contrat = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Equipements = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Equipements = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Type_Contrat = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Prénom = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Nom = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Num_Contrat = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Titre = New System.Windows.Forms.Label()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.BtnResilier = New System.Windows.Forms.Button()
         Me.BtnQuitter = New System.Windows.Forms.Button()
-        Me.LblNumContratAModifier = New System.Windows.Forms.Label()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.TxtBoxNumCnt = New System.Windows.Forms.TextBox()
         Me.BtnRechercher = New System.Windows.Forms.Button()
+        Me.LblNumContratAModifier = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
+        '
+        'column2
+        '
+        Me.column2.HeaderText = "Date de mis en Service "
+        Me.column2.Name = "column2"
+        '
+        'Column1
+        '
+        Me.Column1.HeaderText = "Service"
+        Me.Column1.Name = "Column1"
+        '
+        'Equipements
+        '
+        Me.Equipements.HeaderText = "Equipements"
+        Me.Equipements.Name = "Equipements"
+        '
+        'Type_Contrat
+        '
+        Me.Type_Contrat.HeaderText = "Type_Contrat"
+        Me.Type_Contrat.Name = "Type_Contrat"
+        '
+        'Prénom
+        '
+        Me.Prénom.HeaderText = "Prénom"
+        Me.Prénom.Name = "Prénom"
+        '
+        'Nom
+        '
+        Me.Nom.HeaderText = "Nom"
+        Me.Nom.Name = "Nom"
+        '
+        'Num_Contrat
+        '
+        Me.Num_Contrat.HeaderText = "Num_Contrat"
+        Me.Num_Contrat.Name = "Num_Contrat"
         '
         'DataGridView1
         '
@@ -51,41 +86,6 @@ Partial Class Résilier_Contrat
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(742, 166)
         Me.DataGridView1.TabIndex = 0
-        '
-        'Num_Contrat
-        '
-        Me.Num_Contrat.HeaderText = "Num_Contrat"
-        Me.Num_Contrat.Name = "Num_Contrat"
-        '
-        'Nom
-        '
-        Me.Nom.HeaderText = "Nom"
-        Me.Nom.Name = "Nom"
-        '
-        'Prénom
-        '
-        Me.Prénom.HeaderText = "Prénom"
-        Me.Prénom.Name = "Prénom"
-        '
-        'Type_Contrat
-        '
-        Me.Type_Contrat.HeaderText = "Type_Contrat"
-        Me.Type_Contrat.Name = "Type_Contrat"
-        '
-        'Equipements
-        '
-        Me.Equipements.HeaderText = "Equipements"
-        Me.Equipements.Name = "Equipements"
-        '
-        'Column1
-        '
-        Me.Column1.HeaderText = "Service"
-        Me.Column1.Name = "Column1"
-        '
-        'column2
-        '
-        Me.column2.HeaderText = "Date de mis en Service "
-        Me.column2.Name = "column2"
         '
         'Titre
         '
@@ -98,16 +98,6 @@ Partial Class Résilier_Contrat
         Me.Titre.TabIndex = 39
         Me.Titre.Text = "La liste des contrats"
         Me.Titre.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'GroupBox1
-        '
-        Me.GroupBox1.Controls.Add(Me.BtnQuitter)
-        Me.GroupBox1.Controls.Add(Me.BtnResilier)
-        Me.GroupBox1.Location = New System.Drawing.Point(138, 359)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(506, 94)
-        Me.GroupBox1.TabIndex = 40
-        Me.GroupBox1.TabStop = False
         '
         'BtnResilier
         '
@@ -129,15 +119,15 @@ Partial Class Résilier_Contrat
         Me.BtnQuitter.Text = "Quitter"
         Me.BtnQuitter.UseVisualStyleBackColor = True
         '
-        'LblNumContratAModifier
+        'GroupBox1
         '
-        Me.LblNumContratAModifier.AutoSize = True
-        Me.LblNumContratAModifier.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblNumContratAModifier.Location = New System.Drawing.Point(377, 26)
-        Me.LblNumContratAModifier.Name = "LblNumContratAModifier"
-        Me.LblNumContratAModifier.Size = New System.Drawing.Size(136, 18)
-        Me.LblNumContratAModifier.TabIndex = 21
-        Me.LblNumContratAModifier.Text = "Numéro du contrat "
+        Me.GroupBox1.Controls.Add(Me.BtnQuitter)
+        Me.GroupBox1.Controls.Add(Me.BtnResilier)
+        Me.GroupBox1.Location = New System.Drawing.Point(138, 359)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(506, 94)
+        Me.GroupBox1.TabIndex = 40
+        Me.GroupBox1.TabStop = False
         '
         'TxtBoxNumCnt
         '
@@ -156,6 +146,16 @@ Partial Class Résilier_Contrat
         Me.BtnRechercher.TabIndex = 34
         Me.BtnRechercher.Text = "Rechercher"
         Me.BtnRechercher.UseVisualStyleBackColor = True
+        '
+        'LblNumContratAModifier
+        '
+        Me.LblNumContratAModifier.AutoSize = True
+        Me.LblNumContratAModifier.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblNumContratAModifier.Location = New System.Drawing.Point(377, 26)
+        Me.LblNumContratAModifier.Name = "LblNumContratAModifier"
+        Me.LblNumContratAModifier.Size = New System.Drawing.Size(136, 18)
+        Me.LblNumContratAModifier.TabIndex = 21
+        Me.LblNumContratAModifier.Text = "Numéro du contrat "
         '
         'GroupBox2
         '
@@ -188,20 +188,20 @@ Partial Class Résilier_Contrat
 
     End Sub
 
-    Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents Num_Contrat As DataGridViewTextBoxColumn
-    Friend WithEvents Nom As DataGridViewTextBoxColumn
-    Friend WithEvents Prénom As DataGridViewTextBoxColumn
-    Friend WithEvents Type_Contrat As DataGridViewTextBoxColumn
-    Friend WithEvents Equipements As DataGridViewTextBoxColumn
-    Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents column2 As DataGridViewTextBoxColumn
+    Friend WithEvents Column1 As DataGridViewTextBoxColumn
+    Friend WithEvents Equipements As DataGridViewTextBoxColumn
+    Friend WithEvents Type_Contrat As DataGridViewTextBoxColumn
+    Friend WithEvents Prénom As DataGridViewTextBoxColumn
+    Friend WithEvents Nom As DataGridViewTextBoxColumn
+    Friend WithEvents Num_Contrat As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents Titre As Label
-    Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents BtnQuitter As Button
     Friend WithEvents BtnResilier As Button
-    Friend WithEvents LblNumContratAModifier As Label
+    Friend WithEvents BtnQuitter As Button
+    Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents TxtBoxNumCnt As TextBox
     Friend WithEvents BtnRechercher As Button
+    Friend WithEvents LblNumContratAModifier As Label
     Friend WithEvents GroupBox2 As GroupBox
 End Class
