@@ -72,4 +72,8 @@
     Private Sub ButtonAnnuler_Click(sender As Object, e As EventArgs) Handles ButtonAnnuler.Click
         End
     End Sub
+
+    Private Sub GroupBoxFacture_Enter(sender As Object, e As EventArgs) Handles GroupBoxFacture.Enter
+
+    End Sub
 End Class
