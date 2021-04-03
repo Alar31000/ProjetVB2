@@ -116,6 +116,12 @@
     <Compile Include="FrmModiferFournisseur.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmNouveauFournisseur.Designer.vb">
+      <DependentUpon>FrmNouveauFournisseur.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNouveauFournisseur.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Modifier le contrat.Designer.vb">
       <DependentUpon>Modifier le contrat.vb</DependentUpon>
     </Compile>
@@ -186,6 +192,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmModiferFournisseur.resx">
       <DependentUpon>FrmModiferFournisseur.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNouveauFournisseur.resx">
+      <DependentUpon>FrmNouveauFournisseur.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modifier le contrat.resx">
       <DependentUpon>Modifier le contrat.vb</DependentUpon>
