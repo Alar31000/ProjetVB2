@@ -116,6 +116,12 @@
     <Compile Include="Modifier le contrat.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Renouveler Contrat.Designer.vb">
+      <DependentUpon>Renouveler Contrat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Renouveler Contrat.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Résilier Contrat.Designer.vb">
       <DependentUpon>Résilier Contrat.vb</DependentUpon>
     </Compile>
@@ -180,6 +186,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modifier le contrat.resx">
       <DependentUpon>Modifier le contrat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Renouveler Contrat.resx">
+      <DependentUpon>Renouveler Contrat.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Résilier Contrat.resx">
       <DependentUpon>Résilier Contrat.vb</DependentUpon>
