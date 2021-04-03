@@ -119,19 +119,27 @@
     <Compile Include="FrmNouveauFournisseur.Designer.vb">
       <DependentUpon>FrmNouveauFournisseur.vb</DependentUpon>
     </Compile>
+    
     <Compile Include="FrmNouveauFournisseur.vb">
- <Compile Include="FrmFacture.Designer.vb">
-      <DependentUpon>FrmFacture.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmFacture.vb">
       <SubType>Form</SubType>
+ </Compile>
+      <Compile Include="FrmFacture.Designer.vb">
+        <DependentUpon>FrmFacture.vb</DependentUpon>
+      </Compile>
+     
+    
+    <Compile Include="FrmFacture.vb">
+  <SubType>Form</SubType>
     </Compile>
+    
     <Compile Include="Modifier le contrat.Designer.vb">
       <DependentUpon>Modifier le contrat.vb</DependentUpon>
     </Compile>
+    
     <Compile Include="Modifier le contrat.vb">
       <SubType>Form</SubType>
     </Compile>
+    
     <Compile Include="Résilier Contrat.Designer.vb">
       <DependentUpon>Résilier Contrat.vb</DependentUpon>
     </Compile>
@@ -184,6 +192,7 @@
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
+  
   <ItemGroup>
     <EmbeddedResource Include="CreerUnNouveauContrat.resx">
       <DependentUpon>CreerUnNouveauContrat.vb</DependentUpon>
@@ -200,7 +209,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmNouveauFournisseur.resx">
       <DependentUpon>FrmNouveauFournisseur.vb</DependentUpon>
-      
+    </EmbeddedResource>
         <EmbeddedResource Include="FrmFacture.resx">
       <DependentUpon>FrmFacture.vb</DependentUpon>
 
