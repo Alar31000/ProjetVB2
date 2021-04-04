@@ -62,4 +62,16 @@
     Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
 
     End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+
+    End Sub
+
+    Private Sub LblMService_Click(sender As Object, e As EventArgs) Handles LblMService.Click
+
+    End Sub
+
+    Private Sub TBoxMLocation_TextChanged_1(sender As Object, e As EventArgs) Handles TBoxMLocation.TextChanged
+
+    End Sub
 End Class

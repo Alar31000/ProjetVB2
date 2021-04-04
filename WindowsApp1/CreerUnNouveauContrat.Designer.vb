@@ -108,6 +108,7 @@ Partial Class CreerUnNouveauContrat
         Me.GroupBox2.Controls.Add(Me.TextBox6)
         Me.GroupBox2.Controls.Add(Me.Label4)
         Me.GroupBox2.Controls.Add(Me.TextBox4)
+        Me.GroupBox2.ForeColor = System.Drawing.Color.Black
         Me.GroupBox2.Location = New System.Drawing.Point(366, 10)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(371, 294)
@@ -141,6 +142,7 @@ Partial Class CreerUnNouveauContrat
         'btnService
         '
         Me.btnService.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.btnService.ForeColor = System.Drawing.Color.Navy
         Me.btnService.Location = New System.Drawing.Point(260, 211)
         Me.btnService.Name = "btnService"
         Me.btnService.Size = New System.Drawing.Size(104, 26)
@@ -151,6 +153,7 @@ Partial Class CreerUnNouveauContrat
         'btnLocationEquipement
         '
         Me.btnLocationEquipement.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.btnLocationEquipement.ForeColor = System.Drawing.Color.Navy
         Me.btnLocationEquipement.Location = New System.Drawing.Point(260, 245)
         Me.btnLocationEquipement.Name = "btnLocationEquipement"
         Me.btnLocationEquipement.Size = New System.Drawing.Size(104, 43)
@@ -478,7 +481,7 @@ Partial Class CreerUnNouveauContrat
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(757, 360)
+        Me.ClientSize = New System.Drawing.Size(757, 381)
         Me.Controls.Add(Me.btnAide)
         Me.Controls.Add(Me.btnAnnuler)
         Me.Controls.Add(Me.GroupBox2)
