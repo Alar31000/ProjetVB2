@@ -48,7 +48,7 @@ Partial Class Renouveler_Contrat
         Me.GroupBox2.Controls.Add(Me.LblNumContratAModifier)
         Me.GroupBox2.Controls.Add(Me.BtnRechercher)
         Me.GroupBox2.Controls.Add(Me.TxtBoxNumCnt)
-        Me.GroupBox2.Location = New System.Drawing.Point(29, 221)
+        Me.GroupBox2.Location = New System.Drawing.Point(7, 223)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(742, 98)
         Me.GroupBox2.TabIndex = 45
@@ -68,7 +68,7 @@ Partial Class Renouveler_Contrat
         'BtnRechercher
         '
         Me.BtnRechercher.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnRechercher.Location = New System.Drawing.Point(619, 57)
+        Me.BtnRechercher.Location = New System.Drawing.Point(545, 59)
         Me.BtnRechercher.Name = "BtnRechercher"
         Me.BtnRechercher.Size = New System.Drawing.Size(117, 23)
         Me.BtnRechercher.TabIndex = 34
@@ -85,18 +85,19 @@ Partial Class Renouveler_Contrat
         '
         'GroupBox1
         '
+        Me.GroupBox1.BackColor = System.Drawing.Color.SteelBlue
         Me.GroupBox1.Controls.Add(Me.BtnQuitter)
         Me.GroupBox1.Controls.Add(Me.BtnResilier)
-        Me.GroupBox1.Location = New System.Drawing.Point(167, 352)
+        Me.GroupBox1.Location = New System.Drawing.Point(7, 339)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(506, 94)
+        Me.GroupBox1.Size = New System.Drawing.Size(742, 107)
         Me.GroupBox1.TabIndex = 44
         Me.GroupBox1.TabStop = False
         '
         'BtnQuitter
         '
-        Me.BtnQuitter.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnQuitter.Location = New System.Drawing.Point(336, 34)
+        Me.BtnQuitter.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnQuitter.Location = New System.Drawing.Point(545, 34)
         Me.BtnQuitter.Name = "BtnQuitter"
         Me.BtnQuitter.Size = New System.Drawing.Size(135, 37)
         Me.BtnQuitter.TabIndex = 41
@@ -105,7 +106,7 @@ Partial Class Renouveler_Contrat
         '
         'BtnResilier
         '
-        Me.BtnResilier.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnResilier.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnResilier.Location = New System.Drawing.Point(29, 34)
         Me.BtnResilier.Name = "BtnResilier"
         Me.BtnResilier.Size = New System.Drawing.Size(135, 37)
@@ -115,10 +116,10 @@ Partial Class Renouveler_Contrat
         '
         'Titre
         '
-        Me.Titre.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Titre.BackColor = System.Drawing.Color.DodgerBlue
         Me.Titre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Titre.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Titre.Location = New System.Drawing.Point(214, 4)
+        Me.Titre.Location = New System.Drawing.Point(187, 4)
         Me.Titre.Name = "Titre"
         Me.Titre.Size = New System.Drawing.Size(384, 23)
         Me.Titre.TabIndex = 43
@@ -129,7 +130,7 @@ Partial Class Renouveler_Contrat
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Num_Contrat, Me.Nom, Me.Prénom, Me.Type_Contrat, Me.Equipements, Me.Column1, Me.column2})
-        Me.DataGridView1.Location = New System.Drawing.Point(29, 30)
+        Me.DataGridView1.Location = New System.Drawing.Point(7, 30)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(742, 166)
         Me.DataGridView1.TabIndex = 42
@@ -173,7 +174,7 @@ Partial Class Renouveler_Contrat
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(771, 444)
+        Me.ClientSize = New System.Drawing.Size(750, 444)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Titre)

@@ -99,6 +99,7 @@ Partial Class Form1
         '
         'TextBox2
         '
+        Me.TextBox2.BackColor = System.Drawing.Color.LightGray
         Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox2.Location = New System.Drawing.Point(550, 76)
         Me.TextBox2.Name = "TextBox2"
@@ -107,6 +108,7 @@ Partial Class Form1
         '
         'TextBox1
         '
+        Me.TextBox1.BackColor = System.Drawing.Color.LightGray
         Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.Location = New System.Drawing.Point(160, 79)
         Me.TextBox1.Name = "TextBox1"
@@ -189,7 +191,7 @@ Partial Class Form1
         '
         Me.LblMTCnt.AutoSize = True
         Me.LblMTCnt.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblMTCnt.Location = New System.Drawing.Point(13, 153)
+        Me.LblMTCnt.Location = New System.Drawing.Point(6, 153)
         Me.LblMTCnt.Name = "LblMTCnt"
         Me.LblMTCnt.Size = New System.Drawing.Size(114, 18)
         Me.LblMTCnt.TabIndex = 24
@@ -263,41 +265,42 @@ Partial Class Form1
         '
         'GroupBox2
         '
+        Me.GroupBox2.BackColor = System.Drawing.Color.SteelBlue
         Me.GroupBox2.Controls.Add(Me.Button2)
         Me.GroupBox2.Controls.Add(Me.Button1)
         Me.GroupBox2.Controls.Add(Me.BtnModifier)
-        Me.GroupBox2.Location = New System.Drawing.Point(2, 417)
+        Me.GroupBox2.Location = New System.Drawing.Point(2, 393)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(722, 88)
+        Me.GroupBox2.Size = New System.Drawing.Size(722, 112)
         Me.GroupBox2.TabIndex = 53
         Me.GroupBox2.TabStop = False
         '
         'Button2
         '
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(618, 21)
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Location = New System.Drawing.Point(618, 25)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(81, 54)
+        Me.Button2.Size = New System.Drawing.Size(81, 50)
         Me.Button2.TabIndex = 34
         Me.Button2.Text = "Quitter"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1
         '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(50, 23)
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(10, 25)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(81, 50)
+        Me.Button1.Size = New System.Drawing.Size(111, 50)
         Me.Button1.TabIndex = 33
         Me.Button1.Text = "Nouvelle Recherche"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'BtnModifier
         '
-        Me.BtnModifier.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnModifier.Location = New System.Drawing.Point(328, 19)
+        Me.BtnModifier.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnModifier.Location = New System.Drawing.Point(329, 25)
         Me.BtnModifier.Name = "BtnModifier"
-        Me.BtnModifier.Size = New System.Drawing.Size(81, 54)
+        Me.BtnModifier.Size = New System.Drawing.Size(81, 50)
         Me.BtnModifier.TabIndex = 32
         Me.BtnModifier.Text = "Modifier"
         Me.BtnModifier.UseVisualStyleBackColor = True

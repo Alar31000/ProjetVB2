@@ -89,7 +89,7 @@ Partial Class Résilier_Contrat
         '
         'Titre
         '
-        Me.Titre.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Titre.BackColor = System.Drawing.Color.DodgerBlue
         Me.Titre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Titre.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Titre.Location = New System.Drawing.Point(185, 11)
@@ -101,8 +101,8 @@ Partial Class Résilier_Contrat
         '
         'BtnResilier
         '
-        Me.BtnResilier.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnResilier.Location = New System.Drawing.Point(29, 34)
+        Me.BtnResilier.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnResilier.Location = New System.Drawing.Point(59, 34)
         Me.BtnResilier.Name = "BtnResilier"
         Me.BtnResilier.Size = New System.Drawing.Size(135, 37)
         Me.BtnResilier.TabIndex = 41
@@ -111,21 +111,22 @@ Partial Class Résilier_Contrat
         '
         'BtnQuitter
         '
-        Me.BtnQuitter.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnQuitter.Location = New System.Drawing.Point(336, 34)
+        Me.BtnQuitter.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnQuitter.Location = New System.Drawing.Point(545, 34)
         Me.BtnQuitter.Name = "BtnQuitter"
-        Me.BtnQuitter.Size = New System.Drawing.Size(135, 37)
+        Me.BtnQuitter.Size = New System.Drawing.Size(120, 37)
         Me.BtnQuitter.TabIndex = 41
         Me.BtnQuitter.Text = "Quitter"
         Me.BtnQuitter.UseVisualStyleBackColor = True
         '
         'GroupBox1
         '
+        Me.GroupBox1.BackColor = System.Drawing.Color.SteelBlue
         Me.GroupBox1.Controls.Add(Me.BtnQuitter)
         Me.GroupBox1.Controls.Add(Me.BtnResilier)
-        Me.GroupBox1.Location = New System.Drawing.Point(138, 359)
+        Me.GroupBox1.Location = New System.Drawing.Point(0, 359)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(506, 94)
+        Me.GroupBox1.Size = New System.Drawing.Size(736, 94)
         Me.GroupBox1.TabIndex = 40
         Me.GroupBox1.TabStop = False
         '
@@ -140,7 +141,7 @@ Partial Class Résilier_Contrat
         'BtnRechercher
         '
         Me.BtnRechercher.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnRechercher.Location = New System.Drawing.Point(619, 57)
+        Me.BtnRechercher.Location = New System.Drawing.Point(545, 58)
         Me.BtnRechercher.Name = "BtnRechercher"
         Me.BtnRechercher.Size = New System.Drawing.Size(117, 23)
         Me.BtnRechercher.TabIndex = 34

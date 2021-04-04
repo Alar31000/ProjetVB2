@@ -23,7 +23,7 @@ Public Class Login
 
     End Sub
 
-    Private Sub Button2_Click_1(sender As Object, e As EventArgs) Handles ButtonOk.Click
+    Private Sub Button2_Click_1(sender As Object, e As EventArgs)
 
         'Valider is le nom de l'utilisateur et le mot de passe est correct ou non
         If IsUserValid(TextBoxUtilisateur.Text.Trim, TextBoxMotDePasse.Text.Trim) = True Then
@@ -95,4 +95,7 @@ Public Class Login
 
     End Sub
 
+    Private Sub btnOK_Click(sender As Object, e As EventArgs) Handles btnOK.Click
+
+    End Sub
 End Class

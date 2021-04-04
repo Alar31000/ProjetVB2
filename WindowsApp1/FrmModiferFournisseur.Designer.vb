@@ -78,6 +78,7 @@ Partial Class FrmModiferFournisseur
         '
         'BtnSupprimer
         '
+        Me.BtnSupprimer.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnSupprimer.Location = New System.Drawing.Point(755, 219)
         Me.BtnSupprimer.Name = "BtnSupprimer"
         Me.BtnSupprimer.Size = New System.Drawing.Size(167, 37)
@@ -99,7 +100,7 @@ Partial Class FrmModiferFournisseur
         '
         'BtnQuitter
         '
-        Me.BtnQuitter.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnQuitter.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnQuitter.Location = New System.Drawing.Point(755, 399)
         Me.BtnQuitter.Name = "BtnQuitter"
         Me.BtnQuitter.Size = New System.Drawing.Size(167, 37)
@@ -109,7 +110,7 @@ Partial Class FrmModiferFournisseur
         '
         'BtnAnnuler
         '
-        Me.BtnAnnuler.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnAnnuler.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnAnnuler.Location = New System.Drawing.Point(755, 290)
         Me.BtnAnnuler.Name = "BtnAnnuler"
         Me.BtnAnnuler.Size = New System.Drawing.Size(167, 37)
@@ -119,7 +120,7 @@ Partial Class FrmModiferFournisseur
         '
         'BtnModifier
         '
-        Me.BtnModifier.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnModifier.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnModifier.Location = New System.Drawing.Point(755, 145)
         Me.BtnModifier.Name = "BtnModifier"
         Me.BtnModifier.Size = New System.Drawing.Size(167, 37)
@@ -129,7 +130,7 @@ Partial Class FrmModiferFournisseur
         '
         'BtnChercher
         '
-        Me.BtnChercher.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnChercher.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnChercher.Location = New System.Drawing.Point(755, 66)
         Me.BtnChercher.Name = "BtnChercher"
         Me.BtnChercher.Size = New System.Drawing.Size(167, 37)
