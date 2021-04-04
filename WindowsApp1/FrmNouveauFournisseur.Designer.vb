@@ -89,7 +89,7 @@ Partial Class FrmNouveauFournisseur
         '
         'Quitter
         '
-        Me.Quitter.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Quitter.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Quitter.Location = New System.Drawing.Point(683, 410)
         Me.Quitter.Name = "Quitter"
         Me.Quitter.Size = New System.Drawing.Size(135, 37)
@@ -99,7 +99,7 @@ Partial Class FrmNouveauFournisseur
         '
         'BtnNouveau
         '
-        Me.BtnNouveau.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnNouveau.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnNouveau.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.BtnNouveau.Location = New System.Drawing.Point(683, 95)
         Me.BtnNouveau.Name = "BtnNouveau"
@@ -230,7 +230,7 @@ Partial Class FrmNouveauFournisseur
         '
         'BtnAnnuler
         '
-        Me.BtnAnnuler.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnAnnuler.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnAnnuler.Location = New System.Drawing.Point(683, 292)
         Me.BtnAnnuler.Name = "BtnAnnuler"
         Me.BtnAnnuler.Size = New System.Drawing.Size(135, 37)
@@ -240,7 +240,7 @@ Partial Class FrmNouveauFournisseur
         '
         'BtnValider
         '
-        Me.BtnValider.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnValider.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnValider.Location = New System.Drawing.Point(683, 212)
         Me.BtnValider.Name = "BtnValider"
         Me.BtnValider.Size = New System.Drawing.Size(135, 37)

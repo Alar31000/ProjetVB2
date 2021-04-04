@@ -44,7 +44,6 @@ Partial Class CreerUnNouveauContrat
         Me.Label4 = New System.Windows.Forms.Label()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.btnImprimer = New System.Windows.Forms.Button()
-        Me.btnOK = New System.Windows.Forms.Button()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -66,6 +65,7 @@ Partial Class CreerUnNouveauContrat
         Me.TextBox13 = New System.Windows.Forms.TextBox()
         Me.TextBox14 = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnOK = New System.Windows.Forms.Button()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -279,15 +279,6 @@ Partial Class CreerUnNouveauContrat
         Me.btnImprimer.Text = "Imprimer"
         Me.btnImprimer.UseVisualStyleBackColor = True
         '
-        'btnOK
-        '
-        Me.btnOK.Location = New System.Drawing.Point(471, 328)
-        Me.btnOK.Name = "btnOK"
-        Me.btnOK.Size = New System.Drawing.Size(52, 27)
-        Me.btnOK.TabIndex = 26
-        Me.btnOK.Text = "OK"
-        Me.btnOK.UseVisualStyleBackColor = True
-        '
         'TextBox3
         '
         Me.TextBox3.Location = New System.Drawing.Point(65, 19)
@@ -477,6 +468,17 @@ Partial Class CreerUnNouveauContrat
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Identification Client"
         '
+        'btnOK
+        '
+        Me.btnOK.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnOK.ForeColor = System.Drawing.Color.Navy
+        Me.btnOK.Location = New System.Drawing.Point(471, 328)
+        Me.btnOK.Name = "btnOK"
+        Me.btnOK.Size = New System.Drawing.Size(52, 27)
+        Me.btnOK.TabIndex = 26
+        Me.btnOK.Text = "OK"
+        Me.btnOK.UseVisualStyleBackColor = True
+        '
         'CreerUnNouveauContrat
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -520,7 +522,6 @@ Partial Class CreerUnNouveauContrat
     Friend WithEvents Label4 As Label
     Friend WithEvents TextBox4 As TextBox
     Friend WithEvents btnImprimer As Button
-    Friend WithEvents btnOK As Button
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
@@ -542,4 +543,5 @@ Partial Class CreerUnNouveauContrat
     Friend WithEvents TextBox13 As TextBox
     Friend WithEvents TextBox14 As TextBox
     Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents btnOK As Button
 End Class
