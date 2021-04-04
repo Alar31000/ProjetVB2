@@ -77,7 +77,7 @@ Partial Class FrmNouveauFournisseur
         '
         'Label1
         '
-        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Label1.BackColor = System.Drawing.Color.DodgerBlue
         Me.Label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(234, 16)
@@ -111,7 +111,7 @@ Partial Class FrmNouveauFournisseur
         '
         'GroupBoxBanque
         '
-        Me.GroupBoxBanque.BackColor = System.Drawing.Color.DodgerBlue
+        Me.GroupBoxBanque.BackColor = System.Drawing.Color.SteelBlue
         Me.GroupBoxBanque.Controls.Add(Me.TxtBoxCompte)
         Me.GroupBoxBanque.Controls.Add(Me.TxtBoxCodeBanque)
         Me.GroupBoxBanque.Controls.Add(Me.TxtBoxVilleBanque)
@@ -250,7 +250,7 @@ Partial Class FrmNouveauFournisseur
         '
         'BoxContactFournisseur
         '
-        Me.BoxContactFournisseur.BackColor = System.Drawing.Color.CornflowerBlue
+        Me.BoxContactFournisseur.BackColor = System.Drawing.Color.Lavender
         Me.BoxContactFournisseur.Controls.Add(Me.TxtBoxAdresse)
         Me.BoxContactFournisseur.Controls.Add(Me.TxtBoxVille)
         Me.BoxContactFournisseur.Controls.Add(Me.TxtBoxProvince)
@@ -489,7 +489,7 @@ Partial Class FrmNouveauFournisseur
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TxtBoxSocieté.Location = New System.Drawing.Point(147, 58)
         Me.TxtBoxSocieté.Name = "TxtBoxSocieté"
-        Me.TxtBoxSocieté.Size = New System.Drawing.Size(192, 20)
+        Me.TxtBoxSocieté.Size = New System.Drawing.Size(195, 20)
         Me.TxtBoxSocieté.TabIndex = 1
         '
         'LabelEmail
@@ -520,7 +520,7 @@ Partial Class FrmNouveauFournisseur
         '
         'PictureBox2
         '
-        Me.PictureBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.PictureBox2.BackColor = System.Drawing.Color.SteelBlue
         Me.PictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.PictureBox2.Location = New System.Drawing.Point(674, 62)
         Me.PictureBox2.Name = "PictureBox2"

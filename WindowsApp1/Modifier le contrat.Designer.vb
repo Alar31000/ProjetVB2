@@ -23,8 +23,11 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.BtnMQuitter = New System.Windows.Forms.Button()
-        Me.BtnMNSearch = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.TBoxMService = New System.Windows.Forms.TextBox()
         Me.LblMNC = New System.Windows.Forms.Label()
         Me.TBoxMLocation = New System.Windows.Forms.TextBox()
@@ -40,13 +43,9 @@ Partial Class Form1
         Me.LblMDO = New System.Windows.Forms.Label()
         Me.LblMDF = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.BtnModifier = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.BtnModifier = New System.Windows.Forms.Button()
         Me.BtnRechercher = New System.Windows.Forms.Button()
         Me.TxtBoxNumCnt = New System.Windows.Forms.TextBox()
         Me.LblMessage = New System.Windows.Forms.Label()
@@ -66,16 +65,6 @@ Partial Class Form1
         Me.BtnMQuitter.TabIndex = 50
         Me.BtnMQuitter.Text = "Quitter"
         Me.BtnMQuitter.UseVisualStyleBackColor = True
-        '
-        'BtnMNSearch
-        '
-        Me.BtnMNSearch.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnMNSearch.Location = New System.Drawing.Point(552, 522)
-        Me.BtnMNSearch.Name = "BtnMNSearch"
-        Me.BtnMNSearch.Size = New System.Drawing.Size(81, 58)
-        Me.BtnMNSearch.TabIndex = 49
-        Me.BtnMNSearch.Text = "Nouvelle Recherche"
-        Me.BtnMNSearch.UseVisualStyleBackColor = True
         '
         'GroupBox1
         '
@@ -103,25 +92,61 @@ Partial Class Form1
         Me.GroupBox1.ForeColor = System.Drawing.Color.Black
         Me.GroupBox1.Location = New System.Drawing.Point(2, 90)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(796, 297)
+        Me.GroupBox1.Size = New System.Drawing.Size(722, 297)
         Me.GroupBox1.TabIndex = 52
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Résultat de la recherche et Mise à jour"
         '
+        'TextBox2
+        '
+        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox2.Location = New System.Drawing.Point(550, 76)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(149, 24)
+        Me.TextBox2.TabIndex = 46
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Location = New System.Drawing.Point(160, 79)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(166, 24)
+        Me.TextBox1.TabIndex = 45
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(368, 85)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(72, 18)
+        Me.Label2.TabIndex = 44
+        Me.Label2.Text = "Prénom "
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(19, 85)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(44, 18)
+        Me.Label1.TabIndex = 43
+        Me.Label1.Text = "Nom"
+        '
         'TBoxMService
         '
         Me.TBoxMService.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TBoxMService.Location = New System.Drawing.Point(530, 203)
+        Me.TBoxMService.Location = New System.Drawing.Point(550, 203)
         Me.TBoxMService.Name = "TBoxMService"
         Me.TBoxMService.Size = New System.Drawing.Size(149, 24)
         Me.TBoxMService.TabIndex = 40
         '
         'LblMNC
         '
-        Me.LblMNC.BackColor = System.Drawing.Color.White
+        Me.LblMNC.BackColor = System.Drawing.Color.LightGray
         Me.LblMNC.Enabled = False
         Me.LblMNC.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblMNC.Location = New System.Drawing.Point(405, 41)
+        Me.LblMNC.Location = New System.Drawing.Point(405, 31)
         Me.LblMNC.Name = "LblMNC"
         Me.LblMNC.Size = New System.Drawing.Size(126, 26)
         Me.LblMNC.TabIndex = 42
@@ -129,7 +154,7 @@ Partial Class Form1
         'TBoxMLocation
         '
         Me.TBoxMLocation.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TBoxMLocation.Location = New System.Drawing.Point(530, 150)
+        Me.TBoxMLocation.Location = New System.Drawing.Point(550, 153)
         Me.TBoxMLocation.Name = "TBoxMLocation"
         Me.TBoxMLocation.Size = New System.Drawing.Size(149, 24)
         Me.TBoxMLocation.TabIndex = 39
@@ -138,7 +163,7 @@ Partial Class Form1
         '
         Me.LblMDMService.AutoSize = True
         Me.LblMDMService.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblMDMService.Location = New System.Drawing.Point(350, 252)
+        Me.LblMDMService.Location = New System.Drawing.Point(368, 249)
         Me.LblMDMService.Name = "LblMDMService"
         Me.LblMDMService.Size = New System.Drawing.Size(170, 18)
         Me.LblMDMService.TabIndex = 29
@@ -147,7 +172,7 @@ Partial Class Form1
         'TBoxMDMV
         '
         Me.TBoxMDMV.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TBoxMDMV.Location = New System.Drawing.Point(530, 252)
+        Me.TBoxMDMV.Location = New System.Drawing.Point(550, 249)
         Me.TBoxMDMV.Name = "TBoxMDMV"
         Me.TBoxMDMV.Size = New System.Drawing.Size(149, 24)
         Me.TBoxMDMV.TabIndex = 41
@@ -164,7 +189,7 @@ Partial Class Form1
         '
         Me.LblMTCnt.AutoSize = True
         Me.LblMTCnt.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblMTCnt.Location = New System.Drawing.Point(7, 156)
+        Me.LblMTCnt.Location = New System.Drawing.Point(13, 153)
         Me.LblMTCnt.Name = "LblMTCnt"
         Me.LblMTCnt.Size = New System.Drawing.Size(114, 18)
         Me.LblMTCnt.TabIndex = 24
@@ -174,7 +199,7 @@ Partial Class Form1
         '
         Me.LblMService.AutoSize = True
         Me.LblMService.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblMService.Location = New System.Drawing.Point(350, 206)
+        Me.LblMService.Location = New System.Drawing.Point(368, 203)
         Me.LblMService.Name = "LblMService"
         Me.LblMService.Size = New System.Drawing.Size(61, 18)
         Me.LblMService.TabIndex = 28
@@ -199,10 +224,10 @@ Partial Class Form1
         'LblMNumCnt
         '
         Me.LblMNumCnt.AutoSize = True
-        Me.LblMNumCnt.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblMNumCnt.Location = New System.Drawing.Point(248, 49)
+        Me.LblMNumCnt.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblMNumCnt.Location = New System.Drawing.Point(221, 37)
         Me.LblMNumCnt.Name = "LblMNumCnt"
-        Me.LblMNumCnt.Size = New System.Drawing.Size(135, 18)
+        Me.LblMNumCnt.Size = New System.Drawing.Size(161, 20)
         Me.LblMNumCnt.TabIndex = 23
         Me.LblMNumCnt.Text = "Numéro du Contrat"
         '
@@ -210,7 +235,7 @@ Partial Class Form1
         '
         Me.LblMLocation.AutoSize = True
         Me.LblMLocation.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblMLocation.Location = New System.Drawing.Point(350, 156)
+        Me.LblMLocation.Location = New System.Drawing.Point(368, 156)
         Me.LblMLocation.Name = "LblMLocation"
         Me.LblMLocation.Size = New System.Drawing.Size(149, 18)
         Me.LblMLocation.TabIndex = 27
@@ -243,19 +268,19 @@ Partial Class Form1
         Me.GroupBox2.Controls.Add(Me.BtnModifier)
         Me.GroupBox2.Location = New System.Drawing.Point(2, 417)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(796, 88)
+        Me.GroupBox2.Size = New System.Drawing.Size(722, 88)
         Me.GroupBox2.TabIndex = 53
         Me.GroupBox2.TabStop = False
         '
-        'BtnModifier
+        'Button2
         '
-        Me.BtnModifier.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnModifier.Location = New System.Drawing.Point(353, 19)
-        Me.BtnModifier.Name = "BtnModifier"
-        Me.BtnModifier.Size = New System.Drawing.Size(81, 54)
-        Me.BtnModifier.TabIndex = 32
-        Me.BtnModifier.Text = "Modifier"
-        Me.BtnModifier.UseVisualStyleBackColor = True
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Location = New System.Drawing.Point(618, 21)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(81, 54)
+        Me.Button2.TabIndex = 34
+        Me.Button2.Text = "Quitter"
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1
         '
@@ -267,51 +292,15 @@ Partial Class Form1
         Me.Button1.Text = "Nouvelle Recherche"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Button2
+        'BtnModifier
         '
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(679, 23)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(81, 54)
-        Me.Button2.TabIndex = 34
-        Me.Button2.Text = "Quitter"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(90, 79)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(41, 18)
-        Me.Label1.TabIndex = 43
-        Me.Label1.Text = "Nom"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(445, 82)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(65, 18)
-        Me.Label2.TabIndex = 44
-        Me.Label2.Text = "Prénom "
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(160, 79)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(166, 24)
-        Me.TextBox1.TabIndex = 45
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(530, 79)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(149, 24)
-        Me.TextBox2.TabIndex = 46
+        Me.BtnModifier.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnModifier.Location = New System.Drawing.Point(328, 19)
+        Me.BtnModifier.Name = "BtnModifier"
+        Me.BtnModifier.Size = New System.Drawing.Size(81, 54)
+        Me.BtnModifier.TabIndex = 32
+        Me.BtnModifier.Text = "Modifier"
+        Me.BtnModifier.UseVisualStyleBackColor = True
         '
         'BtnRechercher
         '
@@ -326,7 +315,7 @@ Partial Class Form1
         'TxtBoxNumCnt
         '
         Me.TxtBoxNumCnt.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtBoxNumCnt.Location = New System.Drawing.Point(605, 37)
+        Me.TxtBoxNumCnt.Location = New System.Drawing.Point(531, 37)
         Me.TxtBoxNumCnt.Name = "TxtBoxNumCnt"
         Me.TxtBoxNumCnt.Size = New System.Drawing.Size(191, 24)
         Me.TxtBoxNumCnt.TabIndex = 22
@@ -344,7 +333,7 @@ Partial Class Form1
         '
         Me.LblNumContratAModifier.AutoSize = True
         Me.LblNumContratAModifier.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblNumContratAModifier.Location = New System.Drawing.Point(405, 43)
+        Me.LblNumContratAModifier.Location = New System.Drawing.Point(350, 43)
         Me.LblNumContratAModifier.Name = "LblNumContratAModifier"
         Me.LblNumContratAModifier.Size = New System.Drawing.Size(136, 18)
         Me.LblNumContratAModifier.TabIndex = 21
@@ -369,14 +358,13 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 579)
+        Me.ClientSize = New System.Drawing.Size(735, 500)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GBoxRecherche)
         Me.Controls.Add(Me.BtnMQuitter)
-        Me.Controls.Add(Me.BtnMNSearch)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "Modifer Contrat"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
@@ -386,7 +374,6 @@ Partial Class Form1
 
     End Sub
     Friend WithEvents BtnMQuitter As Button
-    Friend WithEvents BtnMNSearch As Button
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents TBoxMService As TextBox
     Friend WithEvents LblMNC As Label
