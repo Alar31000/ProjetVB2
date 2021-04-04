@@ -87,7 +87,7 @@ Partial Class FrmModiferFournisseur
         '
         'Label1
         '
-        Me.Label1.BackColor = System.Drawing.Color.Fuchsia
+        Me.Label1.BackColor = System.Drawing.Color.DodgerBlue
         Me.Label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(254, 9)
@@ -258,6 +258,7 @@ Partial Class FrmModiferFournisseur
         '
         'BoxContactFournisseur
         '
+        Me.BoxContactFournisseur.BackColor = System.Drawing.Color.Lavender
         Me.BoxContactFournisseur.Controls.Add(Me.TxtBoxAdresse)
         Me.BoxContactFournisseur.Controls.Add(Me.TxtBoxVille)
         Me.BoxContactFournisseur.Controls.Add(Me.TxtBoxProvince)
@@ -287,9 +288,9 @@ Partial Class FrmModiferFournisseur
         Me.BoxContactFournisseur.Controls.Add(Me.LabelFonction)
         Me.BoxContactFournisseur.Controls.Add(Me.TxtBoxNoCompte)
         Me.BoxContactFournisseur.ForeColor = System.Drawing.Color.Black
-        Me.BoxContactFournisseur.Location = New System.Drawing.Point(12, 30)
+        Me.BoxContactFournisseur.Location = New System.Drawing.Point(12, 35)
         Me.BoxContactFournisseur.Name = "BoxContactFournisseur"
-        Me.BoxContactFournisseur.Size = New System.Drawing.Size(709, 281)
+        Me.BoxContactFournisseur.Size = New System.Drawing.Size(709, 276)
         Me.BoxContactFournisseur.TabIndex = 43
         Me.BoxContactFournisseur.TabStop = False
         Me.BoxContactFournisseur.Text = "Information  Fournisseur"
@@ -310,7 +311,7 @@ Partial Class FrmModiferFournisseur
         '
         'TxtBoxProvince
         '
-        Me.TxtBoxProvince.Location = New System.Drawing.Point(507, 15)
+        Me.TxtBoxProvince.Location = New System.Drawing.Point(507, 23)
         Me.TxtBoxProvince.Name = "TxtBoxProvince"
         Me.TxtBoxProvince.Size = New System.Drawing.Size(176, 20)
         Me.TxtBoxProvince.TabIndex = 19
@@ -493,7 +494,7 @@ Partial Class FrmModiferFournisseur
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TxtBoxSocieté.Location = New System.Drawing.Point(177, 58)
         Me.TxtBoxSocieté.Name = "TxtBoxSocieté"
-        Me.TxtBoxSocieté.Size = New System.Drawing.Size(201, 20)
+        Me.TxtBoxSocieté.Size = New System.Drawing.Size(195, 20)
         Me.TxtBoxSocieté.TabIndex = 1
         '
         'LabelEmail
@@ -524,7 +525,7 @@ Partial Class FrmModiferFournisseur
         '
         'PictureBox2
         '
-        Me.PictureBox2.BackColor = System.Drawing.Color.DarkOrange
+        Me.PictureBox2.BackColor = System.Drawing.Color.SteelBlue
         Me.PictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.PictureBox2.Location = New System.Drawing.Point(740, 45)
         Me.PictureBox2.Name = "PictureBox2"
