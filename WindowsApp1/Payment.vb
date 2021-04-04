@@ -157,4 +157,8 @@
     Private Sub TextBoxNumeroCarte_TextChanged(sender As Object, e As EventArgs) Handles TextBoxNumeroCarte.TextChanged
 
     End Sub
+
+    Private Sub LabelNumeroCarte_Click(sender As Object, e As EventArgs) Handles LabelNumeroCarte.Click
+
+    End Sub
 End Class
