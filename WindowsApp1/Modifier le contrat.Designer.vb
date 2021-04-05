@@ -43,7 +43,7 @@ Partial Class Form1
         Me.LblMDO = New System.Windows.Forms.Label()
         Me.LblMDF = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.BtnQuitter = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.BtnModifier = New System.Windows.Forms.Button()
         Me.BtnRechercher = New System.Windows.Forms.Button()
@@ -266,7 +266,7 @@ Partial Class Form1
         'GroupBox2
         '
         Me.GroupBox2.BackColor = System.Drawing.Color.SteelBlue
-        Me.GroupBox2.Controls.Add(Me.Button2)
+        Me.GroupBox2.Controls.Add(Me.BtnQuitter)
         Me.GroupBox2.Controls.Add(Me.Button1)
         Me.GroupBox2.Controls.Add(Me.BtnModifier)
         Me.GroupBox2.Location = New System.Drawing.Point(2, 393)
@@ -275,15 +275,15 @@ Partial Class Form1
         Me.GroupBox2.TabIndex = 53
         Me.GroupBox2.TabStop = False
         '
-        'Button2
+        'BtnQuitter
         '
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(618, 25)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(81, 50)
-        Me.Button2.TabIndex = 34
-        Me.Button2.Text = "Quitter"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.BtnQuitter.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnQuitter.Location = New System.Drawing.Point(618, 25)
+        Me.BtnQuitter.Name = "BtnQuitter"
+        Me.BtnQuitter.Size = New System.Drawing.Size(81, 50)
+        Me.BtnQuitter.TabIndex = 34
+        Me.BtnQuitter.Text = "Quitter"
+        Me.BtnQuitter.UseVisualStyleBackColor = True
         '
         'Button1
         '
@@ -352,7 +352,7 @@ Partial Class Form1
         Me.GBoxRecherche.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GBoxRecherche.Location = New System.Drawing.Point(2, -27)
         Me.GBoxRecherche.Name = "GBoxRecherche"
-        Me.GBoxRecherche.Size = New System.Drawing.Size(796, 103)
+        Me.GBoxRecherche.Size = New System.Drawing.Size(737, 103)
         Me.GBoxRecherche.TabIndex = 51
         Me.GBoxRecherche.TabStop = False
         Me.GBoxRecherche.Text = "Recherche du contrat"
@@ -361,7 +361,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(735, 500)
+        Me.ClientSize = New System.Drawing.Size(725, 500)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GBoxRecherche)
@@ -393,7 +393,7 @@ Partial Class Form1
     Friend WithEvents LblMDO As Label
     Friend WithEvents LblMDF As Label
     Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents Button2 As Button
+    Friend WithEvents BtnQuitter As Button
     Friend WithEvents Button1 As Button
     Friend WithEvents BtnModifier As Button
     Friend WithEvents TextBox2 As TextBox

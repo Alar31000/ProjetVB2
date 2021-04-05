@@ -1,53 +1,5 @@
 ﻿Public Class Form1
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
-    Private Sub LblMessage_Click(sender As Object, e As EventArgs) Handles LblMessage.Click
-
-    End Sub
-
-    Private Sub BtnRechercher_Click(sender As Object, e As EventArgs) Handles BtnRechercher.Click
-
-    End Sub
-
-    Private Sub TxtBoxNumCnt_TextChanged(sender As Object, e As EventArgs) Handles TxtBoxNumCnt.TextChanged
-
-    End Sub
-
-    Private Sub PictureBox2_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub LblMLocation_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub TBoxMLocation_TextChanged(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub TBoxMDO_TextChanged(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub LblMDF_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub LblMNumCnt_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub LblMNC_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub TBoxMService_TextChanged(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub TBoxMTCnt_TextChanged(sender As Object, e As EventArgs)
+    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
 
     End Sub
 
@@ -55,23 +7,33 @@
 
     End Sub
 
-    Private Sub LblMDO_Click(sender As Object, e As EventArgs) Handles LblMDO.Click
+
+
+    Private Sub GBoxRecherche_Enter(sender As Object, e As EventArgs) Handles GBoxRecherche.Enter
 
     End Sub
 
-    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
+    Private Sub BtnRechercher_Click(sender As Object, e As EventArgs) Handles BtnRechercher.Click
+        If (Convert.ToInt32(TxtBoxNumCnt.Text)) = 1909687 Then
+            MsgBox("le numéro du contrat existe!")
+        Else
+            MsgBox("le numéro du contrat n'existe pas!")
+        End If
+
 
     End Sub
 
-    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
 
+    Private Sub BtnQuitter_Click(sender As Object, e As EventArgs) Handles BtnQuitter.Click
+        End
     End Sub
 
-    Private Sub LblMService_Click(sender As Object, e As EventArgs) Handles LblMService.Click
-
+    Private Sub BtnModifier_Click(sender As Object, e As EventArgs) Handles BtnModifier.Click
+        MsgBox("Le contrat a été modifié avec succés!")
     End Sub
 
-    Private Sub TBoxMLocation_TextChanged_1(sender As Object, e As EventArgs) Handles TBoxMLocation.TextChanged
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        MsgBox("Veuillez entrer le numéro du nouveau contrat s'il vous plait!")
 
     End Sub
 End Class
