@@ -14,4 +14,8 @@
     Private Sub BtnQuitter_Click(sender As Object, e As EventArgs) Handles BtnQuitter.Click
         Me.Close()
     End Sub
+
+    Private Sub BtnModifier_Click(sender As Object, e As EventArgs) Handles BtnModifier.Click
+
+    End Sub
 End Class

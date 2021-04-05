@@ -26,11 +26,11 @@ Partial Class Renouveler_Contrat
         Me.LblNumContratAModifier = New System.Windows.Forms.Label()
         Me.BtnRechercher = New System.Windows.Forms.Button()
         Me.TxtBoxNumCnt = New System.Windows.Forms.TextBox()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.BtnQuitter = New System.Windows.Forms.Button()
-        Me.BtnResilier = New System.Windows.Forms.Button()
+        Me.BtnRenouveller = New System.Windows.Forms.Button()
         Me.Titre = New System.Windows.Forms.Label()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.CONTRATDataGridView = New System.Windows.Forms.DataGridView()
         Me.Num_Contrat = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Nom = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Prénom = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -39,8 +39,8 @@ Partial Class Renouveler_Contrat
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GroupBox2.SuspendLayout()
-        Me.GroupBox1.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox3.SuspendLayout()
+        CType(Me.CONTRATDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox2
@@ -83,16 +83,16 @@ Partial Class Renouveler_Contrat
         Me.TxtBoxNumCnt.Size = New System.Drawing.Size(191, 24)
         Me.TxtBoxNumCnt.TabIndex = 22
         '
-        'GroupBox1
+        'GroupBox3
         '
-        Me.GroupBox1.BackColor = System.Drawing.Color.SteelBlue
-        Me.GroupBox1.Controls.Add(Me.BtnQuitter)
-        Me.GroupBox1.Controls.Add(Me.BtnResilier)
-        Me.GroupBox1.Location = New System.Drawing.Point(7, 339)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(742, 107)
-        Me.GroupBox1.TabIndex = 44
-        Me.GroupBox1.TabStop = False
+        Me.GroupBox3.BackColor = System.Drawing.Color.SteelBlue
+        Me.GroupBox3.Controls.Add(Me.BtnQuitter)
+        Me.GroupBox3.Controls.Add(Me.BtnRenouveller)
+        Me.GroupBox3.Location = New System.Drawing.Point(7, 339)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(742, 107)
+        Me.GroupBox3.TabIndex = 44
+        Me.GroupBox3.TabStop = False
         '
         'BtnQuitter
         '
@@ -104,15 +104,15 @@ Partial Class Renouveler_Contrat
         Me.BtnQuitter.Text = "Quitter"
         Me.BtnQuitter.UseVisualStyleBackColor = True
         '
-        'BtnResilier
+        'BtnRenouveller
         '
-        Me.BtnResilier.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnResilier.Location = New System.Drawing.Point(29, 34)
-        Me.BtnResilier.Name = "BtnResilier"
-        Me.BtnResilier.Size = New System.Drawing.Size(135, 37)
-        Me.BtnResilier.TabIndex = 41
-        Me.BtnResilier.Text = "Renouveler"
-        Me.BtnResilier.UseVisualStyleBackColor = True
+        Me.BtnRenouveller.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnRenouveller.Location = New System.Drawing.Point(29, 34)
+        Me.BtnRenouveller.Name = "BtnRenouveller"
+        Me.BtnRenouveller.Size = New System.Drawing.Size(135, 37)
+        Me.BtnRenouveller.TabIndex = 41
+        Me.BtnRenouveller.Text = "Renouveler"
+        Me.BtnRenouveller.UseVisualStyleBackColor = True
         '
         'Titre
         '
@@ -126,14 +126,14 @@ Partial Class Renouveler_Contrat
         Me.Titre.Text = "La liste des contrats"
         Me.Titre.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'DataGridView1
+        'CONTRATDataGridView
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Num_Contrat, Me.Nom, Me.Prénom, Me.Type_Contrat, Me.Equipements, Me.Column1, Me.column2})
-        Me.DataGridView1.Location = New System.Drawing.Point(7, 30)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(742, 166)
-        Me.DataGridView1.TabIndex = 42
+        Me.CONTRATDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.CONTRATDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Num_Contrat, Me.Nom, Me.Prénom, Me.Type_Contrat, Me.Equipements, Me.Column1, Me.column2})
+        Me.CONTRATDataGridView.Location = New System.Drawing.Point(7, 30)
+        Me.CONTRATDataGridView.Name = "CONTRATDataGridView"
+        Me.CONTRATDataGridView.Size = New System.Drawing.Size(742, 166)
+        Me.CONTRATDataGridView.TabIndex = 42
         '
         'Num_Contrat
         '
@@ -176,15 +176,15 @@ Partial Class Renouveler_Contrat
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(750, 444)
         Me.Controls.Add(Me.GroupBox2)
-        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.Titre)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.CONTRATDataGridView)
         Me.Name = "Renouveler_Contrat"
         Me.Text = "Renouveler_Contrat"
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
-        Me.GroupBox1.ResumeLayout(False)
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox3.ResumeLayout(False)
+        CType(Me.CONTRATDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -193,11 +193,11 @@ Partial Class Renouveler_Contrat
     Friend WithEvents LblNumContratAModifier As Label
     Friend WithEvents BtnRechercher As Button
     Friend WithEvents TxtBoxNumCnt As TextBox
-    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents GroupBox3 As GroupBox
     Friend WithEvents BtnQuitter As Button
-    Friend WithEvents BtnResilier As Button
+    Friend WithEvents BtnRenouveller As Button
     Friend WithEvents Titre As Label
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents CONTRATDataGridView As DataGridView
     Friend WithEvents Num_Contrat As DataGridViewTextBoxColumn
     Friend WithEvents Nom As DataGridViewTextBoxColumn
     Friend WithEvents Prénom As DataGridViewTextBoxColumn
