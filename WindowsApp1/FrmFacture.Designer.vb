@@ -55,13 +55,13 @@ Partial Class FrmFacture
         Me.LblPrixTotalF = New System.Windows.Forms.Label()
         Me.BttnPayement = New System.Windows.Forms.Button()
         Me.GroupBoxFacture = New System.Windows.Forms.GroupBox()
+        Me.DateTimePickerFacture = New System.Windows.Forms.DateTimePicker()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.DateTimePickerFacture = New System.Windows.Forms.DateTimePicker()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBoxFacture.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -431,6 +431,18 @@ Partial Class FrmFacture
         Me.GroupBoxFacture.TabStop = False
         Me.GroupBoxFacture.Text = "Facture"
         '
+        'DateTimePickerFacture
+        '
+        Me.DateTimePickerFacture.CalendarFont = New System.Drawing.Font("Segoe UI", 9.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateTimePickerFacture.CalendarMonthBackground = System.Drawing.SystemColors.ControlLight
+        Me.DateTimePickerFacture.Font = New System.Drawing.Font("Segoe UI", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateTimePickerFacture.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DateTimePickerFacture.Location = New System.Drawing.Point(98, 59)
+        Me.DateTimePickerFacture.Name = "DateTimePickerFacture"
+        Me.DateTimePickerFacture.Size = New System.Drawing.Size(154, 25)
+        Me.DateTimePickerFacture.TabIndex = 15
+        Me.DateTimePickerFacture.Value = New Date(2021, 4, 3, 0, 0, 0, 0)
+        '
         'GroupBox3
         '
         Me.GroupBox3.Controls.Add(Me.LabelAdresseL)
@@ -465,28 +477,19 @@ Partial Class FrmFacture
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Adresse de Facturation"
         '
-        'DateTimePickerFacture
+        'TextBox6
         '
-        Me.DateTimePickerFacture.CalendarFont = New System.Drawing.Font("Segoe UI", 9.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateTimePickerFacture.CalendarMonthBackground = System.Drawing.SystemColors.ControlLight
-        Me.DateTimePickerFacture.Font = New System.Drawing.Font("Segoe UI", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateTimePickerFacture.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePickerFacture.Location = New System.Drawing.Point(98, 59)
-        Me.DateTimePickerFacture.Name = "DateTimePickerFacture"
-        Me.DateTimePickerFacture.Size = New System.Drawing.Size(154, 25)
-        Me.DateTimePickerFacture.TabIndex = 15
-        Me.DateTimePickerFacture.Value = New Date(2021, 4, 3, 0, 0, 0, 0)
+        Me.TextBox6.Location = New System.Drawing.Point(98, 138)
+        Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.Size = New System.Drawing.Size(154, 25)
+        Me.TextBox6.TabIndex = 31
         '
-        'Label1
+        'TextBox3
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.Black
-        Me.Label1.Location = New System.Drawing.Point(-4, 24)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(45, 21)
-        Me.Label1.TabIndex = 28
-        Me.Label1.Text = "Nom"
+        Me.TextBox3.Location = New System.Drawing.Point(98, 100)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(154, 25)
+        Me.TextBox3.TabIndex = 30
         '
         'Label2
         '
@@ -499,19 +502,16 @@ Partial Class FrmFacture
         Me.Label2.TabIndex = 29
         Me.Label2.Text = "Adresse"
         '
-        'TextBox3
+        'Label1
         '
-        Me.TextBox3.Location = New System.Drawing.Point(98, 100)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(154, 25)
-        Me.TextBox3.TabIndex = 30
-        '
-        'TextBox6
-        '
-        Me.TextBox6.Location = New System.Drawing.Point(98, 138)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(154, 25)
-        Me.TextBox6.TabIndex = 31
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.Black
+        Me.Label1.Location = New System.Drawing.Point(-4, 24)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(45, 21)
+        Me.Label1.TabIndex = 28
+        Me.Label1.Text = "Nom"
         '
         'FrmFacture
         '

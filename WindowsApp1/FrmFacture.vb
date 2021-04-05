@@ -80,4 +80,8 @@
     Private Sub TextBox6_TextChanged(sender As Object, e As EventArgs) Handles TextBox6.TextChanged
 
     End Sub
+
+    Private Sub LabelAdresseL_Click(sender As Object, e As EventArgs) Handles LabelAdresseL.Click
+
+    End Sub
 End Class
