@@ -38,8 +38,6 @@ Partial Class PagePrincipale
         Me.toolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.toolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
-        Me.toolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
         Me.ÉquipementsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.FacturationsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.FactureToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -166,20 +164,9 @@ Partial Class PagePrincipale
         '
         'EditToolStripMenuItem
         '
-        Me.EditToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.toolStripSeparator3, Me.toolStripSeparator4})
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
         Me.EditToolStripMenuItem.Size = New System.Drawing.Size(76, 24)
         Me.EditToolStripMenuItem.Text = "&Services"
-        '
-        'toolStripSeparator3
-        '
-        Me.toolStripSeparator3.Name = "toolStripSeparator3"
-        Me.toolStripSeparator3.Size = New System.Drawing.Size(71, 6)
-        '
-        'toolStripSeparator4
-        '
-        Me.toolStripSeparator4.Name = "toolStripSeparator4"
-        Me.toolStripSeparator4.Size = New System.Drawing.Size(71, 6)
         '
         'ÉquipementsToolStripMenuItem
         '
@@ -197,13 +184,13 @@ Partial Class PagePrincipale
         'FactureToolStripMenuItem
         '
         Me.FactureToolStripMenuItem.Name = "FactureToolStripMenuItem"
-        Me.FactureToolStripMenuItem.Size = New System.Drawing.Size(171, 26)
+        Me.FactureToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.FactureToolStripMenuItem.Text = "Facturations"
         '
         'PaiementToolStripMenuItem
         '
         Me.PaiementToolStripMenuItem.Name = "PaiementToolStripMenuItem"
-        Me.PaiementToolStripMenuItem.Size = New System.Drawing.Size(171, 26)
+        Me.PaiementToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.PaiementToolStripMenuItem.Text = "Paiement"
         '
         'FournisseursToolStripMenuItem
@@ -305,8 +292,6 @@ Partial Class PagePrincipale
     Friend WithEvents toolStripSeparator2 As ToolStripSeparator
     Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents EditToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents toolStripSeparator3 As ToolStripSeparator
-    Friend WithEvents toolStripSeparator4 As ToolStripSeparator
     Friend WithEvents ToolsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CustomizeToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents OptionsToolStripMenuItem As ToolStripMenuItem
