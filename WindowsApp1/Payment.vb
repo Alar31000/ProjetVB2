@@ -8,10 +8,6 @@
         ' LabelFacture.Visible = True
     End Sub
 
-    Private Sub LabelFacture_Click(sender As Object, e As EventArgs) Handles LabelFacture.Click
-
-    End Sub
-
     Private Sub ButtonPaye_Click(sender As Object, e As EventArgs) Handles ButtonPaye.Click
         'afficher les mode de payement
         GroupBoxPayement.Visible = True

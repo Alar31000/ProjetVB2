@@ -36,4 +36,8 @@
         MsgBox("Veuillez entrer le numéro du nouveau contrat s'il vous plait!")
 
     End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
