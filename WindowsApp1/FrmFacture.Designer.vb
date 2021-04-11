@@ -25,10 +25,10 @@ Partial Class FrmFacture
         Me.LblNFacture = New System.Windows.Forms.Label()
         Me.LblDateFacture = New System.Windows.Forms.Label()
         Me.TextBoxNFacture = New System.Windows.Forms.TextBox()
-        Me.LabelAdresseF = New System.Windows.Forms.Label()
-        Me.LblTéléphone = New System.Windows.Forms.Label()
+        Me.LabelPrénom = New System.Windows.Forms.Label()
+        Me.LblCode_postal = New System.Windows.Forms.Label()
         Me.LabelAdresseL = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
+        Me.LabelCode_postalA = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
@@ -60,7 +60,7 @@ Partial Class FrmFacture
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.LabelAdresse = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBoxFacture.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -72,10 +72,9 @@ Partial Class FrmFacture
         Me.LblNFacture.AutoSize = True
         Me.LblNFacture.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblNFacture.ForeColor = System.Drawing.Color.Black
-        Me.LblNFacture.Location = New System.Drawing.Point(272, 23)
-        Me.LblNFacture.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LblNFacture.Location = New System.Drawing.Point(204, 19)
         Me.LblNFacture.Name = "LblNFacture"
-        Me.LblNFacture.Size = New System.Drawing.Size(152, 28)
+        Me.LblNFacture.Size = New System.Drawing.Size(122, 21)
         Me.LblNFacture.TabIndex = 15
         Me.LblNFacture.Text = "Numéro Facture"
         '
@@ -84,100 +83,90 @@ Partial Class FrmFacture
         Me.LblDateFacture.AutoSize = True
         Me.LblDateFacture.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblDateFacture.ForeColor = System.Drawing.Color.Black
-        Me.LblDateFacture.Location = New System.Drawing.Point(20, 73)
-        Me.LblDateFacture.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LblDateFacture.Location = New System.Drawing.Point(15, 59)
         Me.LblDateFacture.Name = "LblDateFacture"
-        Me.LblDateFacture.Size = New System.Drawing.Size(121, 28)
+        Me.LblDateFacture.Size = New System.Drawing.Size(96, 21)
         Me.LblDateFacture.TabIndex = 17
         Me.LblDateFacture.Text = "Date Facture"
         '
         'TextBoxNFacture
         '
         Me.TextBoxNFacture.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.TextBoxNFacture.Location = New System.Drawing.Point(476, 16)
-        Me.TextBoxNFacture.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBoxNFacture.Location = New System.Drawing.Point(357, 13)
         Me.TextBoxNFacture.Name = "TextBoxNFacture"
-        Me.TextBoxNFacture.Size = New System.Drawing.Size(204, 39)
+        Me.TextBoxNFacture.Size = New System.Drawing.Size(154, 33)
         Me.TextBoxNFacture.TabIndex = 18
         '
-        'LabelAdresseF
+        'LabelPrénom
         '
-        Me.LabelAdresseF.AutoSize = True
-        Me.LabelAdresseF.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelAdresseF.ForeColor = System.Drawing.Color.Black
-        Me.LabelAdresseF.Location = New System.Drawing.Point(-5, 79)
-        Me.LabelAdresseF.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.LabelAdresseF.Name = "LabelAdresseF"
-        Me.LabelAdresseF.Size = New System.Drawing.Size(80, 28)
-        Me.LabelAdresseF.TabIndex = 21
-        Me.LabelAdresseF.Text = "Prénom"
+        Me.LabelPrénom.AutoSize = True
+        Me.LabelPrénom.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelPrénom.ForeColor = System.Drawing.Color.Black
+        Me.LabelPrénom.Location = New System.Drawing.Point(-4, 64)
+        Me.LabelPrénom.Name = "LabelPrénom"
+        Me.LabelPrénom.Size = New System.Drawing.Size(65, 21)
+        Me.LabelPrénom.TabIndex = 21
+        Me.LabelPrénom.Text = "Prénom"
         '
-        'LblTéléphone
+        'LblCode_postal
         '
-        Me.LblTéléphone.AutoSize = True
-        Me.LblTéléphone.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblTéléphone.ForeColor = System.Drawing.Color.Black
-        Me.LblTéléphone.Location = New System.Drawing.Point(-5, 170)
-        Me.LblTéléphone.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.LblTéléphone.Name = "LblTéléphone"
-        Me.LblTéléphone.Size = New System.Drawing.Size(125, 28)
-        Me.LblTéléphone.TabIndex = 22
-        Me.LblTéléphone.Text = "Code Postale"
+        Me.LblCode_postal.AutoSize = True
+        Me.LblCode_postal.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblCode_postal.ForeColor = System.Drawing.Color.Black
+        Me.LblCode_postal.Location = New System.Drawing.Point(-4, 138)
+        Me.LblCode_postal.Name = "LblCode_postal"
+        Me.LblCode_postal.Size = New System.Drawing.Size(99, 21)
+        Me.LblCode_postal.TabIndex = 22
+        Me.LblCode_postal.Text = "Code Postale"
         '
         'LabelAdresseL
         '
         Me.LabelAdresseL.AutoSize = True
         Me.LabelAdresseL.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelAdresseL.ForeColor = System.Drawing.Color.Black
-        Me.LabelAdresseL.Location = New System.Drawing.Point(8, 26)
-        Me.LabelAdresseL.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LabelAdresseL.Location = New System.Drawing.Point(6, 21)
         Me.LabelAdresseL.Name = "LabelAdresseL"
-        Me.LabelAdresseL.Size = New System.Drawing.Size(80, 28)
+        Me.LabelAdresseL.Size = New System.Drawing.Size(65, 21)
         Me.LabelAdresseL.TabIndex = 25
         Me.LabelAdresseL.Text = "Adresse"
         '
-        'Label13
+        'LabelCode_postalA
         '
-        Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.ForeColor = System.Drawing.Color.Black
-        Me.Label13.Location = New System.Drawing.Point(8, 59)
-        Me.Label13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(125, 28)
-        Me.Label13.TabIndex = 26
-        Me.Label13.Text = "Code Postale"
+        Me.LabelCode_postalA.AutoSize = True
+        Me.LabelCode_postalA.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelCode_postalA.ForeColor = System.Drawing.Color.Black
+        Me.LabelCode_postalA.Location = New System.Drawing.Point(6, 48)
+        Me.LabelCode_postalA.Name = "LabelCode_postalA"
+        Me.LabelCode_postalA.Size = New System.Drawing.Size(99, 21)
+        Me.LabelCode_postalA.TabIndex = 26
+        Me.LabelCode_postalA.Text = "Code Postale"
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(131, 30)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox1.Location = New System.Drawing.Point(98, 24)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(204, 29)
+        Me.TextBox1.Size = New System.Drawing.Size(154, 25)
         Me.TextBox1.TabIndex = 27
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(131, 79)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox2.Location = New System.Drawing.Point(98, 64)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(204, 29)
+        Me.TextBox2.Size = New System.Drawing.Size(154, 25)
         Me.TextBox2.TabIndex = 28
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(148, 21)
-        Me.TextBox4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox4.Location = New System.Drawing.Point(111, 17)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(220, 29)
+        Me.TextBox4.Size = New System.Drawing.Size(166, 25)
         Me.TextBox4.TabIndex = 29
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(148, 59)
-        Me.TextBox5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox5.Location = New System.Drawing.Point(111, 48)
         Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(220, 29)
+        Me.TextBox5.Size = New System.Drawing.Size(166, 25)
         Me.TextBox5.TabIndex = 30
         '
         'LabelRProduit
@@ -185,10 +174,9 @@ Partial Class FrmFacture
         Me.LabelRProduit.AutoSize = True
         Me.LabelRProduit.Font = New System.Drawing.Font("Segoe UI", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelRProduit.ForeColor = System.Drawing.Color.Navy
-        Me.LabelRProduit.Location = New System.Drawing.Point(24, 383)
-        Me.LabelRProduit.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LabelRProduit.Location = New System.Drawing.Point(18, 311)
         Me.LabelRProduit.Name = "LabelRProduit"
-        Me.LabelRProduit.Size = New System.Drawing.Size(119, 28)
+        Me.LabelRProduit.Size = New System.Drawing.Size(93, 21)
         Me.LabelRProduit.TabIndex = 31
         Me.LabelRProduit.Text = "Réf.Produit"
         '
@@ -197,10 +185,9 @@ Partial Class FrmFacture
         Me.LabelQuantité.AutoSize = True
         Me.LabelQuantité.Font = New System.Drawing.Font("Segoe UI", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelQuantité.ForeColor = System.Drawing.Color.Navy
-        Me.LabelQuantité.Location = New System.Drawing.Point(574, 383)
-        Me.LabelQuantité.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LabelQuantité.Location = New System.Drawing.Point(430, 311)
         Me.LabelQuantité.Name = "LabelQuantité"
-        Me.LabelQuantité.Size = New System.Drawing.Size(218, 28)
+        Me.LabelQuantité.Size = New System.Drawing.Size(173, 21)
         Me.LabelQuantité.TabIndex = 32
         Me.LabelQuantité.Text = "Quantité Commandée"
         '
@@ -209,10 +196,9 @@ Partial Class FrmFacture
         Me.LabelPrix.AutoSize = True
         Me.LabelPrix.Font = New System.Drawing.Font("Segoe UI", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelPrix.ForeColor = System.Drawing.Color.Navy
-        Me.LabelPrix.Location = New System.Drawing.Point(365, 383)
-        Me.LabelPrix.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LabelPrix.Location = New System.Drawing.Point(274, 311)
         Me.LabelPrix.Name = "LabelPrix"
-        Me.LabelPrix.Size = New System.Drawing.Size(50, 28)
+        Me.LabelPrix.Size = New System.Drawing.Size(40, 21)
         Me.LabelPrix.TabIndex = 33
         Me.LabelPrix.Text = "Prix"
         '
@@ -221,10 +207,9 @@ Partial Class FrmFacture
         Me.LabelMOrdi.AutoSize = True
         Me.LabelMOrdi.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelMOrdi.ForeColor = System.Drawing.Color.Black
-        Me.LabelMOrdi.Location = New System.Drawing.Point(24, 416)
-        Me.LabelMOrdi.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LabelMOrdi.Location = New System.Drawing.Point(18, 338)
         Me.LabelMOrdi.Name = "LabelMOrdi"
-        Me.LabelMOrdi.Size = New System.Drawing.Size(163, 28)
+        Me.LabelMOrdi.Size = New System.Drawing.Size(129, 21)
         Me.LabelMOrdi.TabIndex = 34
         Me.LabelMOrdi.Text = "Micro-ordinateur"
         '
@@ -233,10 +218,9 @@ Partial Class FrmFacture
         Me.LabelModem.AutoSize = True
         Me.LabelModem.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelModem.ForeColor = System.Drawing.Color.Black
-        Me.LabelModem.Location = New System.Drawing.Point(24, 442)
-        Me.LabelModem.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LabelModem.Location = New System.Drawing.Point(18, 359)
         Me.LabelModem.Name = "LabelModem"
-        Me.LabelModem.Size = New System.Drawing.Size(81, 28)
+        Me.LabelModem.Size = New System.Drawing.Size(64, 21)
         Me.LabelModem.TabIndex = 35
         Me.LabelModem.Text = "Modem"
         '
@@ -245,10 +229,9 @@ Partial Class FrmFacture
         Me.LabelLInternet.AutoSize = True
         Me.LabelLInternet.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelLInternet.ForeColor = System.Drawing.Color.Black
-        Me.LabelLInternet.Location = New System.Drawing.Point(24, 468)
-        Me.LabelLInternet.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LabelLInternet.Location = New System.Drawing.Point(18, 380)
         Me.LabelLInternet.Name = "LabelLInternet"
-        Me.LabelLInternet.Size = New System.Drawing.Size(132, 28)
+        Me.LabelLInternet.Size = New System.Drawing.Size(106, 21)
         Me.LabelLInternet.TabIndex = 36
         Me.LabelLInternet.Text = "Ligne Internet"
         '
@@ -257,10 +240,9 @@ Partial Class FrmFacture
         Me.LblQteMicroOrdinateur.AutoSize = True
         Me.LblQteMicroOrdinateur.Font = New System.Drawing.Font("Segoe UI", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblQteMicroOrdinateur.ForeColor = System.Drawing.Color.Black
-        Me.LblQteMicroOrdinateur.Location = New System.Drawing.Point(574, 416)
-        Me.LblQteMicroOrdinateur.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LblQteMicroOrdinateur.Location = New System.Drawing.Point(430, 338)
         Me.LblQteMicroOrdinateur.Name = "LblQteMicroOrdinateur"
-        Me.LblQteMicroOrdinateur.Size = New System.Drawing.Size(24, 28)
+        Me.LblQteMicroOrdinateur.Size = New System.Drawing.Size(19, 21)
         Me.LblQteMicroOrdinateur.TabIndex = 37
         Me.LblQteMicroOrdinateur.Text = "0"
         '
@@ -269,10 +251,9 @@ Partial Class FrmFacture
         Me.LblQteModem.AutoSize = True
         Me.LblQteModem.Font = New System.Drawing.Font("Segoe UI", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblQteModem.ForeColor = System.Drawing.Color.Black
-        Me.LblQteModem.Location = New System.Drawing.Point(574, 442)
-        Me.LblQteModem.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LblQteModem.Location = New System.Drawing.Point(430, 359)
         Me.LblQteModem.Name = "LblQteModem"
-        Me.LblQteModem.Size = New System.Drawing.Size(24, 28)
+        Me.LblQteModem.Size = New System.Drawing.Size(19, 21)
         Me.LblQteModem.TabIndex = 38
         Me.LblQteModem.Text = "0"
         '
@@ -281,10 +262,9 @@ Partial Class FrmFacture
         Me.LblQteInternet.AutoSize = True
         Me.LblQteInternet.Font = New System.Drawing.Font("Segoe UI", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblQteInternet.ForeColor = System.Drawing.Color.Black
-        Me.LblQteInternet.Location = New System.Drawing.Point(574, 468)
-        Me.LblQteInternet.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LblQteInternet.Location = New System.Drawing.Point(430, 380)
         Me.LblQteInternet.Name = "LblQteInternet"
-        Me.LblQteInternet.Size = New System.Drawing.Size(24, 28)
+        Me.LblQteInternet.Size = New System.Drawing.Size(19, 21)
         Me.LblQteInternet.TabIndex = 39
         Me.LblQteInternet.Text = "0"
         '
@@ -292,10 +272,9 @@ Partial Class FrmFacture
         '
         Me.LblPrixMicroOrdiF.AutoSize = True
         Me.LblPrixMicroOrdiF.Font = New System.Drawing.Font("Segoe UI", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblPrixMicroOrdiF.Location = New System.Drawing.Point(365, 416)
-        Me.LblPrixMicroOrdiF.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LblPrixMicroOrdiF.Location = New System.Drawing.Point(274, 338)
         Me.LblPrixMicroOrdiF.Name = "LblPrixMicroOrdiF"
-        Me.LblPrixMicroOrdiF.Size = New System.Drawing.Size(53, 28)
+        Me.LblPrixMicroOrdiF.Size = New System.Drawing.Size(41, 21)
         Me.LblPrixMicroOrdiF.TabIndex = 40
         Me.LblPrixMicroOrdiF.Text = "0.00"
         '
@@ -303,10 +282,9 @@ Partial Class FrmFacture
         '
         Me.LblPrixModemF.AutoSize = True
         Me.LblPrixModemF.Font = New System.Drawing.Font("Segoe UI", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblPrixModemF.Location = New System.Drawing.Point(365, 442)
-        Me.LblPrixModemF.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LblPrixModemF.Location = New System.Drawing.Point(274, 359)
         Me.LblPrixModemF.Name = "LblPrixModemF"
-        Me.LblPrixModemF.Size = New System.Drawing.Size(53, 28)
+        Me.LblPrixModemF.Size = New System.Drawing.Size(41, 21)
         Me.LblPrixModemF.TabIndex = 41
         Me.LblPrixModemF.Text = "0.00"
         '
@@ -314,10 +292,9 @@ Partial Class FrmFacture
         '
         Me.LblPrixInternetF.AutoSize = True
         Me.LblPrixInternetF.Font = New System.Drawing.Font("Segoe UI", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblPrixInternetF.Location = New System.Drawing.Point(365, 468)
-        Me.LblPrixInternetF.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LblPrixInternetF.Location = New System.Drawing.Point(274, 380)
         Me.LblPrixInternetF.Name = "LblPrixInternetF"
-        Me.LblPrixInternetF.Size = New System.Drawing.Size(53, 28)
+        Me.LblPrixInternetF.Size = New System.Drawing.Size(41, 21)
         Me.LblPrixInternetF.TabIndex = 42
         Me.LblPrixInternetF.Text = "0.00"
         '
@@ -326,10 +303,9 @@ Partial Class FrmFacture
         Me.LabelSousTotal.AutoSize = True
         Me.LabelSousTotal.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelSousTotal.ForeColor = System.Drawing.Color.Navy
-        Me.LabelSousTotal.Location = New System.Drawing.Point(18, 545)
-        Me.LabelSousTotal.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LabelSousTotal.Location = New System.Drawing.Point(14, 443)
         Me.LabelSousTotal.Name = "LabelSousTotal"
-        Me.LabelSousTotal.Size = New System.Drawing.Size(125, 28)
+        Me.LabelSousTotal.Size = New System.Drawing.Size(100, 21)
         Me.LabelSousTotal.TabIndex = 43
         Me.LabelSousTotal.Text = "SOUS-TOTAL"
         '
@@ -338,10 +314,9 @@ Partial Class FrmFacture
         Me.LabelTPS.AutoSize = True
         Me.LabelTPS.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelTPS.ForeColor = System.Drawing.Color.Navy
-        Me.LabelTPS.Location = New System.Drawing.Point(20, 582)
-        Me.LabelTPS.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LabelTPS.Location = New System.Drawing.Point(15, 473)
         Me.LabelTPS.Name = "LabelTPS"
-        Me.LabelTPS.Size = New System.Drawing.Size(76, 28)
+        Me.LabelTPS.Size = New System.Drawing.Size(62, 21)
         Me.LabelTPS.TabIndex = 44
         Me.LabelTPS.Text = "TPS 5%"
         '
@@ -350,10 +325,9 @@ Partial Class FrmFacture
         Me.LabelTVQ.AutoSize = True
         Me.LabelTVQ.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelTVQ.ForeColor = System.Drawing.Color.Navy
-        Me.LabelTVQ.Location = New System.Drawing.Point(20, 619)
-        Me.LabelTVQ.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LabelTVQ.Location = New System.Drawing.Point(15, 503)
         Me.LabelTVQ.Name = "LabelTVQ"
-        Me.LabelTVQ.Size = New System.Drawing.Size(118, 28)
+        Me.LabelTVQ.Size = New System.Drawing.Size(96, 21)
         Me.LabelTVQ.TabIndex = 45
         Me.LabelTVQ.Text = "TVQ 9.979%"
         '
@@ -362,10 +336,9 @@ Partial Class FrmFacture
         Me.LabelTotal.AutoSize = True
         Me.LabelTotal.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelTotal.ForeColor = System.Drawing.Color.Navy
-        Me.LabelTotal.Location = New System.Drawing.Point(18, 656)
-        Me.LabelTotal.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LabelTotal.Location = New System.Drawing.Point(14, 533)
         Me.LabelTotal.Name = "LabelTotal"
-        Me.LabelTotal.Size = New System.Drawing.Size(66, 28)
+        Me.LabelTotal.Size = New System.Drawing.Size(53, 21)
         Me.LabelTotal.TabIndex = 46
         Me.LabelTotal.Text = "TOTAL"
         '
@@ -373,10 +346,9 @@ Partial Class FrmFacture
         '
         Me.LblSousTotal.AutoSize = True
         Me.LblSousTotal.Font = New System.Drawing.Font("Segoe UI", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblSousTotal.Location = New System.Drawing.Point(365, 545)
-        Me.LblSousTotal.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LblSousTotal.Location = New System.Drawing.Point(274, 443)
         Me.LblSousTotal.Name = "LblSousTotal"
-        Me.LblSousTotal.Size = New System.Drawing.Size(65, 28)
+        Me.LblSousTotal.Size = New System.Drawing.Size(50, 21)
         Me.LblSousTotal.TabIndex = 47
         Me.LblSousTotal.Text = "$0.00"
         '
@@ -384,10 +356,9 @@ Partial Class FrmFacture
         '
         Me.LblTPS.AutoSize = True
         Me.LblTPS.Font = New System.Drawing.Font("Segoe UI", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblTPS.Location = New System.Drawing.Point(365, 582)
-        Me.LblTPS.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LblTPS.Location = New System.Drawing.Point(274, 473)
         Me.LblTPS.Name = "LblTPS"
-        Me.LblTPS.Size = New System.Drawing.Size(65, 28)
+        Me.LblTPS.Size = New System.Drawing.Size(50, 21)
         Me.LblTPS.TabIndex = 48
         Me.LblTPS.Text = "$0.00"
         '
@@ -395,10 +366,9 @@ Partial Class FrmFacture
         '
         Me.LblTVQ.AutoSize = True
         Me.LblTVQ.Font = New System.Drawing.Font("Segoe UI", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblTVQ.Location = New System.Drawing.Point(365, 619)
-        Me.LblTVQ.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LblTVQ.Location = New System.Drawing.Point(274, 503)
         Me.LblTVQ.Name = "LblTVQ"
-        Me.LblTVQ.Size = New System.Drawing.Size(65, 28)
+        Me.LblTVQ.Size = New System.Drawing.Size(50, 21)
         Me.LblTVQ.TabIndex = 49
         Me.LblTVQ.Text = "$0.00"
         '
@@ -406,10 +376,9 @@ Partial Class FrmFacture
         '
         Me.LblPrixTotalF.AutoSize = True
         Me.LblPrixTotalF.Font = New System.Drawing.Font("Segoe UI", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblPrixTotalF.Location = New System.Drawing.Point(364, 652)
-        Me.LblPrixTotalF.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LblPrixTotalF.Location = New System.Drawing.Point(273, 530)
         Me.LblPrixTotalF.Name = "LblPrixTotalF"
-        Me.LblPrixTotalF.Size = New System.Drawing.Size(78, 32)
+        Me.LblPrixTotalF.Size = New System.Drawing.Size(61, 25)
         Me.LblPrixTotalF.TabIndex = 50
         Me.LblPrixTotalF.Text = "$0.00"
         '
@@ -417,10 +386,9 @@ Partial Class FrmFacture
         '
         Me.BttnPayement.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!)
         Me.BttnPayement.ForeColor = System.Drawing.Color.Navy
-        Me.BttnPayement.Location = New System.Drawing.Point(797, 692)
-        Me.BttnPayement.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BttnPayement.Location = New System.Drawing.Point(598, 562)
         Me.BttnPayement.Name = "BttnPayement"
-        Me.BttnPayement.Size = New System.Drawing.Size(152, 41)
+        Me.BttnPayement.Size = New System.Drawing.Size(114, 33)
         Me.BttnPayement.TabIndex = 51
         Me.BttnPayement.Text = "PAYEMENT"
         Me.BttnPayement.UseVisualStyleBackColor = True
@@ -456,11 +424,9 @@ Partial Class FrmFacture
         Me.GroupBoxFacture.Controls.Add(Me.LabelLInternet)
         Me.GroupBoxFacture.Font = New System.Drawing.Font("Segoe UI", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBoxFacture.ForeColor = System.Drawing.Color.Navy
-        Me.GroupBoxFacture.Location = New System.Drawing.Point(4, -1)
-        Me.GroupBoxFacture.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBoxFacture.Location = New System.Drawing.Point(3, -1)
         Me.GroupBoxFacture.Name = "GroupBoxFacture"
-        Me.GroupBoxFacture.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.GroupBoxFacture.Size = New System.Drawing.Size(1012, 772)
+        Me.GroupBoxFacture.Size = New System.Drawing.Size(759, 627)
         Me.GroupBoxFacture.TabIndex = 53
         Me.GroupBoxFacture.TabStop = False
         Me.GroupBoxFacture.Text = "Facture"
@@ -471,10 +437,9 @@ Partial Class FrmFacture
         Me.DateTimePickerFacture.CalendarMonthBackground = System.Drawing.SystemColors.ControlLight
         Me.DateTimePickerFacture.Font = New System.Drawing.Font("Segoe UI", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DateTimePickerFacture.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePickerFacture.Location = New System.Drawing.Point(156, 73)
-        Me.DateTimePickerFacture.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DateTimePickerFacture.Location = New System.Drawing.Point(117, 59)
         Me.DateTimePickerFacture.Name = "DateTimePickerFacture"
-        Me.DateTimePickerFacture.Size = New System.Drawing.Size(204, 29)
+        Me.DateTimePickerFacture.Size = New System.Drawing.Size(154, 25)
         Me.DateTimePickerFacture.TabIndex = 15
         Me.DateTimePickerFacture.Value = New Date(2021, 4, 3, 0, 0, 0, 0)
         '
@@ -482,15 +447,13 @@ Partial Class FrmFacture
         '
         Me.GroupBox3.Controls.Add(Me.LabelAdresseL)
         Me.GroupBox3.Controls.Add(Me.TextBox4)
-        Me.GroupBox3.Controls.Add(Me.Label13)
+        Me.GroupBox3.Controls.Add(Me.LabelCode_postalA)
         Me.GroupBox3.Controls.Add(Me.TextBox5)
         Me.GroupBox3.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox3.ForeColor = System.Drawing.Color.Black
-        Me.GroupBox3.Location = New System.Drawing.Point(580, 73)
-        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox3.Location = New System.Drawing.Point(435, 59)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.GroupBox3.Size = New System.Drawing.Size(373, 105)
+        Me.GroupBox3.Size = New System.Drawing.Size(280, 85)
         Me.GroupBox3.TabIndex = 1
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Abonnet"
@@ -499,70 +462,63 @@ Partial Class FrmFacture
         '
         Me.GroupBox2.Controls.Add(Me.TextBox6)
         Me.GroupBox2.Controls.Add(Me.TextBox3)
-        Me.GroupBox2.Controls.Add(Me.Label2)
+        Me.GroupBox2.Controls.Add(Me.LabelAdresse)
         Me.GroupBox2.Controls.Add(Me.Label1)
         Me.GroupBox2.Controls.Add(Me.TextBox1)
-        Me.GroupBox2.Controls.Add(Me.LabelAdresseF)
+        Me.GroupBox2.Controls.Add(Me.LabelPrénom)
         Me.GroupBox2.Controls.Add(Me.TextBox2)
-        Me.GroupBox2.Controls.Add(Me.LblTéléphone)
+        Me.GroupBox2.Controls.Add(Me.LblCode_postal)
         Me.GroupBox2.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.ForeColor = System.Drawing.Color.Black
-        Me.GroupBox2.Location = New System.Drawing.Point(25, 122)
-        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox2.Location = New System.Drawing.Point(19, 99)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.GroupBox2.Size = New System.Drawing.Size(393, 214)
+        Me.GroupBox2.Size = New System.Drawing.Size(295, 174)
         Me.GroupBox2.TabIndex = 0
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Adresse de Facturation"
         '
         'TextBox6
         '
-        Me.TextBox6.Location = New System.Drawing.Point(131, 170)
-        Me.TextBox6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox6.Location = New System.Drawing.Point(98, 138)
         Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(204, 29)
+        Me.TextBox6.Size = New System.Drawing.Size(154, 25)
         Me.TextBox6.TabIndex = 31
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(131, 123)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox3.Location = New System.Drawing.Point(98, 100)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(204, 29)
+        Me.TextBox3.Size = New System.Drawing.Size(154, 25)
         Me.TextBox3.TabIndex = 30
         '
-        'Label2
+        'LabelAdresse
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.Black
-        Me.Label2.Location = New System.Drawing.Point(-5, 123)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(80, 28)
-        Me.Label2.TabIndex = 29
-        Me.Label2.Text = "Adresse"
+        Me.LabelAdresse.AutoSize = True
+        Me.LabelAdresse.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelAdresse.ForeColor = System.Drawing.Color.Black
+        Me.LabelAdresse.Location = New System.Drawing.Point(-4, 100)
+        Me.LabelAdresse.Name = "LabelAdresse"
+        Me.LabelAdresse.Size = New System.Drawing.Size(65, 21)
+        Me.LabelAdresse.TabIndex = 29
+        Me.LabelAdresse.Text = "Adresse"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Black
-        Me.Label1.Location = New System.Drawing.Point(-5, 30)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(-4, 24)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(56, 28)
+        Me.Label1.Size = New System.Drawing.Size(45, 21)
         Me.Label1.TabIndex = 28
         Me.Label1.Text = "Nom"
         '
         'FrmFacture
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1003, 767)
+        Me.ClientSize = New System.Drawing.Size(752, 609)
         Me.Controls.Add(Me.GroupBoxFacture)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "FrmFacture"
         Me.Text = "FrmFacture"
         Me.GroupBoxFacture.ResumeLayout(False)
@@ -577,10 +533,10 @@ Partial Class FrmFacture
     Friend WithEvents LblNFacture As Label
     Friend WithEvents LblDateFacture As Label
     Friend WithEvents TextBoxNFacture As TextBox
-    Friend WithEvents LabelAdresseF As Label
-    Friend WithEvents LblTéléphone As Label
+    Friend WithEvents LabelPrénom As Label
+    Friend WithEvents LblCode_postal As Label
     Friend WithEvents LabelAdresseL As Label
-    Friend WithEvents Label13 As Label
+    Friend WithEvents LabelCode_postalA As Label
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents TextBox4 As TextBox
@@ -612,6 +568,6 @@ Partial Class FrmFacture
     Friend WithEvents DateTimePickerFacture As DateTimePicker
     Friend WithEvents TextBox6 As TextBox
     Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents Label2 As Label
+    Friend WithEvents LabelAdresse As Label
     Friend WithEvents Label1 As Label
 End Class
