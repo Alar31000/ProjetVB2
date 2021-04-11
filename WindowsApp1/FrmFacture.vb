@@ -69,9 +69,7 @@
         LblPrixTotalF.Text = String.Format("{0:c}", Val((Equipements.LabelMOrdinateurCost.Text * Equipements.TextBoxMOrdi.Text) + (Equipements.LabelModemCost.Text * Equipements.TextBoxModem.Text) + (Equipements.LabelInternetCost.Text * Equipements.TextBoxInternet.Text) + ((LblSousTotal.Text * 9.975) / 100) + ((LblSousTotal.Text * 5) / 100)))
     End Sub
 
-    Private Sub ButtonAnnuler_Click(sender As Object, e As EventArgs)
-        End
-    End Sub
+
 
     Private Sub GroupBoxFacture_Enter(sender As Object, e As EventArgs) Handles GroupBoxFacture.Enter
 
@@ -82,6 +80,14 @@
     End Sub
 
     Private Sub LabelAdresseL_Click(sender As Object, e As EventArgs) Handles LabelAdresseL.Click
+
+    End Sub
+
+    Private Sub TextBoxNFacture_TextChanged(sender As Object, e As EventArgs) Handles TextBoxNFacture.TextChanged
+
+    End Sub
+
+    Private Sub LabelPrénom_Click(sender As Object, e As EventArgs) Handles LabelPrénom.Click
 
     End Sub
 End Class
