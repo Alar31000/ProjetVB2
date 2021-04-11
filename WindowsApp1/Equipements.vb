@@ -44,7 +44,7 @@
             MsgBox("veuillez cocher la case louer") 'message box si le case louer n'est pas coché
         Else
 
-            Payment.Show()
+            Paiement.Show()
         End If
     End Sub
 

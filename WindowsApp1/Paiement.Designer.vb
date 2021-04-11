@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Payment
+Partial Class Paiement
     Inherits System.Windows.Forms.Form
 
     'Form remplace la méthode Dispose pour nettoyer la liste des composants.
@@ -386,14 +386,14 @@ Partial Class Payment
         Me.GroupBoxCarte.TabStop = False
         Me.GroupBoxCarte.Visible = False
         '
-        'Payment
+        'Paiement
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1075, 570)
         Me.Controls.Add(Me.GroupBoxFacture)
         Me.Margin = New System.Windows.Forms.Padding(4)
-        Me.Name = "Payment"
+        Me.Name = "Paiement"
         Me.Text = "Paiement"
         Me.GroupBoxFacture.ResumeLayout(False)
         Me.GroupBoxFacture.PerformLayout()
