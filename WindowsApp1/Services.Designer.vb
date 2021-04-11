@@ -24,38 +24,59 @@ Partial Class Services
     Private Sub InitializeComponent()
         Me.lstBoxService = New System.Windows.Forms.ListBox()
         Me.btnOK = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lstBoxService
         '
         Me.lstBoxService.FormattingEnabled = True
-        Me.lstBoxService.ItemHeight = 16
-        Me.lstBoxService.Location = New System.Drawing.Point(43, 27)
-        Me.lstBoxService.Margin = New System.Windows.Forms.Padding(4)
+        Me.lstBoxService.Items.AddRange(New Object() {"Formation du personnel.", "Réparation des équipements.", "Programmation des pages Web.", "Assistance téléphonique.", "Impression des rapports et statistiques", "Installation des équipements", "La livraison des équipements"})
+        Me.lstBoxService.Location = New System.Drawing.Point(32, 48)
         Me.lstBoxService.Name = "lstBoxService"
-        Me.lstBoxService.Size = New System.Drawing.Size(537, 276)
+        Me.lstBoxService.Size = New System.Drawing.Size(404, 199)
         Me.lstBoxService.TabIndex = 5
         '
         'btnOK
         '
         Me.btnOK.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!)
         Me.btnOK.ForeColor = System.Drawing.Color.Navy
-        Me.btnOK.Location = New System.Drawing.Point(258, 323)
-        Me.btnOK.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnOK.Location = New System.Drawing.Point(163, 263)
         Me.btnOK.Name = "btnOK"
-        Me.btnOK.Size = New System.Drawing.Size(108, 33)
+        Me.btnOK.Size = New System.Drawing.Size(81, 27)
         Me.btnOK.TabIndex = 28
         Me.btnOK.Text = "OK"
         Me.btnOK.UseVisualStyleBackColor = True
         '
+        'Label1
+        '
+        Me.Label1.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(106, 22)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(234, 23)
+        Me.Label1.TabIndex = 29
+        Me.Label1.Text = "Gestion des Services"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(264, 265)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 30
+        Me.Button1.Text = "Quitter"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'Services
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(628, 369)
+        Me.ClientSize = New System.Drawing.Size(471, 300)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnOK)
         Me.Controls.Add(Me.lstBoxService)
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Services"
         Me.Text = "Services"
         Me.ResumeLayout(False)
@@ -64,4 +85,6 @@ Partial Class Services
 
     Friend WithEvents lstBoxService As ListBox
     Friend WithEvents btnOK As Button
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Button1 As Button
 End Class
