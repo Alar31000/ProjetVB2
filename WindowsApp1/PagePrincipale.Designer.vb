@@ -50,6 +50,8 @@ Partial Class PagePrincipale
         Me.IndexToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.toolStripSeparator5 = New System.Windows.Forms.ToolStripSeparator()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NouveauToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ModifierToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
@@ -182,17 +184,18 @@ Partial Class PagePrincipale
         'FactureToolStripMenuItem
         '
         Me.FactureToolStripMenuItem.Name = "FactureToolStripMenuItem"
-        Me.FactureToolStripMenuItem.Size = New System.Drawing.Size(171, 26)
+        Me.FactureToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.FactureToolStripMenuItem.Text = "Facturations"
         '
         'PaiementToolStripMenuItem
         '
         Me.PaiementToolStripMenuItem.Name = "PaiementToolStripMenuItem"
-        Me.PaiementToolStripMenuItem.Size = New System.Drawing.Size(171, 26)
+        Me.PaiementToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.PaiementToolStripMenuItem.Text = "Paiement"
         '
         'FournisseursToolStripMenuItem
         '
+        Me.FournisseursToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NouveauToolStripMenuItem, Me.ModifierToolStripMenuItem})
         Me.FournisseursToolStripMenuItem.Name = "FournisseursToolStripMenuItem"
         Me.FournisseursToolStripMenuItem.Size = New System.Drawing.Size(103, 24)
         Me.FournisseursToolStripMenuItem.Text = "Fournisseurs"
@@ -238,6 +241,18 @@ Partial Class PagePrincipale
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
         Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(225, 26)
         Me.AboutToolStripMenuItem.Text = "À &Propos d'Abonnet"
+        '
+        'NouveauToolStripMenuItem
+        '
+        Me.NouveauToolStripMenuItem.Name = "NouveauToolStripMenuItem"
+        Me.NouveauToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.NouveauToolStripMenuItem.Text = "Nouveau"
+        '
+        'ModifierToolStripMenuItem
+        '
+        Me.ModifierToolStripMenuItem.Name = "ModifierToolStripMenuItem"
+        Me.ModifierToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.ModifierToolStripMenuItem.Text = "Modifier"
         '
         'PagePrincipale
         '
@@ -289,4 +304,6 @@ Partial Class PagePrincipale
     Friend WithEvents PaiementToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents FournisseursToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents RapportsToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents NouveauToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ModifierToolStripMenuItem As ToolStripMenuItem
 End Class

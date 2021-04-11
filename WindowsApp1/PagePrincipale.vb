@@ -49,4 +49,39 @@
         Me.Close()
 
     End Sub
+
+    Private Sub ÉquipementsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ÉquipementsToolStripMenuItem.Click
+        Equipements.Show()
+
+    End Sub
+
+    Private Sub EditToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EditToolStripMenuItem.Click
+        Services.Show()
+
+    End Sub
+
+    Private Sub FactureToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FactureToolStripMenuItem.Click
+        FrmFacture.Show()
+
+    End Sub
+
+    Private Sub PaiementToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PaiementToolStripMenuItem.Click
+        Paiement.Show()
+
+    End Sub
+
+    Private Sub NouveauToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NouveauToolStripMenuItem.Click
+        FrmNouveauFournisseur.Show()
+
+    End Sub
+
+    Private Sub ModifierToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ModifierToolStripMenuItem.Click
+        FrmModiferFournisseur.Show()
+
+    End Sub
+
+    Private Sub ToolsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ToolsToolStripMenuItem.Click
+        Utilisateurs.Show()
+
+    End Sub
 End Class
