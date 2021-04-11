@@ -1,6 +1,10 @@
-﻿Public Class FrmConsulterContrat
-    'Dim objCnn As New System.Data.OleDb.OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\SgariBdd.accdb")
+﻿Imports System.Data.SQLite
+Imports System.IO
 
+Public Class FrmConsulterContrat
+
+    'Une variable pour la connection de la base de donnees
+    Private connectionString = String.Empty
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
 
     End Sub
@@ -30,6 +34,38 @@
     End Sub
 
     Private Sub FrmConsulterContrat_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        'La connection de la base de donnees
+        connectionString = String.Format("Data Source={0};Version=3;",
+                                         Directory.GetCurrentDirectory() & "\" & "usersDb.db")
+
+
+
+        'Dim sqlContrat As String = "SELECT * FROM Contrat"
+
+        Using conn As New SQLiteConnection(connectionString.ToString)
+                Using cmd As New SQLiteCommand(conn)
+
+                cmd.CommandText = "SELECT * FROM Clients;"
+                'cmd.CommandText = sqlContrat
+
+                conn.Open()
+
+                    Using da As New SQLiteDataAdapter(cmd)
+                        'Using da As New SQLiteDataAdapter(cmd)
+                        Dim dt As New DataTable
+
+
+                        DataGridView1.DataSource = dt
+                        da.Fill(dt)
+                        ' DataGridView2.DataSource = dt
+                        ' da.Fill(dt)
+
+
+                    End Using
+                End Using
+            End Using
+
         'TODO: cette ligne de code charge les données dans la table 'SgariBddDataSet.CONTRAT'. Vous pouvez la déplacer ou la supprimer selon les besoins.
         'Me.CONTRATTableAdapter.Fill(Me.SgariBddDataSet.CONTRAT)
         'TODO: cette ligne de code charge les données dans la table 'SgariBddDataSet.CLIENT'. Vous pouvez la déplacer ou la supprimer selon les besoins.
@@ -51,6 +87,10 @@
         'Dim objView As New DataView(objTable(0))
 
         ' Fermeture de la base de données
+
+    End Sub
+
+    Private Sub DataGridView2_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView2.CellContentClick
 
     End Sub
 End Class
