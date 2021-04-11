@@ -1,5 +1,11 @@
-﻿Public Class Résilier_Contrat
-    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+﻿Imports System.Data.SQLite
+Imports System.IO
+
+Public Class Résilier_Contrat
+
+    'Une variable pour la connection de la base de donnees
+    Private connectionString = String.Empty
+    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
 
     End Sub
 
@@ -44,6 +50,38 @@
 
     End Sub
 
+    Private Sub Résilier_Contrat_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'La connection de la base de donnees
+        connectionString = String.Format("Data Source={0};Version=3;",
+                                         Directory.GetCurrentDirectory() & "\" & "usersDb.db")
+
+        ' Pour affichier la table Client dans le premier DataGrid
+        Using conn As New SQLiteConnection(connectionString.ToString)
+            Using cmd As New SQLiteCommand(conn)
+
+                'La commande pour recupere la table contrat pour l'affichage de la table
+                cmd.CommandText = "SELECT * FROM Contrat"
+
+
+                conn.Open()
+
+                Using da As New SQLiteDataAdapter(cmd)
+
+                    'Using da As New SQLiteDataAdapter(cmd)
+                    Dim dt As New DataTable
+
+
+                    CONTRATDataGridView.DataSource = dt
+
+                    da.Fill(dt)
+                End Using
+            End Using
+        End Using
+    End Sub
+
+    Private Sub CONTRATDataGridView_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles CONTRATDataGridView.CellContentClick
+
+    End Sub
 End Class
 
 

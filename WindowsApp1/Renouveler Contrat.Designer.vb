@@ -31,13 +31,6 @@ Partial Class Renouveler_Contrat
         Me.BtnRenouveller = New System.Windows.Forms.Button()
         Me.Titre = New System.Windows.Forms.Label()
         Me.CONTRATDataGridView = New System.Windows.Forms.DataGridView()
-        Me.Num_Contrat = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Nom = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Prénom = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Type_Contrat = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Equipements = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         CType(Me.CONTRATDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -128,72 +121,27 @@ Partial Class Renouveler_Contrat
         '
         'CONTRATDataGridView
         '
+        Me.CONTRATDataGridView.AllowUserToAddRows = False
+        Me.CONTRATDataGridView.AllowUserToDeleteRows = False
         Me.CONTRATDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.CONTRATDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Num_Contrat, Me.Nom, Me.Prénom, Me.Type_Contrat, Me.Equipements, Me.Column1, Me.column2})
-        Me.CONTRATDataGridView.Location = New System.Drawing.Point(7, 30)
+        Me.CONTRATDataGridView.Location = New System.Drawing.Point(12, 30)
+        Me.CONTRATDataGridView.MultiSelect = False
         Me.CONTRATDataGridView.Name = "CONTRATDataGridView"
+        Me.CONTRATDataGridView.ReadOnly = True
         Me.CONTRATDataGridView.RowHeadersWidth = 51
-        Me.CONTRATDataGridView.Size = New System.Drawing.Size(742, 166)
-        Me.CONTRATDataGridView.TabIndex = 42
-        '
-        'Num_Contrat
-        '
-        Me.Num_Contrat.HeaderText = "Num_Contrat"
-        Me.Num_Contrat.MinimumWidth = 6
-        Me.Num_Contrat.Name = "Num_Contrat"
-        Me.Num_Contrat.Width = 125
-        '
-        'Nom
-        '
-        Me.Nom.HeaderText = "Nom"
-        Me.Nom.MinimumWidth = 6
-        Me.Nom.Name = "Nom"
-        Me.Nom.Width = 125
-        '
-        'Prénom
-        '
-        Me.Prénom.HeaderText = "Prénom"
-        Me.Prénom.MinimumWidth = 6
-        Me.Prénom.Name = "Prénom"
-        Me.Prénom.Width = 125
-        '
-        'Type_Contrat
-        '
-        Me.Type_Contrat.HeaderText = "Type_Contrat"
-        Me.Type_Contrat.MinimumWidth = 6
-        Me.Type_Contrat.Name = "Type_Contrat"
-        Me.Type_Contrat.Width = 125
-        '
-        'Equipements
-        '
-        Me.Equipements.HeaderText = "Equipements"
-        Me.Equipements.MinimumWidth = 6
-        Me.Equipements.Name = "Equipements"
-        Me.Equipements.Width = 125
-        '
-        'Column1
-        '
-        Me.Column1.HeaderText = "Service"
-        Me.Column1.MinimumWidth = 6
-        Me.Column1.Name = "Column1"
-        Me.Column1.Width = 125
-        '
-        'column2
-        '
-        Me.column2.HeaderText = "Date de mis en Service "
-        Me.column2.MinimumWidth = 6
-        Me.column2.Name = "column2"
-        Me.column2.Width = 125
+        Me.CONTRATDataGridView.ShowEditingIcon = False
+        Me.CONTRATDataGridView.Size = New System.Drawing.Size(728, 187)
+        Me.CONTRATDataGridView.TabIndex = 46
         '
         'Renouveler_Contrat
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(752, 444)
+        Me.Controls.Add(Me.CONTRATDataGridView)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.Titre)
-        Me.Controls.Add(Me.CONTRATDataGridView)
         Me.Name = "Renouveler_Contrat"
         Me.Text = "Renouveler_Contrat"
         Me.GroupBox2.ResumeLayout(False)
@@ -213,11 +161,4 @@ Partial Class Renouveler_Contrat
     Friend WithEvents BtnRenouveller As Button
     Friend WithEvents Titre As Label
     Friend WithEvents CONTRATDataGridView As DataGridView
-    Friend WithEvents Num_Contrat As DataGridViewTextBoxColumn
-    Friend WithEvents Nom As DataGridViewTextBoxColumn
-    Friend WithEvents Prénom As DataGridViewTextBoxColumn
-    Friend WithEvents Type_Contrat As DataGridViewTextBoxColumn
-    Friend WithEvents Equipements As DataGridViewTextBoxColumn
-    Friend WithEvents Column1 As DataGridViewTextBoxColumn
-    Friend WithEvents column2 As DataGridViewTextBoxColumn
 End Class
