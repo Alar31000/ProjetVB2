@@ -23,13 +23,13 @@ Public Class Login
 
     End Sub
 
-    Private Sub Button2_Click_1(sender As Object, e As EventArgs) Handles ButtonOk.Click
+    Private Sub Authenticate()
 
-        'Valider is le nom de l'utilisateur et le mot de passe est correct ou non
+        'Valider si le nom de l'utilisateur et le mot de passe est correct ou non
         If IsUserValid(TextBoxUtilisateur.Text.Trim, TextBoxMotDePasse.Text.Trim) = True Then
             MsgBox("Bienvenue.", MsgBoxStyle.OkOnly + vbInformation, "Succès !")
 
-            'Si le mot de passe est corret, on va ouvrir la page principale
+            'Si le mot de passe est correct, on ouvrira la page principale
             Me.Hide()
             Dim frmMainForm As New PagePrincipale
             frmMainForm.Show()
@@ -37,6 +37,12 @@ Public Class Login
         Else
             MsgBox("Accès refusé, Veuillez Verifier Votre Nom d'Utilisatuer ou Votre Mot de Passe.")
         End If
+
+    End Sub
+
+    Private Sub Button2_Click_1(sender As Object, e As EventArgs) Handles ButtonOk.Click
+
+        Authenticate()
 
     End Sub
 
@@ -57,14 +63,9 @@ Public Class Login
 
                         If dt.Rows.Count > 0 Then
                             userInfo = dt.Rows(0)
-                            'Obtenir le mot de passe de la base de donnees
-                            'Dim dbSalt As String = userInfo("user_salt")
-
-                            ' get the hashed password from the database
+                            'Obtenir le mot de passe de la base de donnée
                             Dim dbPass As String = userInfo("user_password")
 
-                            ' Hash the password entered by user when login with same salt from database
-                            'Dim passEntered As String = Utils.GetSaltedHash(password, dbSalt)
 
                             ' then compare the two hased password if they are the same then return valid password
                             If String.Compare(dbPass, password, False) = 0 Then
@@ -72,10 +73,6 @@ Public Class Login
                             End If
 
                         End If
-
-                        'If userInfo("user_password").Equals(password) Then
-                        '    IsValidUser = True
-                        'End If
 
                     End Using
                 End Using
@@ -94,4 +91,14 @@ Public Class Login
     Private Sub Txt_password_TextChanged(sender As Object, e As EventArgs) Handles TextBoxMotDePasse.TextChanged
 
     End Sub
+
+    Private Sub Txt_password_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles TextBoxMotDePasse.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Authenticate()
+        Else
+            Exit Sub
+        End If
+        e.SuppressKeyPress = True
+    End Sub
+
 End Class

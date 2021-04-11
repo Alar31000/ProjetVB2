@@ -1,6 +1,6 @@
 ﻿Public Class FrmFacture
     Private Sub BttnPayement_Click(sender As Object, e As EventArgs) Handles BttnPayement.Click
-        Payment.Show() 'Appel de la forme payement 
+        Paiement.Show() 'Appel de la forme payement 
     End Sub
 
     Private Sub DateTimePicker1_ValueChanged(sender As Object, e As EventArgs) Handles DateTimePickerFacture.ValueChanged

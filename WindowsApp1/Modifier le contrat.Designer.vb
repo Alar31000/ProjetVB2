@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class Modifier_Contrat
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -60,7 +60,7 @@ Partial Class Form1
         '
         Me.BtnMQuitter.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnMQuitter.Location = New System.Drawing.Point(736, 822)
-        Me.BtnMQuitter.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BtnMQuitter.Margin = New System.Windows.Forms.Padding(4)
         Me.BtnMQuitter.Name = "BtnMQuitter"
         Me.BtnMQuitter.Size = New System.Drawing.Size(108, 63)
         Me.BtnMQuitter.TabIndex = 50
@@ -92,9 +92,9 @@ Partial Class Form1
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.Color.Black
         Me.GroupBox1.Location = New System.Drawing.Point(3, 111)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Size = New System.Drawing.Size(963, 366)
         Me.GroupBox1.TabIndex = 52
         Me.GroupBox1.TabStop = False
@@ -105,7 +105,7 @@ Partial Class Form1
         Me.TextBox2.BackColor = System.Drawing.Color.LightGray
         Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox2.Location = New System.Drawing.Point(733, 94)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(197, 29)
         Me.TextBox2.TabIndex = 46
@@ -115,7 +115,7 @@ Partial Class Form1
         Me.TextBox1.BackColor = System.Drawing.Color.LightGray
         Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.Location = New System.Drawing.Point(213, 97)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(220, 29)
         Me.TextBox1.TabIndex = 45
@@ -146,7 +146,7 @@ Partial Class Form1
         '
         Me.TBoxMService.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TBoxMService.Location = New System.Drawing.Point(733, 250)
-        Me.TBoxMService.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TBoxMService.Margin = New System.Windows.Forms.Padding(4)
         Me.TBoxMService.Name = "TBoxMService"
         Me.TBoxMService.Size = New System.Drawing.Size(197, 29)
         Me.TBoxMService.TabIndex = 40
@@ -166,7 +166,7 @@ Partial Class Form1
         '
         Me.TBoxMLocation.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TBoxMLocation.Location = New System.Drawing.Point(733, 188)
-        Me.TBoxMLocation.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TBoxMLocation.Margin = New System.Windows.Forms.Padding(4)
         Me.TBoxMLocation.Name = "TBoxMLocation"
         Me.TBoxMLocation.Size = New System.Drawing.Size(197, 29)
         Me.TBoxMLocation.TabIndex = 39
@@ -186,7 +186,7 @@ Partial Class Form1
         '
         Me.TBoxMDMV.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TBoxMDMV.Location = New System.Drawing.Point(733, 306)
-        Me.TBoxMDMV.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TBoxMDMV.Margin = New System.Windows.Forms.Padding(4)
         Me.TBoxMDMV.Name = "TBoxMDMV"
         Me.TBoxMDMV.Size = New System.Drawing.Size(197, 29)
         Me.TBoxMDMV.TabIndex = 41
@@ -195,7 +195,7 @@ Partial Class Form1
         '
         Me.TBoxMDF.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TBoxMDF.Location = New System.Drawing.Point(213, 306)
-        Me.TBoxMDF.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TBoxMDF.Margin = New System.Windows.Forms.Padding(4)
         Me.TBoxMDF.Name = "TBoxMDF"
         Me.TBoxMDF.Size = New System.Drawing.Size(220, 29)
         Me.TBoxMDF.TabIndex = 38
@@ -226,7 +226,7 @@ Partial Class Form1
         '
         Me.TBoxMDO.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TBoxMDO.Location = New System.Drawing.Point(213, 250)
-        Me.TBoxMDO.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TBoxMDO.Margin = New System.Windows.Forms.Padding(4)
         Me.TBoxMDO.Name = "TBoxMDO"
         Me.TBoxMDO.Size = New System.Drawing.Size(220, 29)
         Me.TBoxMDO.TabIndex = 37
@@ -235,7 +235,7 @@ Partial Class Form1
         '
         Me.TBoxMTCnt.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TBoxMTCnt.Location = New System.Drawing.Point(213, 192)
-        Me.TBoxMTCnt.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TBoxMTCnt.Margin = New System.Windows.Forms.Padding(4)
         Me.TBoxMTCnt.Name = "TBoxMTCnt"
         Me.TBoxMTCnt.Size = New System.Drawing.Size(220, 29)
         Me.TBoxMTCnt.TabIndex = 36
@@ -291,9 +291,9 @@ Partial Class Form1
         Me.GroupBox2.Controls.Add(Me.Button1)
         Me.GroupBox2.Controls.Add(Me.BtnModifier)
         Me.GroupBox2.Location = New System.Drawing.Point(3, 484)
-        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox2.Size = New System.Drawing.Size(963, 138)
         Me.GroupBox2.TabIndex = 53
         Me.GroupBox2.TabStop = False
@@ -302,7 +302,7 @@ Partial Class Form1
         '
         Me.BtnQuitter.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!)
         Me.BtnQuitter.Location = New System.Drawing.Point(824, 31)
-        Me.BtnQuitter.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BtnQuitter.Margin = New System.Windows.Forms.Padding(4)
         Me.BtnQuitter.Name = "BtnQuitter"
         Me.BtnQuitter.Size = New System.Drawing.Size(108, 62)
         Me.BtnQuitter.TabIndex = 34
@@ -313,7 +313,7 @@ Partial Class Form1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!)
         Me.Button1.Location = New System.Drawing.Point(13, 31)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(148, 62)
         Me.Button1.TabIndex = 33
@@ -324,7 +324,7 @@ Partial Class Form1
         '
         Me.BtnModifier.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!)
         Me.BtnModifier.Location = New System.Drawing.Point(439, 31)
-        Me.BtnModifier.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BtnModifier.Margin = New System.Windows.Forms.Padding(4)
         Me.BtnModifier.Name = "BtnModifier"
         Me.BtnModifier.Size = New System.Drawing.Size(108, 62)
         Me.BtnModifier.TabIndex = 32
@@ -335,7 +335,7 @@ Partial Class Form1
         '
         Me.BtnRechercher.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnRechercher.Location = New System.Drawing.Point(805, 91)
-        Me.BtnRechercher.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BtnRechercher.Margin = New System.Windows.Forms.Padding(4)
         Me.BtnRechercher.Name = "BtnRechercher"
         Me.BtnRechercher.Size = New System.Drawing.Size(156, 28)
         Me.BtnRechercher.TabIndex = 34
@@ -346,7 +346,7 @@ Partial Class Form1
         '
         Me.TxtBoxNumCnt.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtBoxNumCnt.Location = New System.Drawing.Point(708, 46)
-        Me.TxtBoxNumCnt.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TxtBoxNumCnt.Margin = New System.Windows.Forms.Padding(4)
         Me.TxtBoxNumCnt.Name = "TxtBoxNumCnt"
         Me.TxtBoxNumCnt.Size = New System.Drawing.Size(253, 29)
         Me.TxtBoxNumCnt.TabIndex = 22
@@ -381,15 +381,15 @@ Partial Class Form1
         Me.GBoxRecherche.Controls.Add(Me.BtnRechercher)
         Me.GBoxRecherche.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GBoxRecherche.Location = New System.Drawing.Point(3, -33)
-        Me.GBoxRecherche.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GBoxRecherche.Margin = New System.Windows.Forms.Padding(4)
         Me.GBoxRecherche.Name = "GBoxRecherche"
-        Me.GBoxRecherche.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GBoxRecherche.Padding = New System.Windows.Forms.Padding(4)
         Me.GBoxRecherche.Size = New System.Drawing.Size(983, 127)
         Me.GBoxRecherche.TabIndex = 51
         Me.GBoxRecherche.TabStop = False
         Me.GBoxRecherche.Text = "Recherche du contrat"
         '
-        'Form1
+        'Modifier_Contrat
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -398,8 +398,8 @@ Partial Class Form1
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GBoxRecherche)
         Me.Controls.Add(Me.BtnMQuitter)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.Name = "Form1"
+        Me.Margin = New System.Windows.Forms.Padding(4)
+        Me.Name = "Modifier_Contrat"
         Me.Text = "Modifer Contrat"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

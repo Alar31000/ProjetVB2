@@ -1,4 +1,4 @@
-﻿Public Class Payment
+﻿Public Class Paiement
     Private Sub CheckedListBoxModePaiement_SelectedIndexChanged(sender As Object, e As EventArgs) 
 
     End Sub
@@ -155,6 +155,10 @@
     End Sub
 
     Private Sub LabelNumeroCarte_Click(sender As Object, e As EventArgs) Handles LabelNumeroCarte.Click
+
+    End Sub
+
+    Private Sub Paiement_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 End Class
