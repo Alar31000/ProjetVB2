@@ -152,7 +152,7 @@ Partial Class Payment
         Me.GroupBoxFacture.Size = New System.Drawing.Size(1081, 586)
         Me.GroupBoxFacture.TabIndex = 12
         Me.GroupBoxFacture.TabStop = False
-        Me.GroupBoxFacture.Text = "Payment de la Facture"
+        Me.GroupBoxFacture.Text = "Paiement de la Facture"
         '
         'LabelNumeroCompte
         '
@@ -191,7 +191,7 @@ Partial Class Payment
         '
         Me.LabelFacture.AutoSize = True
         Me.LabelFacture.ForeColor = System.Drawing.Color.Red
-        Me.LabelFacture.Location = New System.Drawing.Point(150, 94)
+        Me.LabelFacture.Location = New System.Drawing.Point(143, 91)
         Me.LabelFacture.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LabelFacture.Name = "LabelFacture"
         Me.LabelFacture.Size = New System.Drawing.Size(759, 37)
@@ -221,11 +221,11 @@ Partial Class Payment
         '
         'GroupBoxPrélèvement
         '
-        Me.GroupBoxPrélèvement.Location = New System.Drawing.Point(568, 170)
+        Me.GroupBoxPrélèvement.Location = New System.Drawing.Point(575, 172)
         Me.GroupBoxPrélèvement.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBoxPrélèvement.Name = "GroupBoxPrélèvement"
         Me.GroupBoxPrélèvement.Padding = New System.Windows.Forms.Padding(4)
-        Me.GroupBoxPrélèvement.Size = New System.Drawing.Size(481, 144)
+        Me.GroupBoxPrélèvement.Size = New System.Drawing.Size(475, 144)
         Me.GroupBoxPrélèvement.TabIndex = 18
         Me.GroupBoxPrélèvement.TabStop = False
         Me.GroupBoxPrélèvement.Visible = False
@@ -322,7 +322,7 @@ Partial Class Payment
         Me.GroupBoxPayement.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBoxPayement.Name = "GroupBoxPayement"
         Me.GroupBoxPayement.Padding = New System.Windows.Forms.Padding(4)
-        Me.GroupBoxPayement.Size = New System.Drawing.Size(315, 144)
+        Me.GroupBoxPayement.Size = New System.Drawing.Size(331, 144)
         Me.GroupBoxPayement.TabIndex = 24
         Me.GroupBoxPayement.TabStop = False
         Me.GroupBoxPayement.Visible = False
@@ -394,7 +394,7 @@ Partial Class Payment
         Me.Controls.Add(Me.GroupBoxFacture)
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Payment"
-        Me.Text = "Payment"
+        Me.Text = "Paiement"
         Me.GroupBoxFacture.ResumeLayout(False)
         Me.GroupBoxFacture.PerformLayout()
         Me.GroupBoxChèque.ResumeLayout(False)

@@ -109,7 +109,7 @@ Partial Class Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(120.0!, 120.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
-        Me.ClientSize = New System.Drawing.Size(745, 385)
+        Me.ClientSize = New System.Drawing.Size(745, 321)
         Me.Controls.Add(Me.ButtonOk)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.ButtonAnnuler)
