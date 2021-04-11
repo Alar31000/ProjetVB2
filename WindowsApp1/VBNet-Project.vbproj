@@ -110,6 +110,12 @@
     <Compile Include="About.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ModifierMotdePasse.Designer.vb">
+      <DependentUpon>ModifierMotdePasse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModifierMotdePasse.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmConsulterContrat.Designer.vb">
       <DependentUpon>FrmConsulterContrat.vb</DependentUpon>
     </Compile>
@@ -222,6 +228,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modifier le contrat.resx">
       <DependentUpon>Modifier le contrat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifierMotdePasse.resx">
+      <DependentUpon>ModifierMotdePasse.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Renouveler Contrat.resx">
       <DependentUpon>Renouveler Contrat.vb</DependentUpon>
