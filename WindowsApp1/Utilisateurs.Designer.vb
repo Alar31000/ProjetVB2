@@ -22,79 +22,43 @@ Partial Class Utilisateurs
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.UserList = New System.Windows.Forms.ListBox()
-        Me.ButtonAjouter = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.ButtonDel = New System.Windows.Forms.Button()
+        Me.ListUtilisateurs = New System.Windows.Forms.ListBox()
         Me.ButtonQuitter = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'UserList
+        'ListUtilisateurs
         '
-        Me.UserList.BackColor = System.Drawing.Color.White
-        Me.UserList.FormattingEnabled = True
-        Me.UserList.ItemHeight = 16
-        Me.UserList.Location = New System.Drawing.Point(35, 26)
-        Me.UserList.Margin = New System.Windows.Forms.Padding(4)
-        Me.UserList.Name = "UserList"
-        Me.UserList.Size = New System.Drawing.Size(548, 372)
-        Me.UserList.TabIndex = 1
-        '
-        'ButtonAjouter
-        '
-        Me.ButtonAjouter.Location = New System.Drawing.Point(626, 26)
-        Me.ButtonAjouter.Name = "ButtonAjouter"
-        Me.ButtonAjouter.Size = New System.Drawing.Size(83, 25)
-        Me.ButtonAjouter.TabIndex = 2
-        Me.ButtonAjouter.Text = "Ajouter"
-        Me.ButtonAjouter.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(626, 74)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(83, 25)
-        Me.Button2.TabIndex = 3
-        Me.Button2.Text = "Modifier"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'ButtonDel
-        '
-        Me.ButtonDel.Location = New System.Drawing.Point(626, 122)
-        Me.ButtonDel.Name = "ButtonDel"
-        Me.ButtonDel.Size = New System.Drawing.Size(83, 25)
-        Me.ButtonDel.TabIndex = 4
-        Me.ButtonDel.Text = "Supprimer"
-        Me.ButtonDel.UseVisualStyleBackColor = True
+        Me.ListUtilisateurs.BackColor = System.Drawing.Color.White
+        Me.ListUtilisateurs.FormattingEnabled = True
+        Me.ListUtilisateurs.Location = New System.Drawing.Point(26, 21)
+        Me.ListUtilisateurs.Name = "ListUtilisateurs"
+        Me.ListUtilisateurs.Size = New System.Drawing.Size(463, 160)
+        Me.ListUtilisateurs.TabIndex = 1
         '
         'ButtonQuitter
         '
-        Me.ButtonQuitter.Location = New System.Drawing.Point(626, 169)
+        Me.ButtonQuitter.Location = New System.Drawing.Point(221, 197)
+        Me.ButtonQuitter.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ButtonQuitter.Name = "ButtonQuitter"
-        Me.ButtonQuitter.Size = New System.Drawing.Size(83, 25)
+        Me.ButtonQuitter.Size = New System.Drawing.Size(62, 20)
         Me.ButtonQuitter.TabIndex = 5
         Me.ButtonQuitter.Text = "Quitter"
         Me.ButtonQuitter.UseVisualStyleBackColor = True
         '
         'Utilisateurs
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 427)
+        Me.ClientSize = New System.Drawing.Size(501, 230)
         Me.Controls.Add(Me.ButtonQuitter)
-        Me.Controls.Add(Me.ButtonDel)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.ButtonAjouter)
-        Me.Controls.Add(Me.UserList)
+        Me.Controls.Add(Me.ListUtilisateurs)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Utilisateurs"
         Me.Text = "Utilisateurs"
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents UserList As ListBox
-    Friend WithEvents ButtonAjouter As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents ButtonDel As Button
+    Friend WithEvents ListUtilisateurs As ListBox
     Friend WithEvents ButtonQuitter As Button
 End Class
