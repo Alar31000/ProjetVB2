@@ -158,6 +158,12 @@
     <Compile Include="Résilier Contrat.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Utilisateurs.Designer.vb">
+      <DependentUpon>Utilisateurs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utilisateurs.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Whoarewe.Designer.vb">
       <DependentUpon>Whoarewe.vb</DependentUpon>
     </Compile>
@@ -237,6 +243,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Résilier Contrat.resx">
       <DependentUpon>Résilier Contrat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilisateurs.resx">
+      <DependentUpon>Utilisateurs.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Whoarewe.resx">
       <DependentUpon>Whoarewe.vb</DependentUpon>

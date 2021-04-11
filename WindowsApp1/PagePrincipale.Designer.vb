@@ -45,8 +45,6 @@ Partial Class PagePrincipale
         Me.FournisseursToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RapportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CustomizeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.OptionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContentsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.IndexToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -184,13 +182,13 @@ Partial Class PagePrincipale
         'FactureToolStripMenuItem
         '
         Me.FactureToolStripMenuItem.Name = "FactureToolStripMenuItem"
-        Me.FactureToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.FactureToolStripMenuItem.Size = New System.Drawing.Size(171, 26)
         Me.FactureToolStripMenuItem.Text = "Facturations"
         '
         'PaiementToolStripMenuItem
         '
         Me.PaiementToolStripMenuItem.Name = "PaiementToolStripMenuItem"
-        Me.PaiementToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.PaiementToolStripMenuItem.Size = New System.Drawing.Size(171, 26)
         Me.PaiementToolStripMenuItem.Text = "Paiement"
         '
         'FournisseursToolStripMenuItem
@@ -207,22 +205,9 @@ Partial Class PagePrincipale
         '
         'ToolsToolStripMenuItem
         '
-        Me.ToolsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CustomizeToolStripMenuItem, Me.OptionsToolStripMenuItem})
         Me.ToolsToolStripMenuItem.Name = "ToolsToolStripMenuItem"
         Me.ToolsToolStripMenuItem.Size = New System.Drawing.Size(96, 24)
         Me.ToolsToolStripMenuItem.Text = "&Utilisateurs"
-        '
-        'CustomizeToolStripMenuItem
-        '
-        Me.CustomizeToolStripMenuItem.Name = "CustomizeToolStripMenuItem"
-        Me.CustomizeToolStripMenuItem.Size = New System.Drawing.Size(239, 26)
-        Me.CustomizeToolStripMenuItem.Text = "&Ajout Et Suppresion"
-        '
-        'OptionsToolStripMenuItem
-        '
-        Me.OptionsToolStripMenuItem.Name = "OptionsToolStripMenuItem"
-        Me.OptionsToolStripMenuItem.Size = New System.Drawing.Size(239, 26)
-        Me.OptionsToolStripMenuItem.Text = "&Liste des Utiltilisateurs"
         '
         'HelpToolStripMenuItem
         '
@@ -293,8 +278,6 @@ Partial Class PagePrincipale
     Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents EditToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolsToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents CustomizeToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents OptionsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents HelpToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ContentsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents IndexToolStripMenuItem As ToolStripMenuItem
