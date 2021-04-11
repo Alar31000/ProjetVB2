@@ -1,5 +1,5 @@
 ﻿Public Class Paiement
-    Private Sub CheckedListBoxModePaiement_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub CheckedListBoxModePaiement_SelectedIndexChanged(sender As Object, e As EventArgs)
 
     End Sub
 
