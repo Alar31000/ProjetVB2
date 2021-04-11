@@ -47,13 +47,13 @@ Partial Class FrmConsulterContrat
         Me.DataGridView1.AllowUserToAddRows = False
         Me.DataGridView1.AllowUserToDeleteRows = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(391, 40)
+        Me.DataGridView1.Location = New System.Drawing.Point(410, 40)
         Me.DataGridView1.MultiSelect = False
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.ShowEditingIcon = False
-        Me.DataGridView1.Size = New System.Drawing.Size(425, 406)
+        Me.DataGridView1.Size = New System.Drawing.Size(406, 406)
         Me.DataGridView1.TabIndex = 40
         '
         'BtnQuitter
@@ -77,7 +77,7 @@ Partial Class FrmConsulterContrat
         Me.DataGridView2.ReadOnly = True
         Me.DataGridView2.RowHeadersWidth = 51
         Me.DataGridView2.ShowEditingIcon = False
-        Me.DataGridView2.Size = New System.Drawing.Size(373, 406)
+        Me.DataGridView2.Size = New System.Drawing.Size(392, 406)
         Me.DataGridView2.TabIndex = 42
         '
         'FrmConsulterContrat
