@@ -1,3 +1,5 @@
 ﻿Public Class Utilisateurs
-
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Modifier_Contrat.Show()
+    End Sub
 End Class
