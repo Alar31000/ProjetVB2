@@ -123,7 +123,7 @@ Public Class PagePrincipale
         MsgBox("Les documents sont envoyés a l'imprimante avec succés")
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles BtnDéconnexion.Click
         Me.Close()
         Login.Show()
     End Sub

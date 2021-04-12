@@ -29,10 +29,10 @@ Partial Class FrmFacture
         Me.LblCode_postal = New System.Windows.Forms.Label()
         Me.LabelAdresseL = New System.Windows.Forms.Label()
         Me.LabelCode_postalA = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.TxtBoxNom = New System.Windows.Forms.TextBox()
+        Me.TxtBoxPrénom = New System.Windows.Forms.TextBox()
+        Me.TxtBoxAdresseAbonnet = New System.Windows.Forms.TextBox()
+        Me.TxtBoxCodePostalAbonnet = New System.Windows.Forms.TextBox()
         Me.LabelRProduit = New System.Windows.Forms.Label()
         Me.LabelQuantité = New System.Windows.Forms.Label()
         Me.LabelPrix = New System.Windows.Forms.Label()
@@ -58,8 +58,8 @@ Partial Class FrmFacture
         Me.DateTimePickerFacture = New System.Windows.Forms.DateTimePicker()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.TxtBoxCodePostal = New System.Windows.Forms.TextBox()
+        Me.TxtBoxAdresse = New System.Windows.Forms.TextBox()
         Me.LabelAdresse = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBoxFacture.SuspendLayout()
@@ -141,33 +141,33 @@ Partial Class FrmFacture
         Me.LabelCode_postalA.TabIndex = 26
         Me.LabelCode_postalA.Text = "Code Postale"
         '
-        'TextBox1
+        'TxtBoxNom
         '
-        Me.TextBox1.Location = New System.Drawing.Point(98, 24)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(154, 25)
-        Me.TextBox1.TabIndex = 27
+        Me.TxtBoxNom.Location = New System.Drawing.Point(98, 24)
+        Me.TxtBoxNom.Name = "TxtBoxNom"
+        Me.TxtBoxNom.Size = New System.Drawing.Size(154, 25)
+        Me.TxtBoxNom.TabIndex = 27
         '
-        'TextBox2
+        'TxtBoxPrénom
         '
-        Me.TextBox2.Location = New System.Drawing.Point(98, 64)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(154, 25)
-        Me.TextBox2.TabIndex = 28
+        Me.TxtBoxPrénom.Location = New System.Drawing.Point(98, 64)
+        Me.TxtBoxPrénom.Name = "TxtBoxPrénom"
+        Me.TxtBoxPrénom.Size = New System.Drawing.Size(154, 25)
+        Me.TxtBoxPrénom.TabIndex = 28
         '
-        'TextBox4
+        'TxtBoxAdresseAbonnet
         '
-        Me.TextBox4.Location = New System.Drawing.Point(111, 17)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(166, 25)
-        Me.TextBox4.TabIndex = 29
+        Me.TxtBoxAdresseAbonnet.Location = New System.Drawing.Point(111, 17)
+        Me.TxtBoxAdresseAbonnet.Name = "TxtBoxAdresseAbonnet"
+        Me.TxtBoxAdresseAbonnet.Size = New System.Drawing.Size(166, 25)
+        Me.TxtBoxAdresseAbonnet.TabIndex = 29
         '
-        'TextBox5
+        'TxtBoxCodePostalAbonnet
         '
-        Me.TextBox5.Location = New System.Drawing.Point(111, 48)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(166, 25)
-        Me.TextBox5.TabIndex = 30
+        Me.TxtBoxCodePostalAbonnet.Location = New System.Drawing.Point(111, 48)
+        Me.TxtBoxCodePostalAbonnet.Name = "TxtBoxCodePostalAbonnet"
+        Me.TxtBoxCodePostalAbonnet.Size = New System.Drawing.Size(166, 25)
+        Me.TxtBoxCodePostalAbonnet.TabIndex = 30
         '
         'LabelRProduit
         '
@@ -441,14 +441,14 @@ Partial Class FrmFacture
         Me.DateTimePickerFacture.Name = "DateTimePickerFacture"
         Me.DateTimePickerFacture.Size = New System.Drawing.Size(154, 25)
         Me.DateTimePickerFacture.TabIndex = 15
-        Me.DateTimePickerFacture.Value = New Date(2021, 4, 3, 0, 0, 0, 0)
+        Me.DateTimePickerFacture.Value = New Date(2021, 4, 12, 0, 0, 0, 0)
         '
         'GroupBox3
         '
         Me.GroupBox3.Controls.Add(Me.LabelAdresseL)
-        Me.GroupBox3.Controls.Add(Me.TextBox4)
+        Me.GroupBox3.Controls.Add(Me.TxtBoxAdresseAbonnet)
         Me.GroupBox3.Controls.Add(Me.LabelCode_postalA)
-        Me.GroupBox3.Controls.Add(Me.TextBox5)
+        Me.GroupBox3.Controls.Add(Me.TxtBoxCodePostalAbonnet)
         Me.GroupBox3.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox3.ForeColor = System.Drawing.Color.Black
         Me.GroupBox3.Location = New System.Drawing.Point(435, 59)
@@ -460,13 +460,13 @@ Partial Class FrmFacture
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.TextBox6)
-        Me.GroupBox2.Controls.Add(Me.TextBox3)
+        Me.GroupBox2.Controls.Add(Me.TxtBoxCodePostal)
+        Me.GroupBox2.Controls.Add(Me.TxtBoxAdresse)
         Me.GroupBox2.Controls.Add(Me.LabelAdresse)
         Me.GroupBox2.Controls.Add(Me.Label1)
-        Me.GroupBox2.Controls.Add(Me.TextBox1)
+        Me.GroupBox2.Controls.Add(Me.TxtBoxNom)
         Me.GroupBox2.Controls.Add(Me.LabelPrénom)
-        Me.GroupBox2.Controls.Add(Me.TextBox2)
+        Me.GroupBox2.Controls.Add(Me.TxtBoxPrénom)
         Me.GroupBox2.Controls.Add(Me.LblCode_postal)
         Me.GroupBox2.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.ForeColor = System.Drawing.Color.Black
@@ -477,19 +477,19 @@ Partial Class FrmFacture
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Adresse de Facturation"
         '
-        'TextBox6
+        'TxtBoxCodePostal
         '
-        Me.TextBox6.Location = New System.Drawing.Point(98, 138)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(154, 25)
-        Me.TextBox6.TabIndex = 31
+        Me.TxtBoxCodePostal.Location = New System.Drawing.Point(98, 138)
+        Me.TxtBoxCodePostal.Name = "TxtBoxCodePostal"
+        Me.TxtBoxCodePostal.Size = New System.Drawing.Size(154, 25)
+        Me.TxtBoxCodePostal.TabIndex = 31
         '
-        'TextBox3
+        'TxtBoxAdresse
         '
-        Me.TextBox3.Location = New System.Drawing.Point(98, 100)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(154, 25)
-        Me.TextBox3.TabIndex = 30
+        Me.TxtBoxAdresse.Location = New System.Drawing.Point(98, 100)
+        Me.TxtBoxAdresse.Name = "TxtBoxAdresse"
+        Me.TxtBoxAdresse.Size = New System.Drawing.Size(154, 25)
+        Me.TxtBoxAdresse.TabIndex = 30
         '
         'LabelAdresse
         '
@@ -537,10 +537,10 @@ Partial Class FrmFacture
     Friend WithEvents LblCode_postal As Label
     Friend WithEvents LabelAdresseL As Label
     Friend WithEvents LabelCode_postalA As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents TxtBoxNom As TextBox
+    Friend WithEvents TxtBoxPrénom As TextBox
+    Friend WithEvents TxtBoxAdresseAbonnet As TextBox
+    Friend WithEvents TxtBoxCodePostalAbonnet As TextBox
     Friend WithEvents LabelRProduit As Label
     Friend WithEvents LabelQuantité As Label
     Friend WithEvents LabelPrix As Label
@@ -566,8 +566,8 @@ Partial Class FrmFacture
     Friend WithEvents GroupBox3 As GroupBox
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents DateTimePickerFacture As DateTimePicker
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents TxtBoxCodePostal As TextBox
+    Friend WithEvents TxtBoxAdresse As TextBox
     Friend WithEvents LabelAdresse As Label
     Friend WithEvents Label1 As Label
 End Class

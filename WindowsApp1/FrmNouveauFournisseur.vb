@@ -24,7 +24,7 @@
         TxtBoxCodePostal.Text = ""
 
     End Sub
-    Private Sub BtnQuitter_Click(sender As Object, e As EventArgs) Handles Quitter.Click
+    Private Sub BtnQuitter_Click(sender As Object, e As EventArgs) Handles BtnQuitter.Click
         Me.Close()
     End Sub
     'Ce Boutton est pour fermer le form de nouveau fournisseur 

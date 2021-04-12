@@ -63,7 +63,7 @@ Partial Class PagePrincipale
         Me.IndexToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.toolStripSeparator5 = New System.Windows.Forms.ToolStripSeparator()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.BtnDéconnexion = New System.Windows.Forms.Button()
         Me.StatusStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
@@ -76,7 +76,7 @@ Partial Class PagePrincipale
         Me.StatusStrip1.Location = New System.Drawing.Point(0, 562)
         Me.StatusStrip1.Name = "StatusStrip1"
         Me.StatusStrip1.Padding = New System.Windows.Forms.Padding(1, 0, 11, 0)
-        Me.StatusStrip1.Size = New System.Drawing.Size(1584, 22)
+        Me.StatusStrip1.Size = New System.Drawing.Size(1370, 22)
         Me.StatusStrip1.TabIndex = 0
         Me.StatusStrip1.Text = "StatusStrip1"
         '
@@ -105,7 +105,7 @@ Partial Class PagePrincipale
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(1584, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1370, 24)
         Me.MenuStrip1.TabIndex = 2
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -333,22 +333,22 @@ Partial Class PagePrincipale
         Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(181, 22)
         Me.AboutToolStripMenuItem.Text = "À &Propos d'Abonnet"
         '
-        'Button1
+        'BtnDéconnexion
         '
-        Me.Button1.Location = New System.Drawing.Point(12, 27)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(178, 49)
-        Me.Button1.TabIndex = 3
-        Me.Button1.Text = "Déconnexion"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.BtnDéconnexion.Location = New System.Drawing.Point(12, 27)
+        Me.BtnDéconnexion.Name = "BtnDéconnexion"
+        Me.BtnDéconnexion.Size = New System.Drawing.Size(178, 49)
+        Me.BtnDéconnexion.TabIndex = 3
+        Me.BtnDéconnexion.Text = "Déconnexion"
+        Me.BtnDéconnexion.UseVisualStyleBackColor = True
         '
         'PagePrincipale
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.CausesValidation = False
-        Me.ClientSize = New System.Drawing.Size(1584, 584)
-        Me.Controls.Add(Me.Button1)
+        Me.ClientSize = New System.Drawing.Size(1370, 584)
+        Me.Controls.Add(Me.BtnDéconnexion)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.MenuStrip1)
@@ -407,5 +407,5 @@ Partial Class PagePrincipale
     Friend WithEvents ToolStripSeparator6 As ToolStripSeparator
     Friend WithEvents PaimentParCarteToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PaiementParRetraitDirectToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents Button1 As Button
+    Friend WithEvents BtnDéconnexion As Button
 End Class

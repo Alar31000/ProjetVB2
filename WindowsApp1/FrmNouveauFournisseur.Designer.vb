@@ -23,7 +23,7 @@ Partial Class FrmNouveauFournisseur
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Quitter = New System.Windows.Forms.Button()
+        Me.BtnQuitter = New System.Windows.Forms.Button()
         Me.BtnNouveau = New System.Windows.Forms.Button()
         Me.GroupBoxBanque = New System.Windows.Forms.GroupBox()
         Me.TxtBoxCompte = New System.Windows.Forms.TextBox()
@@ -87,15 +87,15 @@ Partial Class FrmNouveauFournisseur
         Me.Label1.Text = "Nouveau fournisseur"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'Quitter
+        'BtnQuitter
         '
-        Me.Quitter.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!)
-        Me.Quitter.Location = New System.Drawing.Point(683, 410)
-        Me.Quitter.Name = "Quitter"
-        Me.Quitter.Size = New System.Drawing.Size(135, 37)
-        Me.Quitter.TabIndex = 47
-        Me.Quitter.Text = "Quitter"
-        Me.Quitter.UseVisualStyleBackColor = True
+        Me.BtnQuitter.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!)
+        Me.BtnQuitter.Location = New System.Drawing.Point(683, 410)
+        Me.BtnQuitter.Name = "BtnQuitter"
+        Me.BtnQuitter.Size = New System.Drawing.Size(135, 37)
+        Me.BtnQuitter.TabIndex = 47
+        Me.BtnQuitter.Text = "Quitter"
+        Me.BtnQuitter.UseVisualStyleBackColor = True
         '
         'BtnNouveau
         '
@@ -533,7 +533,7 @@ Partial Class FrmNouveauFournisseur
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(847, 494)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Quitter)
+        Me.Controls.Add(Me.BtnQuitter)
         Me.Controls.Add(Me.BtnNouveau)
         Me.Controls.Add(Me.GroupBoxBanque)
         Me.Controls.Add(Me.BtnAnnuler)
@@ -552,7 +552,7 @@ Partial Class FrmNouveauFournisseur
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents Quitter As Button
+    Friend WithEvents BtnQuitter As Button
     Friend WithEvents BtnNouveau As Button
     Friend WithEvents GroupBoxBanque As GroupBox
     Friend WithEvents TxtBoxCompte As TextBox

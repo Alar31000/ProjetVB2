@@ -24,8 +24,8 @@ Partial Class Modifier_Contrat
     Private Sub InitializeComponent()
         Me.BtnMQuitter = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.TxtBoxPrénom = New System.Windows.Forms.TextBox()
+        Me.TxtBoxNom = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TBoxMService = New System.Windows.Forms.TextBox()
@@ -69,8 +69,8 @@ Partial Class Modifier_Contrat
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.Controls.Add(Me.TxtBoxPrénom)
+        Me.GroupBox1.Controls.Add(Me.TxtBoxNom)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.TBoxMService)
@@ -87,7 +87,6 @@ Partial Class Modifier_Contrat
         Me.GroupBox1.Controls.Add(Me.LblMLocation)
         Me.GroupBox1.Controls.Add(Me.LblMDO)
         Me.GroupBox1.Controls.Add(Me.LblMDF)
-        Me.GroupBox1.Enabled = False
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.Color.Black
         Me.GroupBox1.Location = New System.Drawing.Point(2, 90)
@@ -97,23 +96,23 @@ Partial Class Modifier_Contrat
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Résultat de la recherche et Mise à jour"
         '
-        'TextBox2
+        'TxtBoxPrénom
         '
-        Me.TextBox2.BackColor = System.Drawing.Color.LightGray
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(550, 76)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(149, 24)
-        Me.TextBox2.TabIndex = 46
+        Me.TxtBoxPrénom.BackColor = System.Drawing.Color.LightGray
+        Me.TxtBoxPrénom.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtBoxPrénom.Location = New System.Drawing.Point(550, 76)
+        Me.TxtBoxPrénom.Name = "TxtBoxPrénom"
+        Me.TxtBoxPrénom.Size = New System.Drawing.Size(149, 24)
+        Me.TxtBoxPrénom.TabIndex = 46
         '
-        'TextBox1
+        'TxtBoxNom
         '
-        Me.TextBox1.BackColor = System.Drawing.Color.LightGray
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(160, 79)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(166, 24)
-        Me.TextBox1.TabIndex = 45
+        Me.TxtBoxNom.BackColor = System.Drawing.Color.LightGray
+        Me.TxtBoxNom.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtBoxNom.Location = New System.Drawing.Point(160, 79)
+        Me.TxtBoxNom.Name = "TxtBoxNom"
+        Me.TxtBoxNom.Size = New System.Drawing.Size(166, 24)
+        Me.TxtBoxNom.TabIndex = 45
         '
         'Label2
         '
@@ -396,8 +395,8 @@ Partial Class Modifier_Contrat
     Friend WithEvents BtnQuitter As Button
     Friend WithEvents Button1 As Button
     Friend WithEvents BtnModifier As Button
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents TxtBoxPrénom As TextBox
+    Friend WithEvents TxtBoxNom As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents BtnRechercher As Button

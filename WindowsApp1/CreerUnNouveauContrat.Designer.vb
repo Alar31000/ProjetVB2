@@ -27,27 +27,27 @@ Partial Class CreerUnNouveauContrat
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.txtBoxFraisMensuel = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.TxtBoxDateOuverture = New System.Windows.Forms.TextBox()
         Me.btnService = New System.Windows.Forms.Button()
         Me.btnLocationEquipement = New System.Windows.Forms.Button()
-        Me.TextBox16 = New System.Windows.Forms.TextBox()
-        Me.TextBox15 = New System.Windows.Forms.TextBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.TxtBoxDateCreation = New System.Windows.Forms.TextBox()
+        Me.TxtBoxNuméro = New System.Windows.Forms.TextBox()
+        Me.CmbBoxFraisRacondement = New System.Windows.Forms.ComboBox()
         Me.Label21 = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.CmbBoxType = New System.Windows.Forms.ComboBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.TxtBoxDateVigueur = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.TxtBoxFermeture = New System.Windows.Forms.TextBox()
         Me.btnImprimer = New System.Windows.Forms.Button()
-        Me.Nom = New System.Windows.Forms.TextBox()
+        Me.TxtBoxNom = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.Prenom = New System.Windows.Forms.TextBox()
+        Me.TxtBoxPrenom = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -56,14 +56,14 @@ Partial Class CreerUnNouveauContrat
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
-        Me.Addresse = New System.Windows.Forms.TextBox()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
-        Me.TextBox11 = New System.Windows.Forms.TextBox()
-        Me.TextBox12 = New System.Windows.Forms.TextBox()
-        Me.TextBox13 = New System.Windows.Forms.TextBox()
-        Me.TextBox14 = New System.Windows.Forms.TextBox()
+        Me.TxtBoxAddresse = New System.Windows.Forms.TextBox()
+        Me.TxtBoxVille = New System.Windows.Forms.TextBox()
+        Me.TxtBoxTéléphone = New System.Windows.Forms.TextBox()
+        Me.TxtBoxEmail = New System.Windows.Forms.TextBox()
+        Me.TxtBoxNEmployé = New System.Windows.Forms.TextBox()
+        Me.TxtBoxCompanie = New System.Windows.Forms.TextBox()
+        Me.TxtBoxCodePostal = New System.Windows.Forms.TextBox()
+        Me.TxtBoxFax = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.btnOK = New System.Windows.Forms.Button()
         Me.GroupBox2.SuspendLayout()
@@ -92,22 +92,22 @@ Partial Class CreerUnNouveauContrat
         '
         Me.GroupBox2.Controls.Add(Me.txtBoxFraisMensuel)
         Me.GroupBox2.Controls.Add(Me.Label1)
-        Me.GroupBox2.Controls.Add(Me.TextBox5)
+        Me.GroupBox2.Controls.Add(Me.TxtBoxDateOuverture)
         Me.GroupBox2.Controls.Add(Me.btnService)
         Me.GroupBox2.Controls.Add(Me.btnLocationEquipement)
-        Me.GroupBox2.Controls.Add(Me.TextBox16)
-        Me.GroupBox2.Controls.Add(Me.TextBox15)
-        Me.GroupBox2.Controls.Add(Me.ComboBox2)
+        Me.GroupBox2.Controls.Add(Me.TxtBoxDateCreation)
+        Me.GroupBox2.Controls.Add(Me.TxtBoxNuméro)
+        Me.GroupBox2.Controls.Add(Me.CmbBoxFraisRacondement)
         Me.GroupBox2.Controls.Add(Me.Label21)
         Me.GroupBox2.Controls.Add(Me.Label19)
         Me.GroupBox2.Controls.Add(Me.Label18)
         Me.GroupBox2.Controls.Add(Me.Label16)
         Me.GroupBox2.Controls.Add(Me.Label5)
-        Me.GroupBox2.Controls.Add(Me.ComboBox1)
+        Me.GroupBox2.Controls.Add(Me.CmbBoxType)
         Me.GroupBox2.Controls.Add(Me.Label3)
-        Me.GroupBox2.Controls.Add(Me.TextBox6)
+        Me.GroupBox2.Controls.Add(Me.TxtBoxDateVigueur)
         Me.GroupBox2.Controls.Add(Me.Label4)
-        Me.GroupBox2.Controls.Add(Me.TextBox4)
+        Me.GroupBox2.Controls.Add(Me.TxtBoxFermeture)
         Me.GroupBox2.ForeColor = System.Drawing.Color.Black
         Me.GroupBox2.Location = New System.Drawing.Point(366, 10)
         Me.GroupBox2.Name = "GroupBox2"
@@ -132,12 +132,12 @@ Partial Class CreerUnNouveauContrat
         Me.Label1.TabIndex = 32
         Me.Label1.Text = "Date d'ouverture"
         '
-        'TextBox5
+        'TxtBoxDateOuverture
         '
-        Me.TextBox5.Location = New System.Drawing.Point(121, 111)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(97, 20)
-        Me.TextBox5.TabIndex = 31
+        Me.TxtBoxDateOuverture.Location = New System.Drawing.Point(121, 111)
+        Me.TxtBoxDateOuverture.Name = "TxtBoxDateOuverture"
+        Me.TxtBoxDateOuverture.Size = New System.Drawing.Size(97, 20)
+        Me.TxtBoxDateOuverture.TabIndex = 31
         '
         'btnService
         '
@@ -161,30 +161,30 @@ Partial Class CreerUnNouveauContrat
         Me.btnLocationEquipement.Text = "Location des équipements"
         Me.btnLocationEquipement.UseVisualStyleBackColor = True
         '
-        'TextBox16
+        'TxtBoxDateCreation
         '
-        Me.TextBox16.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.TextBox16.Location = New System.Drawing.Point(121, 80)
-        Me.TextBox16.Name = "TextBox16"
-        Me.TextBox16.Size = New System.Drawing.Size(97, 20)
-        Me.TextBox16.TabIndex = 24
+        Me.TxtBoxDateCreation.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.TxtBoxDateCreation.Location = New System.Drawing.Point(121, 80)
+        Me.TxtBoxDateCreation.Name = "TxtBoxDateCreation"
+        Me.TxtBoxDateCreation.Size = New System.Drawing.Size(97, 20)
+        Me.TxtBoxDateCreation.TabIndex = 24
         '
-        'TextBox15
+        'TxtBoxNuméro
         '
-        Me.TextBox15.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.TextBox15.Location = New System.Drawing.Point(247, 19)
-        Me.TextBox15.Name = "TextBox15"
-        Me.TextBox15.Size = New System.Drawing.Size(117, 20)
-        Me.TextBox15.TabIndex = 23
+        Me.TxtBoxNuméro.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.TxtBoxNuméro.Location = New System.Drawing.Point(247, 19)
+        Me.TxtBoxNuméro.Name = "TxtBoxNuméro"
+        Me.TxtBoxNuméro.Size = New System.Drawing.Size(117, 20)
+        Me.TxtBoxNuméro.TabIndex = 23
         '
-        'ComboBox2
+        'CmbBoxFraisRacondement
         '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"Installation GRATUITE une semain apres", "Installation a 25$ le jour-j"})
-        Me.ComboBox2.Location = New System.Drawing.Point(121, 55)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(243, 21)
-        Me.ComboBox2.TabIndex = 22
+        Me.CmbBoxFraisRacondement.FormattingEnabled = True
+        Me.CmbBoxFraisRacondement.Items.AddRange(New Object() {"Installation GRATUITE une semain apres", "Installation a 25$ le jour-j"})
+        Me.CmbBoxFraisRacondement.Location = New System.Drawing.Point(121, 55)
+        Me.CmbBoxFraisRacondement.Name = "CmbBoxFraisRacondement"
+        Me.CmbBoxFraisRacondement.Size = New System.Drawing.Size(243, 21)
+        Me.CmbBoxFraisRacondement.TabIndex = 22
         '
         'Label21
         '
@@ -231,14 +231,14 @@ Partial Class CreerUnNouveauContrat
         Me.Label5.TabIndex = 13
         Me.Label5.Text = "Numéro"
         '
-        'ComboBox1
+        'CmbBoxType
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Actif", "Inactif"})
-        Me.ComboBox1.Location = New System.Drawing.Point(51, 23)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(97, 21)
-        Me.ComboBox1.TabIndex = 12
+        Me.CmbBoxType.FormattingEnabled = True
+        Me.CmbBoxType.Items.AddRange(New Object() {"Actif", "Inactif"})
+        Me.CmbBoxType.Location = New System.Drawing.Point(51, 23)
+        Me.CmbBoxType.Name = "CmbBoxType"
+        Me.CmbBoxType.Size = New System.Drawing.Size(97, 21)
+        Me.CmbBoxType.TabIndex = 12
         '
         'Label3
         '
@@ -249,12 +249,12 @@ Partial Class CreerUnNouveauContrat
         Me.Label3.TabIndex = 11
         Me.Label3.Text = "Type"
         '
-        'TextBox6
+        'TxtBoxDateVigueur
         '
-        Me.TextBox6.Location = New System.Drawing.Point(121, 141)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(97, 20)
-        Me.TextBox6.TabIndex = 7
+        Me.TxtBoxDateVigueur.Location = New System.Drawing.Point(121, 141)
+        Me.TxtBoxDateVigueur.Name = "TxtBoxDateVigueur"
+        Me.TxtBoxDateVigueur.Size = New System.Drawing.Size(97, 20)
+        Me.TxtBoxDateVigueur.TabIndex = 7
         '
         'Label4
         '
@@ -264,12 +264,12 @@ Partial Class CreerUnNouveauContrat
         Me.Label4.TabIndex = 10
         Me.Label4.Text = "Date de Fermeture"
         '
-        'TextBox4
+        'TxtBoxFermeture
         '
-        Me.TextBox4.Location = New System.Drawing.Point(121, 172)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(97, 20)
-        Me.TextBox4.TabIndex = 5
+        Me.TxtBoxFermeture.Location = New System.Drawing.Point(121, 172)
+        Me.TxtBoxFermeture.Name = "TxtBoxFermeture"
+        Me.TxtBoxFermeture.Size = New System.Drawing.Size(97, 20)
+        Me.TxtBoxFermeture.TabIndex = 5
         '
         'btnImprimer
         '
@@ -280,12 +280,12 @@ Partial Class CreerUnNouveauContrat
         Me.btnImprimer.Text = "Imprimer"
         Me.btnImprimer.UseVisualStyleBackColor = True
         '
-        'Nom
+        'TxtBoxNom
         '
-        Me.Nom.Location = New System.Drawing.Point(65, 19)
-        Me.Nom.Name = "Nom"
-        Me.Nom.Size = New System.Drawing.Size(247, 20)
-        Me.Nom.TabIndex = 4
+        Me.TxtBoxNom.Location = New System.Drawing.Point(65, 19)
+        Me.TxtBoxNom.Name = "TxtBoxNom"
+        Me.TxtBoxNom.Size = New System.Drawing.Size(247, 20)
+        Me.TxtBoxNom.TabIndex = 4
         '
         'Label6
         '
@@ -305,12 +305,12 @@ Partial Class CreerUnNouveauContrat
         Me.Label7.TabIndex = 6
         Me.Label7.Text = "Prénom"
         '
-        'Prenom
+        'TxtBoxPrenom
         '
-        Me.Prenom.Location = New System.Drawing.Point(65, 52)
-        Me.Prenom.Name = "Prenom"
-        Me.Prenom.Size = New System.Drawing.Size(247, 20)
-        Me.Prenom.TabIndex = 7
+        Me.TxtBoxPrenom.Location = New System.Drawing.Point(65, 52)
+        Me.TxtBoxPrenom.Name = "TxtBoxPrenom"
+        Me.TxtBoxPrenom.Size = New System.Drawing.Size(247, 20)
+        Me.TxtBoxPrenom.TabIndex = 7
         '
         'Label8
         '
@@ -362,9 +362,9 @@ Partial Class CreerUnNouveauContrat
         Me.Label13.AutoSize = True
         Me.Label13.Location = New System.Drawing.Point(8, 258)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(51, 13)
+        Me.Label13.Size = New System.Drawing.Size(60, 13)
         Me.Label13.TabIndex = 13
-        Me.Label13.Text = "Company"
+        Me.Label13.Text = "Compagnie"
         '
         'Label14
         '
@@ -384,72 +384,72 @@ Partial Class CreerUnNouveauContrat
         Me.Label15.TabIndex = 15
         Me.Label15.Text = "Code Postal"
         '
-        'Addresse
+        'TxtBoxAddresse
         '
-        Me.Addresse.Location = New System.Drawing.Point(65, 82)
-        Me.Addresse.Name = "Addresse"
-        Me.Addresse.Size = New System.Drawing.Size(247, 20)
-        Me.Addresse.TabIndex = 16
+        Me.TxtBoxAddresse.Location = New System.Drawing.Point(65, 82)
+        Me.TxtBoxAddresse.Name = "TxtBoxAddresse"
+        Me.TxtBoxAddresse.Size = New System.Drawing.Size(247, 20)
+        Me.TxtBoxAddresse.TabIndex = 16
         '
-        'TextBox8
+        'TxtBoxVille
         '
-        Me.TextBox8.Location = New System.Drawing.Point(65, 115)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(99, 20)
-        Me.TextBox8.TabIndex = 17
+        Me.TxtBoxVille.Location = New System.Drawing.Point(65, 115)
+        Me.TxtBoxVille.Name = "TxtBoxVille"
+        Me.TxtBoxVille.Size = New System.Drawing.Size(99, 20)
+        Me.TxtBoxVille.TabIndex = 17
         '
-        'TextBox9
+        'TxtBoxTéléphone
         '
-        Me.TextBox9.Location = New System.Drawing.Point(68, 153)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(86, 20)
-        Me.TextBox9.TabIndex = 18
+        Me.TxtBoxTéléphone.Location = New System.Drawing.Point(68, 153)
+        Me.TxtBoxTéléphone.Name = "TxtBoxTéléphone"
+        Me.TxtBoxTéléphone.Size = New System.Drawing.Size(86, 20)
+        Me.TxtBoxTéléphone.TabIndex = 18
         '
-        'TextBox10
+        'TxtBoxEmail
         '
-        Me.TextBox10.Location = New System.Drawing.Point(68, 191)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(245, 20)
-        Me.TextBox10.TabIndex = 19
+        Me.TxtBoxEmail.Location = New System.Drawing.Point(68, 191)
+        Me.TxtBoxEmail.Name = "TxtBoxEmail"
+        Me.TxtBoxEmail.Size = New System.Drawing.Size(245, 20)
+        Me.TxtBoxEmail.TabIndex = 19
         '
-        'TextBox11
+        'TxtBoxNEmployé
         '
-        Me.TextBox11.Location = New System.Drawing.Point(68, 224)
-        Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.Size = New System.Drawing.Size(86, 20)
-        Me.TextBox11.TabIndex = 20
+        Me.TxtBoxNEmployé.Location = New System.Drawing.Point(68, 224)
+        Me.TxtBoxNEmployé.Name = "TxtBoxNEmployé"
+        Me.TxtBoxNEmployé.Size = New System.Drawing.Size(86, 20)
+        Me.TxtBoxNEmployé.TabIndex = 20
         '
-        'TextBox12
+        'TxtBoxCompanie
         '
-        Me.TextBox12.Location = New System.Drawing.Point(68, 258)
-        Me.TextBox12.Name = "TextBox12"
-        Me.TextBox12.Size = New System.Drawing.Size(245, 20)
-        Me.TextBox12.TabIndex = 21
+        Me.TxtBoxCompanie.Location = New System.Drawing.Point(68, 258)
+        Me.TxtBoxCompanie.Name = "TxtBoxCompanie"
+        Me.TxtBoxCompanie.Size = New System.Drawing.Size(245, 20)
+        Me.TxtBoxCompanie.TabIndex = 21
         '
-        'TextBox13
+        'TxtBoxCodePostal
         '
-        Me.TextBox13.Location = New System.Drawing.Point(233, 115)
-        Me.TextBox13.Name = "TextBox13"
-        Me.TextBox13.Size = New System.Drawing.Size(79, 20)
-        Me.TextBox13.TabIndex = 22
+        Me.TxtBoxCodePostal.Location = New System.Drawing.Point(233, 115)
+        Me.TxtBoxCodePostal.Name = "TxtBoxCodePostal"
+        Me.TxtBoxCodePostal.Size = New System.Drawing.Size(79, 20)
+        Me.TxtBoxCodePostal.TabIndex = 22
         '
-        'TextBox14
+        'TxtBoxFax
         '
-        Me.TextBox14.Location = New System.Drawing.Point(203, 157)
-        Me.TextBox14.Name = "TextBox14"
-        Me.TextBox14.Size = New System.Drawing.Size(109, 20)
-        Me.TextBox14.TabIndex = 23
+        Me.TxtBoxFax.Location = New System.Drawing.Point(203, 157)
+        Me.TxtBoxFax.Name = "TxtBoxFax"
+        Me.TxtBoxFax.Size = New System.Drawing.Size(109, 20)
+        Me.TxtBoxFax.TabIndex = 23
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.TextBox14)
-        Me.GroupBox1.Controls.Add(Me.TextBox13)
-        Me.GroupBox1.Controls.Add(Me.TextBox12)
-        Me.GroupBox1.Controls.Add(Me.TextBox11)
-        Me.GroupBox1.Controls.Add(Me.TextBox10)
-        Me.GroupBox1.Controls.Add(Me.TextBox9)
-        Me.GroupBox1.Controls.Add(Me.TextBox8)
-        Me.GroupBox1.Controls.Add(Me.Addresse)
+        Me.GroupBox1.Controls.Add(Me.TxtBoxFax)
+        Me.GroupBox1.Controls.Add(Me.TxtBoxCodePostal)
+        Me.GroupBox1.Controls.Add(Me.TxtBoxCompanie)
+        Me.GroupBox1.Controls.Add(Me.TxtBoxNEmployé)
+        Me.GroupBox1.Controls.Add(Me.TxtBoxEmail)
+        Me.GroupBox1.Controls.Add(Me.TxtBoxTéléphone)
+        Me.GroupBox1.Controls.Add(Me.TxtBoxVille)
+        Me.GroupBox1.Controls.Add(Me.TxtBoxAddresse)
         Me.GroupBox1.Controls.Add(Me.Label15)
         Me.GroupBox1.Controls.Add(Me.Label14)
         Me.GroupBox1.Controls.Add(Me.Label13)
@@ -458,10 +458,10 @@ Partial Class CreerUnNouveauContrat
         Me.GroupBox1.Controls.Add(Me.Label10)
         Me.GroupBox1.Controls.Add(Me.Label9)
         Me.GroupBox1.Controls.Add(Me.Label8)
-        Me.GroupBox1.Controls.Add(Me.Prenom)
+        Me.GroupBox1.Controls.Add(Me.TxtBoxPrenom)
         Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.Label6)
-        Me.GroupBox1.Controls.Add(Me.Nom)
+        Me.GroupBox1.Controls.Add(Me.TxtBoxNom)
         Me.GroupBox1.Location = New System.Drawing.Point(19, 10)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(327, 294)
@@ -506,27 +506,27 @@ Partial Class CreerUnNouveauContrat
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents txtBoxFraisMensuel As TextBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents TxtBoxDateOuverture As TextBox
     Friend WithEvents btnService As Button
     Friend WithEvents btnLocationEquipement As Button
-    Friend WithEvents TextBox16 As TextBox
-    Friend WithEvents TextBox15 As TextBox
-    Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents TxtBoxDateCreation As TextBox
+    Friend WithEvents TxtBoxNuméro As TextBox
+    Friend WithEvents CmbBoxFraisRacondement As ComboBox
     Friend WithEvents Label21 As Label
     Friend WithEvents Label19 As Label
     Friend WithEvents Label18 As Label
     Friend WithEvents Label16 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents CmbBoxType As ComboBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox6 As TextBox
+    Friend WithEvents TxtBoxDateVigueur As TextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents TxtBoxFermeture As TextBox
     Friend WithEvents btnImprimer As Button
-    Friend WithEvents Nom As TextBox
+    Friend WithEvents TxtBoxNom As TextBox
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
-    Friend WithEvents Prenom As TextBox
+    Friend WithEvents TxtBoxPrenom As TextBox
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label
@@ -535,14 +535,14 @@ Partial Class CreerUnNouveauContrat
     Friend WithEvents Label13 As Label
     Friend WithEvents Label14 As Label
     Friend WithEvents Label15 As Label
-    Friend WithEvents Addresse As TextBox
-    Friend WithEvents TextBox8 As TextBox
-    Friend WithEvents TextBox9 As TextBox
-    Friend WithEvents TextBox10 As TextBox
-    Friend WithEvents TextBox11 As TextBox
-    Friend WithEvents TextBox12 As TextBox
-    Friend WithEvents TextBox13 As TextBox
-    Friend WithEvents TextBox14 As TextBox
+    Friend WithEvents TxtBoxAddresse As TextBox
+    Friend WithEvents TxtBoxVille As TextBox
+    Friend WithEvents TxtBoxTéléphone As TextBox
+    Friend WithEvents TxtBoxEmail As TextBox
+    Friend WithEvents TxtBoxNEmployé As TextBox
+    Friend WithEvents TxtBoxCompanie As TextBox
+    Friend WithEvents TxtBoxCodePostal As TextBox
+    Friend WithEvents TxtBoxFax As TextBox
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents btnOK As Button
 End Class
