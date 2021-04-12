@@ -29,13 +29,11 @@ Partial Class FrmModiferFournisseur
         Me.BtnModifier = New System.Windows.Forms.Button()
         Me.BtnChercher = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.TxtBoxCompte = New System.Windows.Forms.TextBox()
         Me.TxtBoxCodeBanque = New System.Windows.Forms.TextBox()
         Me.TxtBoxVilleBanque = New System.Windows.Forms.TextBox()
         Me.TxtBoxAdresseBanque = New System.Windows.Forms.TextBox()
         Me.TxtBoxNomBanque = New System.Windows.Forms.TextBox()
         Me.TxtBoxNomComptable = New System.Windows.Forms.TextBox()
-        Me.LabelCompte = New System.Windows.Forms.Label()
         Me.LabelCodeBanque = New System.Windows.Forms.Label()
         Me.labelVillebanque = New System.Windows.Forms.Label()
         Me.LabelAdresseBanque = New System.Windows.Forms.Label()
@@ -80,7 +78,7 @@ Partial Class FrmModiferFournisseur
         '
         Me.BtnSupprimer.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!)
         Me.BtnSupprimer.Location = New System.Drawing.Point(1007, 270)
-        Me.BtnSupprimer.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BtnSupprimer.Margin = New System.Windows.Forms.Padding(4)
         Me.BtnSupprimer.Name = "BtnSupprimer"
         Me.BtnSupprimer.Size = New System.Drawing.Size(223, 46)
         Me.BtnSupprimer.TabIndex = 51
@@ -104,7 +102,7 @@ Partial Class FrmModiferFournisseur
         '
         Me.BtnQuitter.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!)
         Me.BtnQuitter.Location = New System.Drawing.Point(1007, 491)
-        Me.BtnQuitter.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BtnQuitter.Margin = New System.Windows.Forms.Padding(4)
         Me.BtnQuitter.Name = "BtnQuitter"
         Me.BtnQuitter.Size = New System.Drawing.Size(223, 46)
         Me.BtnQuitter.TabIndex = 48
@@ -115,7 +113,7 @@ Partial Class FrmModiferFournisseur
         '
         Me.BtnAnnuler.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!)
         Me.BtnAnnuler.Location = New System.Drawing.Point(1007, 357)
-        Me.BtnAnnuler.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BtnAnnuler.Margin = New System.Windows.Forms.Padding(4)
         Me.BtnAnnuler.Name = "BtnAnnuler"
         Me.BtnAnnuler.Size = New System.Drawing.Size(223, 46)
         Me.BtnAnnuler.TabIndex = 47
@@ -126,7 +124,7 @@ Partial Class FrmModiferFournisseur
         '
         Me.BtnModifier.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!)
         Me.BtnModifier.Location = New System.Drawing.Point(1007, 178)
-        Me.BtnModifier.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BtnModifier.Margin = New System.Windows.Forms.Padding(4)
         Me.BtnModifier.Name = "BtnModifier"
         Me.BtnModifier.Size = New System.Drawing.Size(223, 46)
         Me.BtnModifier.TabIndex = 46
@@ -137,7 +135,7 @@ Partial Class FrmModiferFournisseur
         '
         Me.BtnChercher.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!)
         Me.BtnChercher.Location = New System.Drawing.Point(1007, 81)
-        Me.BtnChercher.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BtnChercher.Margin = New System.Windows.Forms.Padding(4)
         Me.BtnChercher.Name = "BtnChercher"
         Me.BtnChercher.Size = New System.Drawing.Size(223, 46)
         Me.BtnChercher.TabIndex = 45
@@ -147,13 +145,11 @@ Partial Class FrmModiferFournisseur
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.SteelBlue
-        Me.GroupBox1.Controls.Add(Me.TxtBoxCompte)
         Me.GroupBox1.Controls.Add(Me.TxtBoxCodeBanque)
         Me.GroupBox1.Controls.Add(Me.TxtBoxVilleBanque)
         Me.GroupBox1.Controls.Add(Me.TxtBoxAdresseBanque)
         Me.GroupBox1.Controls.Add(Me.TxtBoxNomBanque)
         Me.GroupBox1.Controls.Add(Me.TxtBoxNomComptable)
-        Me.GroupBox1.Controls.Add(Me.LabelCompte)
         Me.GroupBox1.Controls.Add(Me.LabelCodeBanque)
         Me.GroupBox1.Controls.Add(Me.labelVillebanque)
         Me.GroupBox1.Controls.Add(Me.LabelAdresseBanque)
@@ -161,26 +157,18 @@ Partial Class FrmModiferFournisseur
         Me.GroupBox1.Controls.Add(Me.LabelNomComptable)
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.MenuText
         Me.GroupBox1.Location = New System.Drawing.Point(16, 405)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Size = New System.Drawing.Size(945, 159)
         Me.GroupBox1.TabIndex = 44
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Information du compte"
         '
-        'TxtBoxCompte
-        '
-        Me.TxtBoxCompte.Location = New System.Drawing.Point(676, 114)
-        Me.TxtBoxCompte.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.TxtBoxCompte.Name = "TxtBoxCompte"
-        Me.TxtBoxCompte.Size = New System.Drawing.Size(233, 22)
-        Me.TxtBoxCompte.TabIndex = 35
-        '
         'TxtBoxCodeBanque
         '
         Me.TxtBoxCodeBanque.Location = New System.Drawing.Point(676, 73)
-        Me.TxtBoxCodeBanque.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TxtBoxCodeBanque.Margin = New System.Windows.Forms.Padding(4)
         Me.TxtBoxCodeBanque.Name = "TxtBoxCodeBanque"
         Me.TxtBoxCodeBanque.Size = New System.Drawing.Size(233, 22)
         Me.TxtBoxCodeBanque.TabIndex = 34
@@ -188,7 +176,7 @@ Partial Class FrmModiferFournisseur
         'TxtBoxVilleBanque
         '
         Me.TxtBoxVilleBanque.Location = New System.Drawing.Point(676, 30)
-        Me.TxtBoxVilleBanque.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TxtBoxVilleBanque.Margin = New System.Windows.Forms.Padding(4)
         Me.TxtBoxVilleBanque.Name = "TxtBoxVilleBanque"
         Me.TxtBoxVilleBanque.Size = New System.Drawing.Size(233, 22)
         Me.TxtBoxVilleBanque.TabIndex = 33
@@ -196,7 +184,7 @@ Partial Class FrmModiferFournisseur
         'TxtBoxAdresseBanque
         '
         Me.TxtBoxAdresseBanque.Location = New System.Drawing.Point(236, 119)
-        Me.TxtBoxAdresseBanque.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TxtBoxAdresseBanque.Margin = New System.Windows.Forms.Padding(4)
         Me.TxtBoxAdresseBanque.Name = "TxtBoxAdresseBanque"
         Me.TxtBoxAdresseBanque.Size = New System.Drawing.Size(259, 22)
         Me.TxtBoxAdresseBanque.TabIndex = 32
@@ -204,7 +192,7 @@ Partial Class FrmModiferFournisseur
         'TxtBoxNomBanque
         '
         Me.TxtBoxNomBanque.Location = New System.Drawing.Point(236, 68)
-        Me.TxtBoxNomBanque.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TxtBoxNomBanque.Margin = New System.Windows.Forms.Padding(4)
         Me.TxtBoxNomBanque.Name = "TxtBoxNomBanque"
         Me.TxtBoxNomBanque.Size = New System.Drawing.Size(259, 22)
         Me.TxtBoxNomBanque.TabIndex = 31
@@ -212,20 +200,10 @@ Partial Class FrmModiferFournisseur
         'TxtBoxNomComptable
         '
         Me.TxtBoxNomComptable.Location = New System.Drawing.Point(236, 21)
-        Me.TxtBoxNomComptable.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TxtBoxNomComptable.Margin = New System.Windows.Forms.Padding(4)
         Me.TxtBoxNomComptable.Name = "TxtBoxNomComptable"
         Me.TxtBoxNomComptable.Size = New System.Drawing.Size(259, 22)
         Me.TxtBoxNomComptable.TabIndex = 30
-        '
-        'LabelCompte
-        '
-        Me.LabelCompte.AutoSize = True
-        Me.LabelCompte.Location = New System.Drawing.Point(527, 123)
-        Me.LabelCompte.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.LabelCompte.Name = "LabelCompte"
-        Me.LabelCompte.Size = New System.Drawing.Size(138, 17)
-        Me.LabelCompte.TabIndex = 5
-        Me.LabelCompte.Text = "Numero du Compte :"
         '
         'LabelCodeBanque
         '
@@ -310,9 +288,9 @@ Partial Class FrmModiferFournisseur
         Me.BoxContactFournisseur.Controls.Add(Me.TxtBoxNoCompte)
         Me.BoxContactFournisseur.ForeColor = System.Drawing.Color.Black
         Me.BoxContactFournisseur.Location = New System.Drawing.Point(16, 43)
-        Me.BoxContactFournisseur.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BoxContactFournisseur.Margin = New System.Windows.Forms.Padding(4)
         Me.BoxContactFournisseur.Name = "BoxContactFournisseur"
-        Me.BoxContactFournisseur.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BoxContactFournisseur.Padding = New System.Windows.Forms.Padding(4)
         Me.BoxContactFournisseur.Size = New System.Drawing.Size(945, 340)
         Me.BoxContactFournisseur.TabIndex = 43
         Me.BoxContactFournisseur.TabStop = False
@@ -321,7 +299,7 @@ Partial Class FrmModiferFournisseur
         'TxtBoxAdresse
         '
         Me.TxtBoxAdresse.Location = New System.Drawing.Point(236, 260)
-        Me.TxtBoxAdresse.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TxtBoxAdresse.Margin = New System.Windows.Forms.Padding(4)
         Me.TxtBoxAdresse.Name = "TxtBoxAdresse"
         Me.TxtBoxAdresse.Size = New System.Drawing.Size(259, 22)
         Me.TxtBoxAdresse.TabIndex = 17
@@ -329,7 +307,7 @@ Partial Class FrmModiferFournisseur
         'TxtBoxVille
         '
         Me.TxtBoxVille.Location = New System.Drawing.Point(236, 300)
-        Me.TxtBoxVille.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TxtBoxVille.Margin = New System.Windows.Forms.Padding(4)
         Me.TxtBoxVille.Name = "TxtBoxVille"
         Me.TxtBoxVille.Size = New System.Drawing.Size(259, 22)
         Me.TxtBoxVille.TabIndex = 18
@@ -337,7 +315,7 @@ Partial Class FrmModiferFournisseur
         'TxtBoxProvince
         '
         Me.TxtBoxProvince.Location = New System.Drawing.Point(676, 28)
-        Me.TxtBoxProvince.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TxtBoxProvince.Margin = New System.Windows.Forms.Padding(4)
         Me.TxtBoxProvince.Name = "TxtBoxProvince"
         Me.TxtBoxProvince.Size = New System.Drawing.Size(233, 22)
         Me.TxtBoxProvince.TabIndex = 19
@@ -345,7 +323,7 @@ Partial Class FrmModiferFournisseur
         'TxtBoxCodePostal
         '
         Me.TxtBoxCodePostal.Location = New System.Drawing.Point(676, 66)
-        Me.TxtBoxCodePostal.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TxtBoxCodePostal.Margin = New System.Windows.Forms.Padding(4)
         Me.TxtBoxCodePostal.Name = "TxtBoxCodePostal"
         Me.TxtBoxCodePostal.Size = New System.Drawing.Size(233, 22)
         Me.TxtBoxCodePostal.TabIndex = 20
@@ -353,7 +331,7 @@ Partial Class FrmModiferFournisseur
         'TxtBoxPays
         '
         Me.TxtBoxPays.Location = New System.Drawing.Point(676, 116)
-        Me.TxtBoxPays.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TxtBoxPays.Margin = New System.Windows.Forms.Padding(4)
         Me.TxtBoxPays.Name = "TxtBoxPays"
         Me.TxtBoxPays.Size = New System.Drawing.Size(233, 22)
         Me.TxtBoxPays.TabIndex = 21
@@ -361,7 +339,7 @@ Partial Class FrmModiferFournisseur
         'TxtBoxTéléphone1
         '
         Me.TxtBoxTéléphone1.Location = New System.Drawing.Point(676, 164)
-        Me.TxtBoxTéléphone1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TxtBoxTéléphone1.Margin = New System.Windows.Forms.Padding(4)
         Me.TxtBoxTéléphone1.Name = "TxtBoxTéléphone1"
         Me.TxtBoxTéléphone1.Size = New System.Drawing.Size(233, 22)
         Me.TxtBoxTéléphone1.TabIndex = 22
@@ -369,7 +347,7 @@ Partial Class FrmModiferFournisseur
         'TxtBoxTéléphone2
         '
         Me.TxtBoxTéléphone2.Location = New System.Drawing.Point(676, 208)
-        Me.TxtBoxTéléphone2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TxtBoxTéléphone2.Margin = New System.Windows.Forms.Padding(4)
         Me.TxtBoxTéléphone2.Name = "TxtBoxTéléphone2"
         Me.TxtBoxTéléphone2.Size = New System.Drawing.Size(233, 22)
         Me.TxtBoxTéléphone2.TabIndex = 23
@@ -377,7 +355,7 @@ Partial Class FrmModiferFournisseur
         'TxtBoxFax
         '
         Me.TxtBoxFax.Location = New System.Drawing.Point(676, 255)
-        Me.TxtBoxFax.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TxtBoxFax.Margin = New System.Windows.Forms.Padding(4)
         Me.TxtBoxFax.Name = "TxtBoxFax"
         Me.TxtBoxFax.Size = New System.Drawing.Size(233, 22)
         Me.TxtBoxFax.TabIndex = 24
@@ -385,7 +363,7 @@ Partial Class FrmModiferFournisseur
         'TxtBoxSiteWeb
         '
         Me.TxtBoxSiteWeb.Location = New System.Drawing.Point(676, 300)
-        Me.TxtBoxSiteWeb.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TxtBoxSiteWeb.Margin = New System.Windows.Forms.Padding(4)
         Me.TxtBoxSiteWeb.Name = "TxtBoxSiteWeb"
         Me.TxtBoxSiteWeb.Size = New System.Drawing.Size(233, 22)
         Me.TxtBoxSiteWeb.TabIndex = 25
@@ -463,7 +441,7 @@ Partial Class FrmModiferFournisseur
         'TxtBoxEmail
         '
         Me.TxtBoxEmail.Location = New System.Drawing.Point(236, 213)
-        Me.TxtBoxEmail.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TxtBoxEmail.Margin = New System.Windows.Forms.Padding(4)
         Me.TxtBoxEmail.Name = "TxtBoxEmail"
         Me.TxtBoxEmail.Size = New System.Drawing.Size(259, 22)
         Me.TxtBoxEmail.TabIndex = 4
@@ -481,7 +459,7 @@ Partial Class FrmModiferFournisseur
         'TxtBoxFonction
         '
         Me.TxtBoxFonction.Location = New System.Drawing.Point(236, 164)
-        Me.TxtBoxFonction.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TxtBoxFonction.Margin = New System.Windows.Forms.Padding(4)
         Me.TxtBoxFonction.Name = "TxtBoxFonction"
         Me.TxtBoxFonction.Size = New System.Drawing.Size(259, 22)
         Me.TxtBoxFonction.TabIndex = 3
@@ -519,7 +497,7 @@ Partial Class FrmModiferFournisseur
         'TxtBoxContact
         '
         Me.TxtBoxContact.Location = New System.Drawing.Point(236, 121)
-        Me.TxtBoxContact.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TxtBoxContact.Margin = New System.Windows.Forms.Padding(4)
         Me.TxtBoxContact.Name = "TxtBoxContact"
         Me.TxtBoxContact.Size = New System.Drawing.Size(259, 22)
         Me.TxtBoxContact.TabIndex = 2
@@ -540,7 +518,7 @@ Partial Class FrmModiferFournisseur
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TxtBoxSocieté.Location = New System.Drawing.Point(236, 71)
-        Me.TxtBoxSocieté.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TxtBoxSocieté.Margin = New System.Windows.Forms.Padding(4)
         Me.TxtBoxSocieté.Name = "TxtBoxSocieté"
         Me.TxtBoxSocieté.Size = New System.Drawing.Size(259, 22)
         Me.TxtBoxSocieté.TabIndex = 1
@@ -569,7 +547,7 @@ Partial Class FrmModiferFournisseur
         '
         Me.TxtBoxNoCompte.AccessibleRole = System.Windows.Forms.AccessibleRole.Grip
         Me.TxtBoxNoCompte.Location = New System.Drawing.Point(236, 28)
-        Me.TxtBoxNoCompte.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TxtBoxNoCompte.Margin = New System.Windows.Forms.Padding(4)
         Me.TxtBoxNoCompte.Name = "TxtBoxNoCompte"
         Me.TxtBoxNoCompte.Size = New System.Drawing.Size(259, 22)
         Me.TxtBoxNoCompte.TabIndex = 0
@@ -579,7 +557,7 @@ Partial Class FrmModiferFournisseur
         Me.PictureBox2.BackColor = System.Drawing.Color.SteelBlue
         Me.PictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.PictureBox2.Location = New System.Drawing.Point(987, 55)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(256, 526)
         Me.PictureBox2.TabIndex = 49
@@ -599,7 +577,7 @@ Partial Class FrmModiferFournisseur
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.BoxContactFournisseur)
         Me.Controls.Add(Me.PictureBox2)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "FrmModiferFournisseur"
         Me.Text = "FrmModiferFournisseur"
         Me.GroupBox1.ResumeLayout(False)
@@ -618,13 +596,11 @@ Partial Class FrmModiferFournisseur
     Friend WithEvents BtnModifier As Button
     Friend WithEvents BtnChercher As Button
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents TxtBoxCompte As TextBox
     Friend WithEvents TxtBoxCodeBanque As TextBox
     Friend WithEvents TxtBoxVilleBanque As TextBox
     Friend WithEvents TxtBoxAdresseBanque As TextBox
     Friend WithEvents TxtBoxNomBanque As TextBox
     Friend WithEvents TxtBoxNomComptable As TextBox
-    Friend WithEvents LabelCompte As Label
     Friend WithEvents LabelCodeBanque As Label
     Friend WithEvents labelVillebanque As Label
     Friend WithEvents LabelAdresseBanque As Label

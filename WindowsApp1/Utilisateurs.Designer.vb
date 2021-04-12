@@ -30,29 +30,31 @@ Partial Class Utilisateurs
         '
         Me.ListUtilisateurs.BackColor = System.Drawing.Color.White
         Me.ListUtilisateurs.FormattingEnabled = True
-        Me.ListUtilisateurs.Location = New System.Drawing.Point(26, 21)
+        Me.ListUtilisateurs.ItemHeight = 16
+        Me.ListUtilisateurs.Location = New System.Drawing.Point(13, 13)
+        Me.ListUtilisateurs.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ListUtilisateurs.Name = "ListUtilisateurs"
-        Me.ListUtilisateurs.Size = New System.Drawing.Size(463, 160)
+        Me.ListUtilisateurs.Size = New System.Drawing.Size(642, 228)
         Me.ListUtilisateurs.TabIndex = 1
         '
         'ButtonQuitter
         '
-        Me.ButtonQuitter.Location = New System.Drawing.Point(221, 197)
-        Me.ButtonQuitter.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ButtonQuitter.Location = New System.Drawing.Point(297, 247)
+        Me.ButtonQuitter.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ButtonQuitter.Name = "ButtonQuitter"
-        Me.ButtonQuitter.Size = New System.Drawing.Size(62, 20)
+        Me.ButtonQuitter.Size = New System.Drawing.Size(83, 25)
         Me.ButtonQuitter.TabIndex = 5
         Me.ButtonQuitter.Text = "Quitter"
         Me.ButtonQuitter.UseVisualStyleBackColor = True
         '
         'Utilisateurs
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(501, 230)
+        Me.ClientSize = New System.Drawing.Size(668, 283)
         Me.Controls.Add(Me.ButtonQuitter)
         Me.Controls.Add(Me.ListUtilisateurs)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "Utilisateurs"
         Me.Text = "Utilisateurs"
         Me.ResumeLayout(False)

@@ -108,6 +108,14 @@ Public Class Résilier_Contrat
     Private Sub CONTRATDataGridView_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles CONTRATDataGridView.CellContentClick
 
     End Sub
+
+    Private Sub TxtBoxNumCnt_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtBoxNumCnt.KeyPress
+        If Asc(e.KeyChar) <> 8 Then
+            If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then
+                e.Handled = True
+            End If
+        End If
+    End Sub
 End Class
 
 

@@ -54,7 +54,7 @@
                 TxtBoxNomComptable.Text = Comptable1
                 TxtBoxAdresseBanque.Text = AdresseBanque1
                 TxtBoxCodeBanque.Text = CodeBanque1
-                TxtBoxCompte.Text = Compte1
+
                 TxtBoxContact.Text = Contact1
                 TxtBoxEmail.Text = Email1
                 TxtBoxFax.Text = Fax1
@@ -77,7 +77,7 @@
                 TxtBoxNomComptable.Text = Comptable2
                 TxtBoxAdresseBanque.Text = AdresseBanque2
                 TxtBoxCodeBanque.Text = CodeBanque2
-                TxtBoxCompte.Text = Compte2
+
                 TxtBoxContact.Text = Contact2
                 TxtBoxEmail.Text = Email2
                 TxtBoxFax.Text = Fax2
@@ -106,7 +106,7 @@
         TxtBoxAdresse.Text = ""
         TxtBoxAdresseBanque.Text = ""
         TxtBoxCodeBanque.Text = ""
-        TxtBoxCompte.Text = ""
+
         TxtBoxContact.Text = ""
         TxtBoxEmail.Text = ""
         TxtBoxFax.Text = ""
@@ -140,7 +140,7 @@
         TxtBoxAdresse.Enabled = False
         TxtBoxAdresseBanque.Enabled = False
         TxtBoxCodeBanque.Enabled = False
-        TxtBoxCompte.Enabled = False
+
         TxtBoxContact.Enabled = False
         TxtBoxEmail.Enabled = False
         TxtBoxFax.Enabled = False
@@ -174,7 +174,7 @@
         TxtBoxAdresse.Enabled = True
         TxtBoxAdresseBanque.Enabled = True
         TxtBoxCodeBanque.Enabled = True
-        TxtBoxCompte.Enabled = True
+
         TxtBoxContact.Enabled = True
         TxtBoxEmail.Enabled = True
         TxtBoxFax.Enabled = True
@@ -253,5 +253,14 @@
     Private Sub BtnSupprimer_Click(sender As Object, e As EventArgs) Handles BtnSupprimer.Click
         EffacerDonner()
         MsgBox("le fournisseur a ete bien supprime!!")
+    End Sub
+
+    Private Sub Number_Only(sender As Object, e As KeyPressEventArgs) Handles TxtBoxTéléphone2.KeyPress, TxtBoxTéléphone1.KeyPress, TxtBoxNoCompte.KeyPress, TxtBoxCodeBanque.KeyPress
+        If Asc(e.KeyChar) <> 8 Then
+            If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then
+                e.Handled = True
+            End If
+
+        End If
     End Sub
 End Class
