@@ -14,7 +14,6 @@
     End Sub
     Private Sub btnAnnuler_Click(sender As Object, e As EventArgs) Handles btnAnnuler.Click
         MsgBox("Le contrat a été annulé avec succés!")
-        End
     End Sub
     Private Sub btnAide_Click(sender As Object, e As EventArgs) Handles btnAide.Click
         MsgBox("Veuillez vous contacter la service de la foramation Personnelle pour plus de details...!")
