@@ -44,10 +44,10 @@ Partial Class CreerUnNouveauContrat
         Me.Label4 = New System.Windows.Forms.Label()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.btnImprimer = New System.Windows.Forms.Button()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.Nom = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Prenom = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -56,7 +56,7 @@ Partial Class CreerUnNouveauContrat
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.Addresse = New System.Windows.Forms.TextBox()
         Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.TextBox9 = New System.Windows.Forms.TextBox()
         Me.TextBox10 = New System.Windows.Forms.TextBox()
@@ -180,6 +180,7 @@ Partial Class CreerUnNouveauContrat
         'ComboBox2
         '
         Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Items.AddRange(New Object() {"Installation GRATUITE une semain apres", "Installation a 25$ le jour-j"})
         Me.ComboBox2.Location = New System.Drawing.Point(121, 55)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(243, 21)
@@ -279,12 +280,12 @@ Partial Class CreerUnNouveauContrat
         Me.btnImprimer.Text = "Imprimer"
         Me.btnImprimer.UseVisualStyleBackColor = True
         '
-        'TextBox3
+        'Nom
         '
-        Me.TextBox3.Location = New System.Drawing.Point(65, 19)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(247, 20)
-        Me.TextBox3.TabIndex = 4
+        Me.Nom.Location = New System.Drawing.Point(65, 19)
+        Me.Nom.Name = "Nom"
+        Me.Nom.Size = New System.Drawing.Size(247, 20)
+        Me.Nom.TabIndex = 4
         '
         'Label6
         '
@@ -304,12 +305,12 @@ Partial Class CreerUnNouveauContrat
         Me.Label7.TabIndex = 6
         Me.Label7.Text = "Prénom"
         '
-        'TextBox2
+        'Prenom
         '
-        Me.TextBox2.Location = New System.Drawing.Point(65, 52)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(247, 20)
-        Me.TextBox2.TabIndex = 7
+        Me.Prenom.Location = New System.Drawing.Point(65, 52)
+        Me.Prenom.Name = "Prenom"
+        Me.Prenom.Size = New System.Drawing.Size(247, 20)
+        Me.Prenom.TabIndex = 7
         '
         'Label8
         '
@@ -383,12 +384,12 @@ Partial Class CreerUnNouveauContrat
         Me.Label15.TabIndex = 15
         Me.Label15.Text = "Code Postal"
         '
-        'TextBox7
+        'Addresse
         '
-        Me.TextBox7.Location = New System.Drawing.Point(65, 82)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(247, 20)
-        Me.TextBox7.TabIndex = 16
+        Me.Addresse.Location = New System.Drawing.Point(65, 82)
+        Me.Addresse.Name = "Addresse"
+        Me.Addresse.Size = New System.Drawing.Size(247, 20)
+        Me.Addresse.TabIndex = 16
         '
         'TextBox8
         '
@@ -448,7 +449,7 @@ Partial Class CreerUnNouveauContrat
         Me.GroupBox1.Controls.Add(Me.TextBox10)
         Me.GroupBox1.Controls.Add(Me.TextBox9)
         Me.GroupBox1.Controls.Add(Me.TextBox8)
-        Me.GroupBox1.Controls.Add(Me.TextBox7)
+        Me.GroupBox1.Controls.Add(Me.Addresse)
         Me.GroupBox1.Controls.Add(Me.Label15)
         Me.GroupBox1.Controls.Add(Me.Label14)
         Me.GroupBox1.Controls.Add(Me.Label13)
@@ -457,10 +458,10 @@ Partial Class CreerUnNouveauContrat
         Me.GroupBox1.Controls.Add(Me.Label10)
         Me.GroupBox1.Controls.Add(Me.Label9)
         Me.GroupBox1.Controls.Add(Me.Label8)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
+        Me.GroupBox1.Controls.Add(Me.Prenom)
         Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.Label6)
-        Me.GroupBox1.Controls.Add(Me.TextBox3)
+        Me.GroupBox1.Controls.Add(Me.Nom)
         Me.GroupBox1.Location = New System.Drawing.Point(19, 10)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(327, 294)
@@ -522,10 +523,10 @@ Partial Class CreerUnNouveauContrat
     Friend WithEvents Label4 As Label
     Friend WithEvents TextBox4 As TextBox
     Friend WithEvents btnImprimer As Button
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents Nom As TextBox
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents Prenom As TextBox
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label
@@ -534,7 +535,7 @@ Partial Class CreerUnNouveauContrat
     Friend WithEvents Label13 As Label
     Friend WithEvents Label14 As Label
     Friend WithEvents Label15 As Label
-    Friend WithEvents TextBox7 As TextBox
+    Friend WithEvents Addresse As TextBox
     Friend WithEvents TextBox8 As TextBox
     Friend WithEvents TextBox9 As TextBox
     Friend WithEvents TextBox10 As TextBox

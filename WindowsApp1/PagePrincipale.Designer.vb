@@ -46,12 +46,6 @@ Partial Class PagePrincipale
         Me.NouveauToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ModifierToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RapportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ContentsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.IndexToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.toolStripSeparator5 = New System.Windows.Forms.ToolStripSeparator()
-        Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AchévementDesContratsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ÉquipementsÀCommanderToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ÉquipementsÀRetournerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -63,6 +57,13 @@ Partial Class PagePrincipale
         Me.ToolStripSeparator6 = New System.Windows.Forms.ToolStripSeparator()
         Me.PaimentParCarteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PaiementParRetraitDirectToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ContentsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.IndexToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.toolStripSeparator5 = New System.Windows.Forms.ToolStripSeparator()
+        Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.StatusStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
@@ -72,10 +73,10 @@ Partial Class PagePrincipale
         '
         Me.StatusStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel1})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 376)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 562)
         Me.StatusStrip1.Name = "StatusStrip1"
         Me.StatusStrip1.Padding = New System.Windows.Forms.Padding(1, 0, 11, 0)
-        Me.StatusStrip1.Size = New System.Drawing.Size(998, 22)
+        Me.StatusStrip1.Size = New System.Drawing.Size(1584, 22)
         Me.StatusStrip1.TabIndex = 0
         Me.StatusStrip1.Text = "StatusStrip1"
         '
@@ -90,7 +91,7 @@ Partial Class PagePrincipale
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(-210, 90)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(1810, 269)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -104,7 +105,7 @@ Partial Class PagePrincipale
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(998, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1584, 24)
         Me.MenuStrip1.TabIndex = 2
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -217,13 +218,13 @@ Partial Class PagePrincipale
         'NouveauToolStripMenuItem
         '
         Me.NouveauToolStripMenuItem.Name = "NouveauToolStripMenuItem"
-        Me.NouveauToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.NouveauToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
         Me.NouveauToolStripMenuItem.Text = "Nouveau"
         '
         'ModifierToolStripMenuItem
         '
         Me.ModifierToolStripMenuItem.Name = "ModifierToolStripMenuItem"
-        Me.ModifierToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ModifierToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
         Me.ModifierToolStripMenuItem.Text = "Modifier"
         '
         'RapportsToolStripMenuItem
@@ -232,42 +233,6 @@ Partial Class PagePrincipale
         Me.RapportsToolStripMenuItem.Name = "RapportsToolStripMenuItem"
         Me.RapportsToolStripMenuItem.Size = New System.Drawing.Size(66, 20)
         Me.RapportsToolStripMenuItem.Text = "Rapports"
-        '
-        'ToolsToolStripMenuItem
-        '
-        Me.ToolsToolStripMenuItem.Name = "ToolsToolStripMenuItem"
-        Me.ToolsToolStripMenuItem.Size = New System.Drawing.Size(77, 20)
-        Me.ToolsToolStripMenuItem.Text = "&Utilisateurs"
-        '
-        'HelpToolStripMenuItem
-        '
-        Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ContentsToolStripMenuItem, Me.IndexToolStripMenuItem, Me.toolStripSeparator5, Me.AboutToolStripMenuItem})
-        Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(43, 20)
-        Me.HelpToolStripMenuItem.Text = "&Aide"
-        '
-        'ContentsToolStripMenuItem
-        '
-        Me.ContentsToolStripMenuItem.Name = "ContentsToolStripMenuItem"
-        Me.ContentsToolStripMenuItem.Size = New System.Drawing.Size(181, 22)
-        Me.ContentsToolStripMenuItem.Text = "Qui &Sommes Nous ?"
-        '
-        'IndexToolStripMenuItem
-        '
-        Me.IndexToolStripMenuItem.Name = "IndexToolStripMenuItem"
-        Me.IndexToolStripMenuItem.Size = New System.Drawing.Size(181, 22)
-        Me.IndexToolStripMenuItem.Text = "&Information"
-        '
-        'toolStripSeparator5
-        '
-        Me.toolStripSeparator5.Name = "toolStripSeparator5"
-        Me.toolStripSeparator5.Size = New System.Drawing.Size(178, 6)
-        '
-        'AboutToolStripMenuItem
-        '
-        Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(181, 22)
-        Me.AboutToolStripMenuItem.Text = "À &Propos d'Abonnet"
         '
         'AchévementDesContratsToolStripMenuItem
         '
@@ -332,17 +297,63 @@ Partial Class PagePrincipale
         Me.PaiementParRetraitDirectToolStripMenuItem.Size = New System.Drawing.Size(220, 22)
         Me.PaiementParRetraitDirectToolStripMenuItem.Text = "Paiement par retrait direct"
         '
+        'ToolsToolStripMenuItem
+        '
+        Me.ToolsToolStripMenuItem.Name = "ToolsToolStripMenuItem"
+        Me.ToolsToolStripMenuItem.Size = New System.Drawing.Size(77, 20)
+        Me.ToolsToolStripMenuItem.Text = "&Utilisateurs"
+        '
+        'HelpToolStripMenuItem
+        '
+        Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ContentsToolStripMenuItem, Me.IndexToolStripMenuItem, Me.toolStripSeparator5, Me.AboutToolStripMenuItem})
+        Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(43, 20)
+        Me.HelpToolStripMenuItem.Text = "&Aide"
+        '
+        'ContentsToolStripMenuItem
+        '
+        Me.ContentsToolStripMenuItem.Name = "ContentsToolStripMenuItem"
+        Me.ContentsToolStripMenuItem.Size = New System.Drawing.Size(181, 22)
+        Me.ContentsToolStripMenuItem.Text = "Qui &Sommes Nous ?"
+        '
+        'IndexToolStripMenuItem
+        '
+        Me.IndexToolStripMenuItem.Name = "IndexToolStripMenuItem"
+        Me.IndexToolStripMenuItem.Size = New System.Drawing.Size(181, 22)
+        Me.IndexToolStripMenuItem.Text = "&Information"
+        '
+        'toolStripSeparator5
+        '
+        Me.toolStripSeparator5.Name = "toolStripSeparator5"
+        Me.toolStripSeparator5.Size = New System.Drawing.Size(178, 6)
+        '
+        'AboutToolStripMenuItem
+        '
+        Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(181, 22)
+        Me.AboutToolStripMenuItem.Text = "À &Propos d'Abonnet"
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(12, 27)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(178, 49)
+        Me.Button1.TabIndex = 3
+        Me.Button1.Text = "Déconnexion"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'PagePrincipale
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.CausesValidation = False
-        Me.ClientSize = New System.Drawing.Size(998, 398)
+        Me.ClientSize = New System.Drawing.Size(1584, 584)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "PagePrincipale"
         Me.Text = "Page Principale"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
@@ -396,4 +407,5 @@ Partial Class PagePrincipale
     Friend WithEvents ToolStripSeparator6 As ToolStripSeparator
     Friend WithEvents PaimentParCarteToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PaiementParRetraitDirectToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Button1 As Button
 End Class

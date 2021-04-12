@@ -122,4 +122,9 @@ Public Class PagePrincipale
     Private Sub PaiementParRetraitDirectToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PaiementParRetraitDirectToolStripMenuItem.Click
         MsgBox("Les documents sont envoyés a l'imprimante avec succés")
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Me.Close()
+        Login.Show()
+    End Sub
 End Class
