@@ -34,6 +34,29 @@ Public Class Résilier_Contrat
     End Sub
 
     Private Sub BtnRechercher_Click(sender As Object, e As EventArgs) Handles BtnRechercher.Click
+
+        connectionString = String.Format("Data Source={0};Version=3;",
+                                         Directory.GetCurrentDirectory() & "\" & "usersDb.db")
+        Using conn As New SQLiteConnection(connectionString.ToString)
+            Using cmd As New SQLiteCommand(conn)
+                'La commande pour recupere la table contrat pour l'affichage de la table
+                cmd.CommandText = "SELECT * FROM Contrat"
+
+
+                conn.Open()
+
+                Using da As New SQLiteDataAdapter(cmd)
+
+                    'Using da As New SQLiteDataAdapter(cmd)
+                    Dim dt As New DataTable
+
+
+                    CONTRATDataGridView.DataSource = dt
+
+                    da.Fill(dt)
+                End Using
+            End Using
+        End Using
         If (Convert.ToInt32(TxtBoxNumCnt.Text)) = 1 Then
             MsgBox("le numéro du contrat existe!")
         ElseIf (Convert.ToInt32(TxtBoxNumCnt.Text)) = 2 Then
