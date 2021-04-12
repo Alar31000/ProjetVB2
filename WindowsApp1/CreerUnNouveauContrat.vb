@@ -17,7 +17,7 @@
         End
     End Sub
     Private Sub btnAide_Click(sender As Object, e As EventArgs) Handles btnAide.Click
-        MsgBox("Veuillez nous contacter au ...!")
+        MsgBox("Veuillez vous contacter la service de la foramation Personnelle pour plus de details...!")
     End Sub
 
     Private Sub TextBox5_TextChanged(sender As Object, e As EventArgs) Handles TextBox5.TextChanged
@@ -33,6 +33,10 @@
     End Sub
 
     Private Sub GroupBox2_Enter(sender As Object, e As EventArgs) Handles GroupBox2.Enter
+
+    End Sub
+
+    Private Sub CreerUnNouveauContrat_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 End Class
