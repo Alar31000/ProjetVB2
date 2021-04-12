@@ -34,11 +34,14 @@ Public Class Résilier_Contrat
     End Sub
 
     Private Sub BtnRechercher_Click(sender As Object, e As EventArgs) Handles BtnRechercher.Click
-        If (Convert.ToInt32(TxtBoxNumCnt.Text)) = 1909687 Then
+        If (Convert.ToInt32(TxtBoxNumCnt.Text)) = 1 Then
+            MsgBox("le numéro du contrat existe!")
+        ElseIf (Convert.ToInt32(TxtBoxNumCnt.Text)) = 2 Then
             MsgBox("le numéro du contrat existe!")
         Else
             MsgBox("le numéro du contrat n'existe pas!")
         End If
+
 
 
     End Sub

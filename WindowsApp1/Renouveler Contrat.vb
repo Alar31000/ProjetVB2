@@ -6,7 +6,7 @@ Public Class Renouveler_Contrat
     Private connectionString = String.Empty
     Private Sub BtnRenouveller_Click(sender As Object, e As EventArgs) Handles BtnRenouveller.Click
 
-        MsgBox("Le contrat est bien renouveller")
+        MsgBox("Le contrat a bien été renouveller")
 
 
 
@@ -27,7 +27,9 @@ Public Class Renouveler_Contrat
     End Sub
 
     Private Sub BtnRechercher_Click(sender As Object, e As EventArgs) Handles BtnRechercher.Click
-        If (Convert.ToInt32(TxtBoxNumCnt.Text)) = 1909687 Then
+        If (Convert.ToInt32(TxtBoxNumCnt.Text)) = 1 Then
+            MsgBox("le numéro du contrat existe!")
+        ElseIf (Convert.ToInt32(TxtBoxNumCnt.Text)) = 2 Then
             MsgBox("le numéro du contrat existe!")
         Else
             MsgBox("le numéro du contrat n'existe pas!")

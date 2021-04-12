@@ -7,10 +7,10 @@
         Services.Show()
     End Sub
     Private Sub btnOK_Click(sender As Object, e As EventArgs) Handles btnOK.Click
-        If TextBox5.Text = "" Then
+        If TxtBoxDateOuverture.Text = "" Then
             MsgBox("S'il vous plait, Veuillez Entrer les information nécessaires", vbOKOnly, "Erreur")
 
-        ElseIf TextBox13.Text = "" Then
+        ElseIf TxtBoxCodePostal.Text = "" Then
             MsgBox("S'il vous plait, Veuillez Entrer les information nécessaires ", vbOKOnly, "Erreur")
 
         ElseIf GroupBox1.Text = "" Then
@@ -19,38 +19,38 @@
         ElseIf GroupBox2.Text = "" Then
             MsgBox("S'il vous plait, Veuillez Entrer les information nécessaires", vbOKOnly, "Erreur")
 
-        ElseIf Nom.Text = "" Then
+        ElseIf TxtBoxNom.Text = "" Then
             MsgBox("S'il vous plait, Veuillez Entrer les information nécessaires", vbOKOnly, "Erreur")
 
 
-        ElseIf Prenom.Text = "" Then
+        ElseIf TxtBoxPrenom.Text = "" Then
             MsgBox("S'il vous plait, Veuillez Entrer les information nécessaires", vbOKOnly, "Erreur")
 
-        ElseIf Addresse.Text = "" Then
+        ElseIf TxtBoxAddresse.Text = "" Then
             MsgBox("S'il vous plait, Veuillez Entrer les information nécessaires", vbOKOnly, "Erreur")
 
-        ElseIf TextBox8.Text = "" Then
+        ElseIf TxtBoxVille.Text = "" Then
             MsgBox("S'il vous plait, Veuillez Entrer les information nécessaires", vbOKOnly, "Erreur")
 
-        ElseIf TextBox9.Text = "" Then
+        ElseIf TxtBoxTéléphone.Text = "" Then
             MsgBox("S'il vous plait, Veuillez Entrer les information nécessaires", vbOKOnly, "Erreur")
 
-        ElseIf TextBox14.Text = "" Then
+        ElseIf TxtBoxFax.Text = "" Then
             MsgBox("S'il vous plait, Veuillez Entrer les information nécessaires", vbOKOnly, "Erreur")
 
-        ElseIf TextBox11.Text = "" Then
+        ElseIf TxtBoxNEmployé.Text = "" Then
             MsgBox("S'il vous plait, Veuillez Entrer les information nécessaires", vbOKOnly, "Erreur")
 
-        ElseIf TextBox12.Text = "" Then
+        ElseIf TxtBoxCompanie.Text = "" Then
             MsgBox("S'il vous plait, Veuillez Entrer les information nécessaires", vbOKOnly, "Erreur")
 
         ElseIf txtBoxFraisMensuel.Text = "" Then
             MsgBox("S'il vous plait, Veuillez Entrer les information nécessaires", vbOKOnly, "Erreur")
 
-        ElseIf TextBox4.Text = "" Then
+        ElseIf TxtBoxFermeture.Text = "" Then
             MsgBox("S'il vous plait, Veuillez Entrer les information nécessaires", vbOKOnly, "Erreur")
 
-        ElseIf TextBox6.Text = "" Then
+        ElseIf TxtBoxDateVigueur.Text = "" Then
             MsgBox("S'il vous plait, Veuillez Entrer les information nécessaires", vbOKOnly, "Erreur")
         Else
             MsgBox("Le contrat a été créé avec succés!", vbOKOnly, "Nouveau Contrat")
@@ -64,22 +64,22 @@
 
     'Une procedure pour effacer les donnees qui ont ete rentre par l'utilisateur
     Sub EffacerDonner()
-        TextBox5.Text = ""
-        TextBox13.Text = ""
+        TxtBoxDateOuverture.Text = ""
+        TxtBoxCodePostal.Text = ""
         GroupBox1.Text = ""
         GroupBox2.Text = ""
-        Nom.Text = ""
-        Prenom.Text = ""
-        Addresse.Text = ""
-        TextBox8.Text = ""
-        TextBox9.Text = ""
-        TextBox14.Text = ""
-        TextBox10.Text = ""
-        TextBox11.Text = ""
-        TextBox12.Text = ""
+        TxtBoxNom.Text = ""
+        TxtBoxPrenom.Text = ""
+        TxtBoxAddresse.Text = ""
+        TxtBoxVille.Text = ""
+        TxtBoxTéléphone.Text = ""
+        TxtBoxFax.Text = ""
+        TxtBoxEmail.Text = ""
+        TxtBoxNEmployé.Text = ""
+        TxtBoxCompanie.Text = ""
         txtBoxFraisMensuel.Text = ""
-        TextBox4.Text = ""
-        TextBox6.Text = ""
+        TxtBoxFermeture.Text = ""
+        TxtBoxDateVigueur.Text = ""
 
 
     End Sub
@@ -90,11 +90,11 @@
         MsgBox("Veuillez vous contacter la service de la foramation Personnelle pour plus de details...!")
     End Sub
 
-    Private Sub TextBox5_TextChanged(sender As Object, e As EventArgs) Handles TextBox5.TextChanged
+    Private Sub TextBox5_TextChanged(sender As Object, e As EventArgs) Handles TxtBoxDateOuverture.TextChanged
 
     End Sub
 
-    Private Sub TextBox13_TextChanged(sender As Object, e As EventArgs) Handles TextBox13.TextChanged
+    Private Sub TextBox13_TextChanged(sender As Object, e As EventArgs) Handles TxtBoxCodePostal.TextChanged
 
     End Sub
 
@@ -110,39 +110,39 @@
 
     End Sub
 
-    Private Sub TextBox3_TextChanged(sender As Object, e As EventArgs) Handles Nom.TextChanged
+    Private Sub TextBox3_TextChanged(sender As Object, e As EventArgs) Handles TxtBoxNom.TextChanged
 
     End Sub
 
-    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles Prenom.TextChanged
+    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles TxtBoxPrenom.TextChanged
 
     End Sub
 
-    Private Sub TextBox7_TextChanged(sender As Object, e As EventArgs) Handles Addresse.TextChanged
+    Private Sub TextBox7_TextChanged(sender As Object, e As EventArgs) Handles TxtBoxAddresse.TextChanged
 
     End Sub
 
-    Private Sub TextBox8_TextChanged(sender As Object, e As EventArgs) Handles TextBox8.TextChanged
+    Private Sub TextBox8_TextChanged(sender As Object, e As EventArgs) Handles TxtBoxVille.TextChanged
 
     End Sub
 
-    Private Sub TextBox9_TextChanged(sender As Object, e As EventArgs) Handles TextBox9.TextChanged
+    Private Sub TextBox9_TextChanged(sender As Object, e As EventArgs) Handles TxtBoxTéléphone.TextChanged
 
     End Sub
 
-    Private Sub TextBox14_TextChanged(sender As Object, e As EventArgs) Handles TextBox14.TextChanged
+    Private Sub TextBox14_TextChanged(sender As Object, e As EventArgs) Handles TxtBoxFax.TextChanged
 
     End Sub
 
-    Private Sub TextBox10_TextChanged(sender As Object, e As EventArgs) Handles TextBox10.TextChanged
+    Private Sub TextBox10_TextChanged(sender As Object, e As EventArgs) Handles TxtBoxEmail.TextChanged
 
     End Sub
 
-    Private Sub TextBox11_TextChanged(sender As Object, e As EventArgs) Handles TextBox11.TextChanged
+    Private Sub TextBox11_TextChanged(sender As Object, e As EventArgs) Handles TxtBoxNEmployé.TextChanged
 
     End Sub
 
-    Private Sub TextBox12_TextChanged(sender As Object, e As EventArgs) Handles TextBox12.TextChanged
+    Private Sub TextBox12_TextChanged(sender As Object, e As EventArgs) Handles TxtBoxCompanie.TextChanged
 
     End Sub
 
@@ -150,11 +150,11 @@
 
     End Sub
 
-    Private Sub TextBox4_TextChanged(sender As Object, e As EventArgs) Handles TextBox4.TextChanged
+    Private Sub TextBox4_TextChanged(sender As Object, e As EventArgs) Handles TxtBoxFermeture.TextChanged
 
     End Sub
 
-    Private Sub TextBox6_TextChanged(sender As Object, e As EventArgs) Handles TextBox6.TextChanged
+    Private Sub TextBox6_TextChanged(sender As Object, e As EventArgs) Handles TxtBoxDateVigueur.TextChanged
 
     End Sub
 End Class
