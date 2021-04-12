@@ -13,12 +13,7 @@ Public Class Renouveler_Contrat
     End Sub
 
     Private Sub BtnQuitter_Click(sender As Object, e As EventArgs) Handles BtnQuitter.Click
-        Dim iExit As DialogResult
-        iExit = MsgBox("Voulez Vous Fermer cette fenêtre ?", MessageBoxButtons.YesNo, MessageBoxIcon.Information)
-        If iExit = DialogResult.Yes Then
-            Me.Close()
-        End If
-        End
+        Me.Close()
 
     End Sub
 
@@ -80,14 +75,6 @@ Public Class Renouveler_Contrat
 
     Private Sub CONTRATDataGridView_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles CONTRATDataGridView.CellContentClick
 
-    End Sub
-
-    Private Sub Number_Only(sender As Object, e As KeyPressEventArgs) Handles TxtBoxNumCnt.KeyPress
-        If Asc(e.KeyChar) <> 8 Then
-            If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then
-                e.Handled = True
-            End If
-        End If
     End Sub
 End Class
 

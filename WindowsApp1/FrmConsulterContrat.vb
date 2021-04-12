@@ -5,18 +5,15 @@ Public Class FrmConsulterContrat
 
     'Une variable pour la connection de la base de donnees
     Private connectionString = String.Empty
+    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
 
+    End Sub
     Private Sub Titre_Click(sender As Object, e As EventArgs) Handles Titre.Click
 
     End Sub
 
     Private Sub BtnQuitter_Click(sender As Object, e As EventArgs) Handles BtnQuitter.Click
-        Dim iExit As DialogResult
-        iExit = MsgBox("Voulez Vous Fermer cette fenêtre ?", MessageBoxButtons.YesNo, MessageBoxIcon.Information)
-        If iExit = DialogResult.Yes Then
-            Me.Close()
-        End If
-        End
+        Me.Close()
     End Sub
 
     Private Sub FrmConsulterContrat_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -68,4 +65,7 @@ Public Class FrmConsulterContrat
 
     End Sub
 
+    Private Sub DataGridView2_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView2.CellContentClick
+
+    End Sub
 End Class

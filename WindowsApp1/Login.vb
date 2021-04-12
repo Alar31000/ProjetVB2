@@ -29,7 +29,6 @@ Public Class Login
         If IsUserValid(TextBoxUtilisateur.Text.Trim, TextBoxMotDePasse.Text.Trim) = True Then
             MsgBox("Bienvenue.", MsgBoxStyle.OkOnly + vbInformation, "Succès !")
 
-
             'Si le mot de passe est correct, on ouvrira la page principale
             Me.Hide()
             Dim frmMainForm As New PagePrincipale
@@ -99,7 +98,7 @@ Public Class Login
         Else
             Exit Sub
         End If
-
+        e.SuppressKeyPress = True
     End Sub
 
 End Class

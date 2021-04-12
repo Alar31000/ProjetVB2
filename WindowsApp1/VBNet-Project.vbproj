@@ -110,12 +110,6 @@
     <Compile Include="About.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Rapport.Designer.vb">
-      <DependentUpon>Rapport.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Rapport.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="ModifierMotdePasse.Designer.vb">
       <DependentUpon>ModifierMotdePasse.vb</DependentUpon>
     </Compile>
@@ -225,9 +219,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Rapport.resx">
-      <DependentUpon>Rapport.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmConsulterContrat.resx">
       <DependentUpon>FrmConsulterContrat.vb</DependentUpon>

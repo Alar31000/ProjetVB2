@@ -57,7 +57,7 @@ Partial Class Paiement
         '
         Me.ButtonPaye.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!)
         Me.ButtonPaye.Location = New System.Drawing.Point(44, 212)
-        Me.ButtonPaye.Margin = New System.Windows.Forms.Padding(4)
+        Me.ButtonPaye.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ButtonPaye.Name = "ButtonPaye"
         Me.ButtonPaye.Size = New System.Drawing.Size(177, 42)
         Me.ButtonPaye.TabIndex = 0
@@ -67,7 +67,7 @@ Partial Class Paiement
         'TextBoxNumeroCarte
         '
         Me.TextBoxNumeroCarte.Location = New System.Drawing.Point(407, 353)
-        Me.TextBoxNumeroCarte.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBoxNumeroCarte.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBoxNumeroCarte.Name = "TextBoxNumeroCarte"
         Me.TextBoxNumeroCarte.Size = New System.Drawing.Size(113, 43)
         Me.TextBoxNumeroCarte.TabIndex = 2
@@ -76,7 +76,7 @@ Partial Class Paiement
         'TextBoxDateEx
         '
         Me.TextBoxDateEx.Location = New System.Drawing.Point(407, 420)
-        Me.TextBoxDateEx.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBoxDateEx.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBoxDateEx.Name = "TextBoxDateEx"
         Me.TextBoxDateEx.Size = New System.Drawing.Size(113, 43)
         Me.TextBoxDateEx.TabIndex = 3
@@ -109,7 +109,7 @@ Partial Class Paiement
         'TextBoxCVV
         '
         Me.TextBoxCVV.Location = New System.Drawing.Point(407, 484)
-        Me.TextBoxCVV.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBoxCVV.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBoxCVV.Name = "TextBoxCVV"
         Me.TextBoxCVV.Size = New System.Drawing.Size(113, 43)
         Me.TextBoxCVV.TabIndex = 10
@@ -156,9 +156,9 @@ Partial Class Paiement
         Me.GroupBoxFacture.Font = New System.Drawing.Font("Segoe UI Black", 15.75!, System.Drawing.FontStyle.Bold)
         Me.GroupBoxFacture.ForeColor = System.Drawing.Color.Navy
         Me.GroupBoxFacture.Location = New System.Drawing.Point(1, 1)
-        Me.GroupBoxFacture.Margin = New System.Windows.Forms.Padding(4)
+        Me.GroupBoxFacture.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBoxFacture.Name = "GroupBoxFacture"
-        Me.GroupBoxFacture.Padding = New System.Windows.Forms.Padding(4)
+        Me.GroupBoxFacture.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBoxFacture.Size = New System.Drawing.Size(1081, 598)
         Me.GroupBoxFacture.TabIndex = 12
         Me.GroupBoxFacture.TabStop = False
@@ -167,7 +167,7 @@ Partial Class Paiement
         'TextBoxNComptec
         '
         Me.TextBoxNComptec.Location = New System.Drawing.Point(864, 475)
-        Me.TextBoxNComptec.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBoxNComptec.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBoxNComptec.Name = "TextBoxNComptec"
         Me.TextBoxNComptec.Size = New System.Drawing.Size(113, 43)
         Me.TextBoxNComptec.TabIndex = 26
@@ -201,7 +201,7 @@ Partial Class Paiement
         'TextBoxNInstitution
         '
         Me.TextBoxNInstitution.Location = New System.Drawing.Point(864, 416)
-        Me.TextBoxNInstitution.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBoxNInstitution.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBoxNInstitution.Name = "TextBoxNInstitution"
         Me.TextBoxNInstitution.Size = New System.Drawing.Size(113, 43)
         Me.TextBoxNInstitution.TabIndex = 15
@@ -210,7 +210,7 @@ Partial Class Paiement
         'TextBoxNSuccursale
         '
         Me.TextBoxNSuccursale.Location = New System.Drawing.Point(864, 353)
-        Me.TextBoxNSuccursale.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBoxNSuccursale.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBoxNSuccursale.Name = "TextBoxNSuccursale"
         Me.TextBoxNSuccursale.Size = New System.Drawing.Size(113, 43)
         Me.TextBoxNSuccursale.TabIndex = 15
@@ -219,7 +219,7 @@ Partial Class Paiement
         'TextBoxNCompte
         '
         Me.TextBoxNCompte.Location = New System.Drawing.Point(864, 252)
-        Me.TextBoxNCompte.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBoxNCompte.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBoxNCompte.Name = "TextBoxNCompte"
         Me.TextBoxNCompte.Size = New System.Drawing.Size(113, 43)
         Me.TextBoxNCompte.TabIndex = 14
@@ -230,7 +230,7 @@ Partial Class Paiement
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!)
         Me.Button1.Location = New System.Drawing.Point(44, 414)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(164, 42)
         Me.Button1.TabIndex = 25
@@ -298,9 +298,9 @@ Partial Class Paiement
         'GroupBoxPrélèvement
         '
         Me.GroupBoxPrélèvement.Location = New System.Drawing.Point(575, 172)
-        Me.GroupBoxPrélèvement.Margin = New System.Windows.Forms.Padding(4)
+        Me.GroupBoxPrélèvement.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBoxPrélèvement.Name = "GroupBoxPrélèvement"
-        Me.GroupBoxPrélèvement.Padding = New System.Windows.Forms.Padding(4)
+        Me.GroupBoxPrélèvement.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBoxPrélèvement.Size = New System.Drawing.Size(475, 144)
         Me.GroupBoxPrélèvement.TabIndex = 18
         Me.GroupBoxPrélèvement.TabStop = False
@@ -309,9 +309,9 @@ Partial Class Paiement
         'GroupBoxChèque
         '
         Me.GroupBoxChèque.Location = New System.Drawing.Point(575, 336)
-        Me.GroupBoxChèque.Margin = New System.Windows.Forms.Padding(4)
+        Me.GroupBoxChèque.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBoxChèque.Name = "GroupBoxChèque"
-        Me.GroupBoxChèque.Padding = New System.Windows.Forms.Padding(4)
+        Me.GroupBoxChèque.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBoxChèque.Size = New System.Drawing.Size(475, 218)
         Me.GroupBoxChèque.TabIndex = 19
         Me.GroupBoxChèque.TabStop = False
@@ -323,9 +323,9 @@ Partial Class Paiement
         Me.GroupBoxPayement.Controls.Add(Me.CheckBoxCarte)
         Me.GroupBoxPayement.Controls.Add(Me.CheckBoxChèque)
         Me.GroupBoxPayement.Location = New System.Drawing.Point(236, 170)
-        Me.GroupBoxPayement.Margin = New System.Windows.Forms.Padding(4)
+        Me.GroupBoxPayement.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBoxPayement.Name = "GroupBoxPayement"
-        Me.GroupBoxPayement.Padding = New System.Windows.Forms.Padding(4)
+        Me.GroupBoxPayement.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBoxPayement.Size = New System.Drawing.Size(331, 144)
         Me.GroupBoxPayement.TabIndex = 24
         Me.GroupBoxPayement.TabStop = False
@@ -337,7 +337,7 @@ Partial Class Paiement
         Me.CheckBoxPrélèvement.Font = New System.Drawing.Font("Segoe UI", 12.0!)
         Me.CheckBoxPrélèvement.ForeColor = System.Drawing.Color.Navy
         Me.CheckBoxPrélèvement.Location = New System.Drawing.Point(8, 30)
-        Me.CheckBoxPrélèvement.Margin = New System.Windows.Forms.Padding(4)
+        Me.CheckBoxPrélèvement.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.CheckBoxPrélèvement.Name = "CheckBoxPrélèvement"
         Me.CheckBoxPrélèvement.Size = New System.Drawing.Size(259, 32)
         Me.CheckBoxPrélèvement.TabIndex = 21
@@ -351,7 +351,7 @@ Partial Class Paiement
         Me.CheckBoxCarte.Font = New System.Drawing.Font("Segoe UI", 12.0!)
         Me.CheckBoxCarte.ForeColor = System.Drawing.Color.Navy
         Me.CheckBoxCarte.Location = New System.Drawing.Point(8, 64)
-        Me.CheckBoxCarte.Margin = New System.Windows.Forms.Padding(4)
+        Me.CheckBoxCarte.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.CheckBoxCarte.Name = "CheckBoxCarte"
         Me.CheckBoxCarte.Size = New System.Drawing.Size(135, 32)
         Me.CheckBoxCarte.TabIndex = 22
@@ -365,7 +365,7 @@ Partial Class Paiement
         Me.CheckBoxChèque.Font = New System.Drawing.Font("Segoe UI", 12.0!)
         Me.CheckBoxChèque.ForeColor = System.Drawing.Color.Navy
         Me.CheckBoxChèque.Location = New System.Drawing.Point(8, 98)
-        Me.CheckBoxChèque.Margin = New System.Windows.Forms.Padding(4)
+        Me.CheckBoxChèque.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.CheckBoxChèque.Name = "CheckBoxChèque"
         Me.CheckBoxChèque.Size = New System.Drawing.Size(179, 32)
         Me.CheckBoxChèque.TabIndex = 23
@@ -376,9 +376,9 @@ Partial Class Paiement
         'GroupBoxCarte
         '
         Me.GroupBoxCarte.Location = New System.Drawing.Point(212, 336)
-        Me.GroupBoxCarte.Margin = New System.Windows.Forms.Padding(4)
+        Me.GroupBoxCarte.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBoxCarte.Name = "GroupBoxCarte"
-        Me.GroupBoxCarte.Padding = New System.Windows.Forms.Padding(4)
+        Me.GroupBoxCarte.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBoxCarte.Size = New System.Drawing.Size(341, 217)
         Me.GroupBoxCarte.TabIndex = 20
         Me.GroupBoxCarte.TabStop = False
@@ -390,7 +390,7 @@ Partial Class Paiement
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1075, 570)
         Me.Controls.Add(Me.GroupBoxFacture)
-        Me.Margin = New System.Windows.Forms.Padding(4)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Paiement"
         Me.Text = "Paiement"
         Me.GroupBoxFacture.ResumeLayout(False)
