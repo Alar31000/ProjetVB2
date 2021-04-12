@@ -49,6 +49,7 @@ Public Class PagePrincipale
 
     Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
         Me.Close()
+        Login.Show()
 
     End Sub
 
@@ -123,8 +124,7 @@ Public Class PagePrincipale
         MsgBox("Les documents sont envoyés a l'imprimante avec succés")
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles BtnDéconnexion.Click
-        Me.Close()
-        Login.Show()
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
+
     End Sub
 End Class
