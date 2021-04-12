@@ -68,4 +68,8 @@
     Private Sub BtnValider_Click(sender As Object, e As EventArgs) Handles BtnValider.Click
         verifierInput()
     End Sub
+
+    Private Sub FrmNouveauFournisseur_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
