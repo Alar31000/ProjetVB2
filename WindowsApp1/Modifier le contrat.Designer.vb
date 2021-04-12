@@ -87,7 +87,6 @@ Partial Class Modifier_Contrat
         Me.GroupBox1.Controls.Add(Me.LblMLocation)
         Me.GroupBox1.Controls.Add(Me.LblMDO)
         Me.GroupBox1.Controls.Add(Me.LblMDF)
-        Me.GroupBox1.Enabled = False
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.Color.Black
         Me.GroupBox1.Location = New System.Drawing.Point(2, 90)

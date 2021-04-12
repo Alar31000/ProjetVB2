@@ -38,11 +38,24 @@
             TBoxMDMV.Text = "03/08/2021"
         Else
             MsgBox("le numéro du contrat n'existe pas!")
+            SupprimerDonner()
+
         End If
 
 
     End Sub
+    Sub SupprimerDonner()
+        LblMNC.Text = ""
+        TxtBoxNom.Text = ""
+        TxtBoxPrénom.Text = ""
+        TBoxMTCnt.Text = ""
+        TBoxMDO.Text = ""
+        TBoxMDF.Text = ""
+        TBoxMLocation.Text = ""
+        TBoxMService.Text = ""
+        TBoxMDMV.Text = ""
 
+    End Sub
 
     Private Sub BtnQuitter_Click(sender As Object, e As EventArgs) Handles BtnQuitter.Click
         Me.Close()
@@ -67,6 +80,10 @@
     End Sub
 
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TxtBoxNom.TextChanged
+
+    End Sub
+
+    Private Sub TxtBoxPrénom_TextChanged(sender As Object, e As EventArgs) Handles TxtBoxPrénom.TextChanged
 
     End Sub
 End Class

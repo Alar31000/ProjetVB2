@@ -8,50 +8,50 @@
     End Sub
     Private Sub btnOK_Click(sender As Object, e As EventArgs) Handles btnOK.Click
         If TxtBoxDateOuverture.Text = "" Then
-            MsgBox("S'il vous plait, Veuillez Entrer les information nécessaires", vbOKOnly, "Erreur")
+            MsgBox("S'il vous plait, Veuillez Entrer les informations nécessaires", vbOKOnly, "Erreur")
 
         ElseIf TxtBoxCodePostal.Text = "" Then
-            MsgBox("S'il vous plait, Veuillez Entrer les information nécessaires ", vbOKOnly, "Erreur")
+            MsgBox("S'il vous plait, Veuillez Entrer les informations nécessaires ", vbOKOnly, "Erreur")
 
         ElseIf GroupBox1.Text = "" Then
-            MsgBox("S'il vous plait, Veuillez Entrer les information nécessaires", vbOKOnly, "Erreur")
+            MsgBox("S'il vous plait, Veuillez Entrer les informations nécessaires", vbOKOnly, "Erreur")
 
         ElseIf GroupBox2.Text = "" Then
-            MsgBox("S'il vous plait, Veuillez Entrer les information nécessaires", vbOKOnly, "Erreur")
+            MsgBox("S'il vous plait, Veuillez Entrer les informations nécessaires", vbOKOnly, "Erreur")
 
         ElseIf TxtBoxNom.Text = "" Then
-            MsgBox("S'il vous plait, Veuillez Entrer les information nécessaires", vbOKOnly, "Erreur")
+            MsgBox("S'il vous plait, Veuillez Entrer les informations nécessaires", vbOKOnly, "Erreur")
 
 
         ElseIf TxtBoxPrenom.Text = "" Then
-            MsgBox("S'il vous plait, Veuillez Entrer les information nécessaires", vbOKOnly, "Erreur")
+            MsgBox("S'il vous plait, Veuillez Entrer les informations nécessaires", vbOKOnly, "Erreur")
 
         ElseIf TxtBoxAddresse.Text = "" Then
-            MsgBox("S'il vous plait, Veuillez Entrer les information nécessaires", vbOKOnly, "Erreur")
+            MsgBox("S'il vous plait, Veuillez Entrer les informations nécessaires", vbOKOnly, "Erreur")
 
         ElseIf TxtBoxVille.Text = "" Then
-            MsgBox("S'il vous plait, Veuillez Entrer les information nécessaires", vbOKOnly, "Erreur")
+            MsgBox("S'il vous plait, Veuillez Entrer les informations nécessaires", vbOKOnly, "Erreur")
 
         ElseIf TxtBoxTéléphone.Text = "" Then
-            MsgBox("S'il vous plait, Veuillez Entrer les information nécessaires", vbOKOnly, "Erreur")
+            MsgBox("S'il vous plait, Veuillez Entrer les informations nécessaires", vbOKOnly, "Erreur")
 
         ElseIf TxtBoxFax.Text = "" Then
-            MsgBox("S'il vous plait, Veuillez Entrer les information nécessaires", vbOKOnly, "Erreur")
+            MsgBox("S'il vous plait, Veuillez Entrer les informations nécessaires", vbOKOnly, "Erreur")
 
         ElseIf TxtBoxNEmployé.Text = "" Then
-            MsgBox("S'il vous plait, Veuillez Entrer les information nécessaires", vbOKOnly, "Erreur")
+            MsgBox("S'il vous plait, Veuillez Entrer les informations nécessaires", vbOKOnly, "Erreur")
 
         ElseIf TxtBoxCompanie.Text = "" Then
-            MsgBox("S'il vous plait, Veuillez Entrer les information nécessaires", vbOKOnly, "Erreur")
+            MsgBox("S'il vous plait, Veuillez Entrer les informations nécessaires", vbOKOnly, "Erreur")
 
         ElseIf txtBoxFraisMensuel.Text = "" Then
-            MsgBox("S'il vous plait, Veuillez Entrer les information nécessaires", vbOKOnly, "Erreur")
+            MsgBox("S'il vous plait, Veuillez Entrer les informations nécessaires", vbOKOnly, "Erreur")
 
         ElseIf TxtBoxFermeture.Text = "" Then
-            MsgBox("S'il vous plait, Veuillez Entrer les information nécessaires", vbOKOnly, "Erreur")
+            MsgBox("S'il vous plait, Veuillez Entrer les informations nécessaires", vbOKOnly, "Erreur")
 
         ElseIf TxtBoxDateVigueur.Text = "" Then
-            MsgBox("S'il vous plait, Veuillez Entrer les information nécessaires", vbOKOnly, "Erreur")
+            MsgBox("S'il vous plait, Veuillez Entrer les informations nécessaires", vbOKOnly, "Erreur")
         Else
             MsgBox("Le contrat a été créé avec succés!", vbOKOnly, "Nouveau Contrat")
         End If
@@ -155,6 +155,10 @@
     End Sub
 
     Private Sub TextBox6_TextChanged(sender As Object, e As EventArgs) Handles TxtBoxDateVigueur.TextChanged
+
+    End Sub
+
+    Private Sub CmbBoxFraisRacondement_SelectedIndexChanged(sender As Object, e As EventArgs) Handles CmbBoxFraisRacondement.SelectedIndexChanged
 
     End Sub
 End Class
