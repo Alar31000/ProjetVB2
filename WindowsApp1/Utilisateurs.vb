@@ -8,20 +8,32 @@ Public Class Utilisateurs
     End Sub
     ' Procedure pour affichier les utilisateurs principaux de l'application SGARI
     Sub recherche()
+        Dim userfullname As String
+        Dim sql As String = "SELECT * FROM users;"
+        ListUtilisateurs.Items.Clear()
+        Dim conn As New SQLiteConnection(connectionString.ToString)
+        conn.Open()
+        Dim cmd As New SQLiteCommand
+        cmd.Connection = conn
+        cmd.CommandText = sql
+        Dim sqlRead As SQLiteDataReader
+        sqlRead = cmd.ExecuteReader
+        If sqlRead.HasRows Then
+            Do While sqlRead.Read()
+                userfullname = sqlRead.Item("user_fullname")
+                ListUtilisateurs.Items.Add(userfullname)
+            Loop
+        End If
 
-        '    ListUtilisateurs.Items.Clear()
-        '    If data_reader.HasRows Then
-        '        Do While data_reader.Read()
-        '            WorkItemNumber = data_reader.Item("work item number")
-        '            Description = data_reader.Item("description")
-        '            ListBox1.Items.Add(New ListItem(Description, WorkItemNumber)
-        'Loop
-        '    End If
-        '    Dim tabutilisateur() As String = {"Administrateur", "Ines", "Sofiane", "Camille", "Yaseen", "Sulaymane"}
-        '    Dim intCount As Integer = 0
-        '    For intCount = 0 To tabutilisateur.Length - 1
-        '        ListUtilisateurs.Items.Add(tabutilisateur(intCount))
-        '    Next
+        sqlRead.Close()
+        conn.Close()
+
+
+        'Dim tabutilisateur() As String = {"Administrateur", "Ines", "Sofiane", "Camille", "Yaseen", "Sulaymane"}
+        'Dim intCount As Integer = 0
+        'For intCount = 0 To tabutilisateur.Length - 1
+        '    ListUtilisateurs.Items.Add(tabutilisateur(intCount))
+        'Next
 
 
     End Sub
@@ -35,5 +47,10 @@ Public Class Utilisateurs
 
     Private Sub ButtonQuitter_Click(sender As Object, e As EventArgs) Handles ButtonQuitter.Click
         Me.Close()
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        ModifierMotdePasse.Show()
+
     End Sub
 End Class
