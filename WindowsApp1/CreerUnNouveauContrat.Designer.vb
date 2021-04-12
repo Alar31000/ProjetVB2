@@ -22,6 +22,7 @@ Partial Class CreerUnNouveauContrat
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CreerUnNouveauContrat))
         Me.btnAide = New System.Windows.Forms.Button()
         Me.btnAnnuler = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
@@ -66,6 +67,9 @@ Partial Class CreerUnNouveauContrat
         Me.TextBox14 = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.btnOK = New System.Windows.Forms.Button()
+        Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
+        Me.RichTextbox1 = New System.Windows.Forms.RichTextBox()
+        Me.PrintPreviewDialog1 = New System.Windows.Forms.PrintPreviewDialog()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -73,7 +77,7 @@ Partial Class CreerUnNouveauContrat
         'btnAide
         '
         Me.btnAide.Location = New System.Drawing.Point(903, 404)
-        Me.btnAide.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnAide.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAide.Name = "btnAide"
         Me.btnAide.Size = New System.Drawing.Size(69, 33)
         Me.btnAide.TabIndex = 29
@@ -83,7 +87,7 @@ Partial Class CreerUnNouveauContrat
         'btnAnnuler
         '
         Me.btnAnnuler.Location = New System.Drawing.Point(817, 404)
-        Me.btnAnnuler.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnAnnuler.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAnnuler.Name = "btnAnnuler"
         Me.btnAnnuler.Size = New System.Drawing.Size(69, 33)
         Me.btnAnnuler.TabIndex = 28
@@ -112,9 +116,9 @@ Partial Class CreerUnNouveauContrat
         Me.GroupBox2.Controls.Add(Me.TextBox4)
         Me.GroupBox2.ForeColor = System.Drawing.Color.Black
         Me.GroupBox2.Location = New System.Drawing.Point(488, 12)
-        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox2.Size = New System.Drawing.Size(495, 362)
         Me.GroupBox2.TabIndex = 25
         Me.GroupBox2.TabStop = False
@@ -123,7 +127,7 @@ Partial Class CreerUnNouveauContrat
         'txtBoxFraisMensuel
         '
         Me.txtBoxFraisMensuel.Location = New System.Drawing.Point(161, 276)
-        Me.txtBoxFraisMensuel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtBoxFraisMensuel.Margin = New System.Windows.Forms.Padding(4)
         Me.txtBoxFraisMensuel.Name = "txtBoxFraisMensuel"
         Me.txtBoxFraisMensuel.Size = New System.Drawing.Size(128, 22)
         Me.txtBoxFraisMensuel.TabIndex = 33
@@ -141,7 +145,7 @@ Partial Class CreerUnNouveauContrat
         'TextBox5
         '
         Me.TextBox5.Location = New System.Drawing.Point(161, 137)
-        Me.TextBox5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox5.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(128, 22)
         Me.TextBox5.TabIndex = 31
@@ -151,7 +155,7 @@ Partial Class CreerUnNouveauContrat
         Me.btnService.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.btnService.ForeColor = System.Drawing.Color.Navy
         Me.btnService.Location = New System.Drawing.Point(347, 260)
-        Me.btnService.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnService.Margin = New System.Windows.Forms.Padding(4)
         Me.btnService.Name = "btnService"
         Me.btnService.Size = New System.Drawing.Size(139, 32)
         Me.btnService.TabIndex = 28
@@ -163,7 +167,7 @@ Partial Class CreerUnNouveauContrat
         Me.btnLocationEquipement.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.btnLocationEquipement.ForeColor = System.Drawing.Color.Navy
         Me.btnLocationEquipement.Location = New System.Drawing.Point(347, 302)
-        Me.btnLocationEquipement.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnLocationEquipement.Margin = New System.Windows.Forms.Padding(4)
         Me.btnLocationEquipement.Name = "btnLocationEquipement"
         Me.btnLocationEquipement.Size = New System.Drawing.Size(139, 53)
         Me.btnLocationEquipement.TabIndex = 27
@@ -174,7 +178,7 @@ Partial Class CreerUnNouveauContrat
         '
         Me.TextBox16.BackColor = System.Drawing.SystemColors.ControlLight
         Me.TextBox16.Location = New System.Drawing.Point(161, 98)
-        Me.TextBox16.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox16.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox16.Name = "TextBox16"
         Me.TextBox16.Size = New System.Drawing.Size(128, 22)
         Me.TextBox16.TabIndex = 24
@@ -183,7 +187,7 @@ Partial Class CreerUnNouveauContrat
         '
         Me.TextBox15.BackColor = System.Drawing.SystemColors.ControlLight
         Me.TextBox15.Location = New System.Drawing.Point(329, 23)
-        Me.TextBox15.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox15.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox15.Name = "TextBox15"
         Me.TextBox15.Size = New System.Drawing.Size(155, 22)
         Me.TextBox15.TabIndex = 23
@@ -192,7 +196,7 @@ Partial Class CreerUnNouveauContrat
         '
         Me.ComboBox2.FormattingEnabled = True
         Me.ComboBox2.Location = New System.Drawing.Point(161, 68)
-        Me.ComboBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ComboBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(323, 24)
         Me.ComboBox2.TabIndex = 22
@@ -252,7 +256,7 @@ Partial Class CreerUnNouveauContrat
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"Actif", "Inactif"})
         Me.ComboBox1.Location = New System.Drawing.Point(68, 28)
-        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(128, 24)
         Me.ComboBox1.TabIndex = 12
@@ -270,7 +274,7 @@ Partial Class CreerUnNouveauContrat
         'TextBox6
         '
         Me.TextBox6.Location = New System.Drawing.Point(161, 174)
-        Me.TextBox6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox6.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(128, 22)
         Me.TextBox6.TabIndex = 7
@@ -287,7 +291,7 @@ Partial Class CreerUnNouveauContrat
         'TextBox4
         '
         Me.TextBox4.Location = New System.Drawing.Point(161, 212)
-        Me.TextBox4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox4.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(128, 22)
         Me.TextBox4.TabIndex = 5
@@ -295,7 +299,7 @@ Partial Class CreerUnNouveauContrat
         'btnImprimer
         '
         Me.btnImprimer.Location = New System.Drawing.Point(719, 404)
-        Me.btnImprimer.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnImprimer.Margin = New System.Windows.Forms.Padding(4)
         Me.btnImprimer.Name = "btnImprimer"
         Me.btnImprimer.Size = New System.Drawing.Size(81, 33)
         Me.btnImprimer.TabIndex = 27
@@ -305,7 +309,7 @@ Partial Class CreerUnNouveauContrat
         'TextBox3
         '
         Me.TextBox3.Location = New System.Drawing.Point(87, 23)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox3.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(328, 22)
         Me.TextBox3.TabIndex = 4
@@ -333,7 +337,7 @@ Partial Class CreerUnNouveauContrat
         'TextBox2
         '
         Me.TextBox2.Location = New System.Drawing.Point(87, 64)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(328, 22)
         Me.TextBox2.TabIndex = 7
@@ -421,7 +425,7 @@ Partial Class CreerUnNouveauContrat
         'TextBox7
         '
         Me.TextBox7.Location = New System.Drawing.Point(87, 101)
-        Me.TextBox7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox7.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.Size = New System.Drawing.Size(328, 22)
         Me.TextBox7.TabIndex = 16
@@ -429,7 +433,7 @@ Partial Class CreerUnNouveauContrat
         'TextBox8
         '
         Me.TextBox8.Location = New System.Drawing.Point(87, 142)
-        Me.TextBox8.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox8.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.Size = New System.Drawing.Size(131, 22)
         Me.TextBox8.TabIndex = 17
@@ -437,7 +441,7 @@ Partial Class CreerUnNouveauContrat
         'TextBox9
         '
         Me.TextBox9.Location = New System.Drawing.Point(91, 188)
-        Me.TextBox9.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox9.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox9.Name = "TextBox9"
         Me.TextBox9.Size = New System.Drawing.Size(113, 22)
         Me.TextBox9.TabIndex = 18
@@ -445,7 +449,7 @@ Partial Class CreerUnNouveauContrat
         'TextBox10
         '
         Me.TextBox10.Location = New System.Drawing.Point(91, 235)
-        Me.TextBox10.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox10.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox10.Name = "TextBox10"
         Me.TextBox10.Size = New System.Drawing.Size(325, 22)
         Me.TextBox10.TabIndex = 19
@@ -453,7 +457,7 @@ Partial Class CreerUnNouveauContrat
         'TextBox11
         '
         Me.TextBox11.Location = New System.Drawing.Point(91, 276)
-        Me.TextBox11.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox11.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox11.Name = "TextBox11"
         Me.TextBox11.Size = New System.Drawing.Size(113, 22)
         Me.TextBox11.TabIndex = 20
@@ -461,7 +465,7 @@ Partial Class CreerUnNouveauContrat
         'TextBox12
         '
         Me.TextBox12.Location = New System.Drawing.Point(91, 318)
-        Me.TextBox12.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox12.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox12.Name = "TextBox12"
         Me.TextBox12.Size = New System.Drawing.Size(325, 22)
         Me.TextBox12.TabIndex = 21
@@ -469,7 +473,7 @@ Partial Class CreerUnNouveauContrat
         'TextBox13
         '
         Me.TextBox13.Location = New System.Drawing.Point(311, 142)
-        Me.TextBox13.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox13.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox13.Name = "TextBox13"
         Me.TextBox13.Size = New System.Drawing.Size(104, 22)
         Me.TextBox13.TabIndex = 22
@@ -477,7 +481,7 @@ Partial Class CreerUnNouveauContrat
         'TextBox14
         '
         Me.TextBox14.Location = New System.Drawing.Point(271, 193)
-        Me.TextBox14.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox14.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox14.Name = "TextBox14"
         Me.TextBox14.Size = New System.Drawing.Size(144, 22)
         Me.TextBox14.TabIndex = 23
@@ -505,9 +509,9 @@ Partial Class CreerUnNouveauContrat
         Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.TextBox3)
         Me.GroupBox1.Location = New System.Drawing.Point(25, 12)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Size = New System.Drawing.Size(436, 362)
         Me.GroupBox1.TabIndex = 24
         Me.GroupBox1.TabStop = False
@@ -518,25 +522,49 @@ Partial Class CreerUnNouveauContrat
         Me.btnOK.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!)
         Me.btnOK.ForeColor = System.Drawing.Color.Black
         Me.btnOK.Location = New System.Drawing.Point(628, 404)
-        Me.btnOK.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnOK.Margin = New System.Windows.Forms.Padding(4)
         Me.btnOK.Name = "btnOK"
         Me.btnOK.Size = New System.Drawing.Size(69, 33)
         Me.btnOK.TabIndex = 26
         Me.btnOK.Text = "OK"
         Me.btnOK.UseVisualStyleBackColor = True
         '
+        'PrintDocument1
+        '
+        '
+        'RichTextbox1
+        '
+        Me.RichTextbox1.Location = New System.Drawing.Point(25, 381)
+        Me.RichTextbox1.Name = "RichTextbox1"
+        Me.RichTextbox1.Size = New System.Drawing.Size(436, 96)
+        Me.RichTextbox1.TabIndex = 30
+        Me.RichTextbox1.Text = ""
+        Me.RichTextbox1.Visible = False
+        '
+        'PrintPreviewDialog1
+        '
+        Me.PrintPreviewDialog1.AutoScrollMargin = New System.Drawing.Size(0, 0)
+        Me.PrintPreviewDialog1.AutoScrollMinSize = New System.Drawing.Size(0, 0)
+        Me.PrintPreviewDialog1.ClientSize = New System.Drawing.Size(400, 300)
+        Me.PrintPreviewDialog1.Document = Me.PrintDocument1
+        Me.PrintPreviewDialog1.Enabled = True
+        Me.PrintPreviewDialog1.Icon = CType(resources.GetObject("PrintPreviewDialog1.Icon"), System.Drawing.Icon)
+        Me.PrintPreviewDialog1.Name = "PrintPreviewDialog1"
+        Me.PrintPreviewDialog1.Visible = False
+        '
         'CreerUnNouveauContrat
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1009, 469)
+        Me.Controls.Add(Me.RichTextbox1)
         Me.Controls.Add(Me.btnAide)
         Me.Controls.Add(Me.btnAnnuler)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.btnImprimer)
         Me.Controls.Add(Me.btnOK)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "CreerUnNouveauContrat"
         Me.Text = "CreerUnNouveauContrat"
         Me.GroupBox2.ResumeLayout(False)
@@ -591,4 +619,7 @@ Partial Class CreerUnNouveauContrat
     Friend WithEvents TextBox14 As TextBox
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents btnOK As Button
+    Friend WithEvents PrintDocument1 As Printing.PrintDocument
+    Friend WithEvents PrintPreviewDialog1 As PrintPreviewDialog
+    Friend WithEvents RichTextbox1 As RichTextBox
 End Class

@@ -94,4 +94,12 @@
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
         FrmFacture.Show()
     End Sub
+
+    Private Sub Number_Only(sender As Object, e As KeyPressEventArgs) Handles TextBoxMOrdi.KeyPress, TextBoxModem.KeyPress, TextBoxInternet.KeyPress
+        If Asc(e.KeyChar) <> 8 Then
+            If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then
+                e.Handled = True
+            End If
+        End If
+    End Sub
 End Class

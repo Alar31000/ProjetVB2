@@ -4,7 +4,12 @@
     End Sub
 
     Private Sub ButtonAnnuler_Click(sender As Object, e As EventArgs) Handles ButtonAnnuler.Click
-        Me.Close()
+        Dim iExit As DialogResult
+        iExit = MsgBox("Voulez Vous Fermer cette fenêtre ?", MessageBoxButtons.YesNo, MessageBoxIcon.Information)
+        If iExit = DialogResult.Yes Then
+            Application.Exit()
+        End If
+        End
 
     End Sub
 

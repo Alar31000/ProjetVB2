@@ -91,35 +91,39 @@ Public Class PagePrincipale
 
     End Sub
 
-    Private Sub AchévementDesContratsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AchévementDesContratsToolStripMenuItem.Click
+    Private Sub AchévementDesContratsToolStripMenuItem_Click(sender As Object, e As EventArgs)
         MsgBox("Les documents sont envoyés a l'imprimante avec succés")
     End Sub
 
-    Private Sub ÉquipementsÀCommanderToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ÉquipementsÀCommanderToolStripMenuItem.Click
+    Private Sub ÉquipementsÀCommanderToolStripMenuItem_Click(sender As Object, e As EventArgs)
         MsgBox("Les documents sont envoyés a l'imprimante avec succés")
     End Sub
 
-    Private Sub ÉquipementsÀRetournerToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ÉquipementsÀRetournerToolStripMenuItem.Click
+    Private Sub ÉquipementsÀRetournerToolStripMenuItem_Click(sender As Object, e As EventArgs)
         MsgBox("Les documents sont envoyés a l'imprimante avec succés")
     End Sub
 
-    Private Sub ContratsOuvertsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ContratsOuvertsToolStripMenuItem.Click
+    Private Sub ContratsOuvertsToolStripMenuItem_Click(sender As Object, e As EventArgs)
         MsgBox("Les documents sont envoyés a l'imprimante avec succés")
     End Sub
 
-    Private Sub ContratsRésiliersToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ContratsRésiliersToolStripMenuItem.Click
+    Private Sub ContratsRésiliersToolStripMenuItem_Click(sender As Object, e As EventArgs)
         MsgBox("Les documents sont envoyés a l'imprimante avec succés")
     End Sub
 
-    Private Sub ClientsContentieuxToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ClientsContentieuxToolStripMenuItem.Click
+    Private Sub ClientsContentieuxToolStripMenuItem_Click(sender As Object, e As EventArgs)
         MsgBox("Les documents sont envoyés a l'imprimante avec succés")
     End Sub
 
-    Private Sub PaimentParCarteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PaimentParCarteToolStripMenuItem.Click
+    Private Sub PaimentParCarteToolStripMenuItem_Click(sender As Object, e As EventArgs)
         MsgBox("Les documents sont envoyés a l'imprimante avec succés")
     End Sub
 
-    Private Sub PaiementParRetraitDirectToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PaiementParRetraitDirectToolStripMenuItem.Click
+    Private Sub PaiementParRetraitDirectToolStripMenuItem_Click(sender As Object, e As EventArgs)
         MsgBox("Les documents sont envoyés a l'imprimante avec succés")
+    End Sub
+
+    Private Sub RapportsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RapportsToolStripMenuItem.Click
+        Rapport.Show()
     End Sub
 End Class
