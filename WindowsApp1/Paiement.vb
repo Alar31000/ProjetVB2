@@ -170,4 +170,9 @@
 
         End If
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        MsgBox("La Facture a été envoyé au client!")
+
+    End Sub
 End Class
