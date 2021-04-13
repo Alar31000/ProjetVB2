@@ -161,4 +161,18 @@
     Private Sub Paiement_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub TextBoxNIP_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBoxNumeroCarte.KeyPress, TextBoxNSuccursale.KeyPress, TextBoxNIP.KeyPress, TextBoxNInstitution.KeyPress, TextBoxNComptec.KeyPress, TextBoxNCompte.KeyPress, TextBoxDateEx.KeyPress, TextBoxCVV.KeyPress
+        If Asc(e.KeyChar) <> 8 Then
+            If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then
+                e.Handled = True
+            End If
+
+        End If
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        MsgBox("La Facture a été envoyé au client!")
+
+    End Sub
 End Class

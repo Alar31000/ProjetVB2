@@ -63,7 +63,6 @@ Partial Class PagePrincipale
         Me.IndexToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.toolStripSeparator5 = New System.Windows.Forms.ToolStripSeparator()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.BtnDéconnexion = New System.Windows.Forms.Button()
         Me.StatusStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
@@ -73,24 +72,23 @@ Partial Class PagePrincipale
         '
         Me.StatusStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel1})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 562)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 708)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Padding = New System.Windows.Forms.Padding(1, 0, 11, 0)
-        Me.StatusStrip1.Size = New System.Drawing.Size(1370, 22)
+        Me.StatusStrip1.Size = New System.Drawing.Size(1712, 22)
         Me.StatusStrip1.TabIndex = 0
         Me.StatusStrip1.Text = "StatusStrip1"
         '
         'ToolStripStatusLabel1
         '
         Me.ToolStripStatusLabel1.Name = "ToolStripStatusLabel1"
-        Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(119, 17)
+        Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(153, 20)
         Me.ToolStripStatusLabel1.Text = "ToolStripStatusLabel1"
         Me.ToolStripStatusLabel1.Visible = False
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(-210, 90)
+        Me.PictureBox1.Location = New System.Drawing.Point(-262, 112)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(1810, 269)
@@ -104,8 +102,8 @@ Partial Class PagePrincipale
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.EditToolStripMenuItem, Me.ÉquipementsToolStripMenuItem, Me.FacturationsToolStripMenuItem, Me.FournisseursToolStripMenuItem, Me.RapportsToolStripMenuItem, Me.ToolsToolStripMenuItem, Me.HelpToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(1370, 24)
+        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(6, 2, 0, 2)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1712, 28)
         Me.MenuStrip1.TabIndex = 2
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -113,7 +111,7 @@ Partial Class PagePrincipale
         '
         Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewToolStripMenuItem, Me.OpenToolStripMenuItem, Me.toolStripSeparator, Me.SaveAsToolStripMenuItem, Me.SaveToolStripMenuItem, Me.toolStripSeparator1, Me.PrintToolStripMenuItem, Me.toolStripSeparator2, Me.ExitToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(72, 24)
         Me.FileToolStripMenuItem.Text = "&Contrat"
         '
         'NewToolStripMenuItem
@@ -122,7 +120,7 @@ Partial Class PagePrincipale
         Me.NewToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.NewToolStripMenuItem.Name = "NewToolStripMenuItem"
         Me.NewToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.N), System.Windows.Forms.Keys)
-        Me.NewToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
+        Me.NewToolStripMenuItem.Size = New System.Drawing.Size(207, 26)
         Me.NewToolStripMenuItem.Text = "&Créer"
         '
         'OpenToolStripMenuItem
@@ -131,18 +129,18 @@ Partial Class PagePrincipale
         Me.OpenToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.OpenToolStripMenuItem.Name = "OpenToolStripMenuItem"
         Me.OpenToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.O), System.Windows.Forms.Keys)
-        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
+        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(207, 26)
         Me.OpenToolStripMenuItem.Text = "C&onsulter"
         '
         'toolStripSeparator
         '
         Me.toolStripSeparator.Name = "toolStripSeparator"
-        Me.toolStripSeparator.Size = New System.Drawing.Size(165, 6)
+        Me.toolStripSeparator.Size = New System.Drawing.Size(204, 6)
         '
         'SaveAsToolStripMenuItem
         '
         Me.SaveAsToolStripMenuItem.Name = "SaveAsToolStripMenuItem"
-        Me.SaveAsToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
+        Me.SaveAsToolStripMenuItem.Size = New System.Drawing.Size(207, 26)
         Me.SaveAsToolStripMenuItem.Text = "&Renouveler"
         '
         'SaveToolStripMenuItem
@@ -150,205 +148,195 @@ Partial Class PagePrincipale
         Me.SaveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
         Me.SaveToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.M), System.Windows.Forms.Keys)
-        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
+        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(207, 26)
         Me.SaveToolStripMenuItem.Text = "&Modifier"
         '
         'toolStripSeparator1
         '
         Me.toolStripSeparator1.Name = "toolStripSeparator1"
-        Me.toolStripSeparator1.Size = New System.Drawing.Size(165, 6)
+        Me.toolStripSeparator1.Size = New System.Drawing.Size(204, 6)
         '
         'PrintToolStripMenuItem
         '
         Me.PrintToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.PrintToolStripMenuItem.Name = "PrintToolStripMenuItem"
         Me.PrintToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.P), System.Windows.Forms.Keys)
-        Me.PrintToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
+        Me.PrintToolStripMenuItem.Size = New System.Drawing.Size(207, 26)
         Me.PrintToolStripMenuItem.Text = "Ré&silier"
         '
         'toolStripSeparator2
         '
         Me.toolStripSeparator2.Name = "toolStripSeparator2"
-        Me.toolStripSeparator2.Size = New System.Drawing.Size(165, 6)
+        Me.toolStripSeparator2.Size = New System.Drawing.Size(204, 6)
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
-        Me.ExitToolStripMenuItem.Text = "&Quitter"
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.ExitToolStripMenuItem.Text = "&Déconnexion"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(76, 24)
         Me.EditToolStripMenuItem.Text = "&Services"
         '
         'ÉquipementsToolStripMenuItem
         '
         Me.ÉquipementsToolStripMenuItem.Name = "ÉquipementsToolStripMenuItem"
-        Me.ÉquipementsToolStripMenuItem.Size = New System.Drawing.Size(88, 20)
+        Me.ÉquipementsToolStripMenuItem.Size = New System.Drawing.Size(109, 24)
         Me.ÉquipementsToolStripMenuItem.Text = "Équipements"
         '
         'FacturationsToolStripMenuItem
         '
         Me.FacturationsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FactureToolStripMenuItem, Me.PaiementToolStripMenuItem})
         Me.FacturationsToolStripMenuItem.Name = "FacturationsToolStripMenuItem"
-        Me.FacturationsToolStripMenuItem.Size = New System.Drawing.Size(63, 20)
+        Me.FacturationsToolStripMenuItem.Size = New System.Drawing.Size(76, 24)
         Me.FacturationsToolStripMenuItem.Text = "Factures"
         '
         'FactureToolStripMenuItem
         '
         Me.FactureToolStripMenuItem.Name = "FactureToolStripMenuItem"
-        Me.FactureToolStripMenuItem.Size = New System.Drawing.Size(139, 22)
+        Me.FactureToolStripMenuItem.Size = New System.Drawing.Size(171, 26)
         Me.FactureToolStripMenuItem.Text = "Facturations"
         '
         'PaiementToolStripMenuItem
         '
         Me.PaiementToolStripMenuItem.Name = "PaiementToolStripMenuItem"
-        Me.PaiementToolStripMenuItem.Size = New System.Drawing.Size(139, 22)
+        Me.PaiementToolStripMenuItem.Size = New System.Drawing.Size(171, 26)
         Me.PaiementToolStripMenuItem.Text = "Paiement"
         '
         'FournisseursToolStripMenuItem
         '
         Me.FournisseursToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NouveauToolStripMenuItem, Me.ModifierToolStripMenuItem})
         Me.FournisseursToolStripMenuItem.Name = "FournisseursToolStripMenuItem"
-        Me.FournisseursToolStripMenuItem.Size = New System.Drawing.Size(85, 20)
+        Me.FournisseursToolStripMenuItem.Size = New System.Drawing.Size(103, 24)
         Me.FournisseursToolStripMenuItem.Text = "Fournisseurs"
         '
         'NouveauToolStripMenuItem
         '
         Me.NouveauToolStripMenuItem.Name = "NouveauToolStripMenuItem"
-        Me.NouveauToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
+        Me.NouveauToolStripMenuItem.Size = New System.Drawing.Size(151, 26)
         Me.NouveauToolStripMenuItem.Text = "Nouveau"
         '
         'ModifierToolStripMenuItem
         '
         Me.ModifierToolStripMenuItem.Name = "ModifierToolStripMenuItem"
-        Me.ModifierToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
+        Me.ModifierToolStripMenuItem.Size = New System.Drawing.Size(151, 26)
         Me.ModifierToolStripMenuItem.Text = "Modifier"
         '
         'RapportsToolStripMenuItem
         '
         Me.RapportsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AchévementDesContratsToolStripMenuItem, Me.ÉquipementsÀCommanderToolStripMenuItem, Me.ÉquipementsÀRetournerToolStripMenuItem, Me.ToolStripSeparator3, Me.ContratsOuvertsToolStripMenuItem, Me.ContratsRésiliersToolStripMenuItem, Me.ToolStripSeparator4, Me.ClientsContentieuxToolStripMenuItem, Me.ToolStripSeparator6, Me.PaimentParCarteToolStripMenuItem, Me.PaiementParRetraitDirectToolStripMenuItem})
         Me.RapportsToolStripMenuItem.Name = "RapportsToolStripMenuItem"
-        Me.RapportsToolStripMenuItem.Size = New System.Drawing.Size(66, 20)
+        Me.RapportsToolStripMenuItem.Size = New System.Drawing.Size(83, 24)
         Me.RapportsToolStripMenuItem.Text = "Rapports"
         '
         'AchévementDesContratsToolStripMenuItem
         '
         Me.AchévementDesContratsToolStripMenuItem.Name = "AchévementDesContratsToolStripMenuItem"
-        Me.AchévementDesContratsToolStripMenuItem.Size = New System.Drawing.Size(220, 22)
+        Me.AchévementDesContratsToolStripMenuItem.Size = New System.Drawing.Size(274, 26)
         Me.AchévementDesContratsToolStripMenuItem.Text = "&Achévement des contrats"
         '
         'ÉquipementsÀCommanderToolStripMenuItem
         '
         Me.ÉquipementsÀCommanderToolStripMenuItem.Name = "ÉquipementsÀCommanderToolStripMenuItem"
-        Me.ÉquipementsÀCommanderToolStripMenuItem.Size = New System.Drawing.Size(220, 22)
+        Me.ÉquipementsÀCommanderToolStripMenuItem.Size = New System.Drawing.Size(274, 26)
         Me.ÉquipementsÀCommanderToolStripMenuItem.Text = "&Équipements à commander"
         '
         'ÉquipementsÀRetournerToolStripMenuItem
         '
         Me.ÉquipementsÀRetournerToolStripMenuItem.Name = "ÉquipementsÀRetournerToolStripMenuItem"
-        Me.ÉquipementsÀRetournerToolStripMenuItem.Size = New System.Drawing.Size(220, 22)
+        Me.ÉquipementsÀRetournerToolStripMenuItem.Size = New System.Drawing.Size(274, 26)
         Me.ÉquipementsÀRetournerToolStripMenuItem.Text = "Équipements à Retourner"
         '
         'ToolStripSeparator3
         '
         Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
-        Me.ToolStripSeparator3.Size = New System.Drawing.Size(217, 6)
+        Me.ToolStripSeparator3.Size = New System.Drawing.Size(271, 6)
         '
         'ContratsOuvertsToolStripMenuItem
         '
         Me.ContratsOuvertsToolStripMenuItem.Name = "ContratsOuvertsToolStripMenuItem"
-        Me.ContratsOuvertsToolStripMenuItem.Size = New System.Drawing.Size(220, 22)
+        Me.ContratsOuvertsToolStripMenuItem.Size = New System.Drawing.Size(274, 26)
         Me.ContratsOuvertsToolStripMenuItem.Text = "Contrats ouverts"
         '
         'ContratsRésiliersToolStripMenuItem
         '
         Me.ContratsRésiliersToolStripMenuItem.Name = "ContratsRésiliersToolStripMenuItem"
-        Me.ContratsRésiliersToolStripMenuItem.Size = New System.Drawing.Size(220, 22)
+        Me.ContratsRésiliersToolStripMenuItem.Size = New System.Drawing.Size(274, 26)
         Me.ContratsRésiliersToolStripMenuItem.Text = "Contrats résiliers"
         '
         'ToolStripSeparator4
         '
         Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
-        Me.ToolStripSeparator4.Size = New System.Drawing.Size(217, 6)
+        Me.ToolStripSeparator4.Size = New System.Drawing.Size(271, 6)
         '
         'ClientsContentieuxToolStripMenuItem
         '
         Me.ClientsContentieuxToolStripMenuItem.Name = "ClientsContentieuxToolStripMenuItem"
-        Me.ClientsContentieuxToolStripMenuItem.Size = New System.Drawing.Size(220, 22)
+        Me.ClientsContentieuxToolStripMenuItem.Size = New System.Drawing.Size(274, 26)
         Me.ClientsContentieuxToolStripMenuItem.Text = "Clients contentieux"
         '
         'ToolStripSeparator6
         '
         Me.ToolStripSeparator6.Name = "ToolStripSeparator6"
-        Me.ToolStripSeparator6.Size = New System.Drawing.Size(217, 6)
+        Me.ToolStripSeparator6.Size = New System.Drawing.Size(271, 6)
         '
         'PaimentParCarteToolStripMenuItem
         '
         Me.PaimentParCarteToolStripMenuItem.Name = "PaimentParCarteToolStripMenuItem"
-        Me.PaimentParCarteToolStripMenuItem.Size = New System.Drawing.Size(220, 22)
+        Me.PaimentParCarteToolStripMenuItem.Size = New System.Drawing.Size(274, 26)
         Me.PaimentParCarteToolStripMenuItem.Text = "Paiement par carte crédit"
         '
         'PaiementParRetraitDirectToolStripMenuItem
         '
         Me.PaiementParRetraitDirectToolStripMenuItem.Name = "PaiementParRetraitDirectToolStripMenuItem"
-        Me.PaiementParRetraitDirectToolStripMenuItem.Size = New System.Drawing.Size(220, 22)
+        Me.PaiementParRetraitDirectToolStripMenuItem.Size = New System.Drawing.Size(274, 26)
         Me.PaiementParRetraitDirectToolStripMenuItem.Text = "Paiement par retrait direct"
         '
         'ToolsToolStripMenuItem
         '
         Me.ToolsToolStripMenuItem.Name = "ToolsToolStripMenuItem"
-        Me.ToolsToolStripMenuItem.Size = New System.Drawing.Size(77, 20)
+        Me.ToolsToolStripMenuItem.Size = New System.Drawing.Size(96, 24)
         Me.ToolsToolStripMenuItem.Text = "&Utilisateurs"
         '
         'HelpToolStripMenuItem
         '
         Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ContentsToolStripMenuItem, Me.IndexToolStripMenuItem, Me.toolStripSeparator5, Me.AboutToolStripMenuItem})
         Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(43, 20)
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(54, 24)
         Me.HelpToolStripMenuItem.Text = "&Aide"
         '
         'ContentsToolStripMenuItem
         '
         Me.ContentsToolStripMenuItem.Name = "ContentsToolStripMenuItem"
-        Me.ContentsToolStripMenuItem.Size = New System.Drawing.Size(181, 22)
+        Me.ContentsToolStripMenuItem.Size = New System.Drawing.Size(225, 26)
         Me.ContentsToolStripMenuItem.Text = "Qui &Sommes Nous ?"
         '
         'IndexToolStripMenuItem
         '
         Me.IndexToolStripMenuItem.Name = "IndexToolStripMenuItem"
-        Me.IndexToolStripMenuItem.Size = New System.Drawing.Size(181, 22)
+        Me.IndexToolStripMenuItem.Size = New System.Drawing.Size(225, 26)
         Me.IndexToolStripMenuItem.Text = "&Information"
         '
         'toolStripSeparator5
         '
         Me.toolStripSeparator5.Name = "toolStripSeparator5"
-        Me.toolStripSeparator5.Size = New System.Drawing.Size(178, 6)
+        Me.toolStripSeparator5.Size = New System.Drawing.Size(222, 6)
         '
         'AboutToolStripMenuItem
         '
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(181, 22)
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(225, 26)
         Me.AboutToolStripMenuItem.Text = "À &Propos d'Abonnet"
-        '
-        'BtnDéconnexion
-        '
-        Me.BtnDéconnexion.Location = New System.Drawing.Point(12, 27)
-        Me.BtnDéconnexion.Name = "BtnDéconnexion"
-        Me.BtnDéconnexion.Size = New System.Drawing.Size(178, 49)
-        Me.BtnDéconnexion.TabIndex = 3
-        Me.BtnDéconnexion.Text = "Déconnexion"
-        Me.BtnDéconnexion.UseVisualStyleBackColor = True
         '
         'PagePrincipale
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(120.0!, 120.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.CausesValidation = False
-        Me.ClientSize = New System.Drawing.Size(1370, 584)
-        Me.Controls.Add(Me.BtnDéconnexion)
+        Me.ClientSize = New System.Drawing.Size(1712, 730)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.MenuStrip1)
@@ -407,5 +395,4 @@ Partial Class PagePrincipale
     Friend WithEvents ToolStripSeparator6 As ToolStripSeparator
     Friend WithEvents PaimentParCarteToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PaiementParRetraitDirectToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents BtnDéconnexion As Button
 End Class

@@ -24,35 +24,48 @@ Partial Class Utilisateurs
     Private Sub InitializeComponent()
         Me.ListUtilisateurs = New System.Windows.Forms.ListBox()
         Me.ButtonQuitter = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'ListUtilisateurs
         '
         Me.ListUtilisateurs.BackColor = System.Drawing.Color.White
         Me.ListUtilisateurs.FormattingEnabled = True
-        Me.ListUtilisateurs.Location = New System.Drawing.Point(26, 21)
+        Me.ListUtilisateurs.ItemHeight = 16
+        Me.ListUtilisateurs.Location = New System.Drawing.Point(13, 13)
+        Me.ListUtilisateurs.Margin = New System.Windows.Forms.Padding(4)
         Me.ListUtilisateurs.Name = "ListUtilisateurs"
-        Me.ListUtilisateurs.Size = New System.Drawing.Size(463, 160)
+        Me.ListUtilisateurs.Size = New System.Drawing.Size(508, 260)
         Me.ListUtilisateurs.TabIndex = 1
         '
         'ButtonQuitter
         '
-        Me.ButtonQuitter.Location = New System.Drawing.Point(221, 197)
-        Me.ButtonQuitter.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ButtonQuitter.Location = New System.Drawing.Point(561, 202)
+        Me.ButtonQuitter.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ButtonQuitter.Name = "ButtonQuitter"
-        Me.ButtonQuitter.Size = New System.Drawing.Size(62, 20)
+        Me.ButtonQuitter.Size = New System.Drawing.Size(83, 25)
         Me.ButtonQuitter.TabIndex = 5
         Me.ButtonQuitter.Text = "Quitter"
         Me.ButtonQuitter.UseVisualStyleBackColor = True
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(561, 50)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 6
+        Me.Button1.Text = "Modifier"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'Utilisateurs
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(501, 230)
+        Me.ClientSize = New System.Drawing.Size(668, 283)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ButtonQuitter)
         Me.Controls.Add(Me.ListUtilisateurs)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "Utilisateurs"
         Me.Text = "Utilisateurs"
         Me.ResumeLayout(False)
@@ -61,4 +74,5 @@ Partial Class Utilisateurs
 
     Friend WithEvents ListUtilisateurs As ListBox
     Friend WithEvents ButtonQuitter As Button
+    Friend WithEvents Button1 As Button
 End Class

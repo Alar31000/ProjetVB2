@@ -59,7 +59,8 @@
 
     End Sub
     Private Sub btnImprimer_Click(sender As Object, e As EventArgs) Handles btnImprimer.Click
-        MsgBox("Le contrat a été imprimé avec succés!")
+        PrintPreviewDialog1.ShowDialog()
+
     End Sub
 
     'Une procedure pour effacer les donnees qui ont ete rentre par l'utilisateur
@@ -160,5 +161,18 @@
 
     Private Sub CmbBoxFraisRacondement_SelectedIndexChanged(sender As Object, e As EventArgs) Handles CmbBoxFraisRacondement.SelectedIndexChanged
 
+    End Sub
+
+    Private Sub PrintDocument1_PrintPage(sender As Object, e As Printing.PrintPageEventArgs) Handles PrintDocument1.PrintPage
+        e.Graphics.DrawString(RichTextBox1.Text, New Font("Arial", 12, FontStyle.Regular), Brushes.Black, New Point(0, 0))
+    End Sub
+
+    Private Sub TxtBoxTéléphone_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtBoxTéléphone.KeyPress, TxtBoxNEmployé.KeyPress, txtBoxFraisMensuel.KeyPress, TxtBoxFermeture.KeyPress, TxtBoxFax.KeyPress, TxtBoxDateVigueur.KeyPress, TxtBoxDateOuverture.KeyPress
+        If Asc(e.KeyChar) <> 8 Then
+            If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then
+                e.Handled = True
+            End If
+
+        End If
     End Sub
 End Class

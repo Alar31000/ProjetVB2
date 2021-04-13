@@ -8,7 +8,7 @@
         TxtBoxAdresse.Text = ""
         TxtBoxAdresseBanque.Text = ""
         TxtBoxCodeBanque.Text = ""
-        TxtBoxCompte.Text = ""
+
         TxtBoxContact.Text = ""
         TxtBoxEmail.Text = ""
         TxtBoxFax.Text = ""
@@ -71,5 +71,14 @@
 
     Private Sub FrmNouveauFournisseur_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+    End Sub
+
+    Private Sub TxtBoxNoCompte_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtBoxTéléphone2.KeyPress, TxtBoxTéléphone1.KeyPress, TxtBoxNoCompte.KeyPress, TxtBoxFax.KeyPress, TxtBoxCodeBanque.KeyPress
+        If Asc(e.KeyChar) <> 8 Then
+            If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then
+                e.Handled = True
+            End If
+
+        End If
     End Sub
 End Class

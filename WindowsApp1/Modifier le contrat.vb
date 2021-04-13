@@ -86,4 +86,13 @@
     Private Sub TxtBoxPrénom_TextChanged(sender As Object, e As EventArgs) Handles TxtBoxPrénom.TextChanged
 
     End Sub
+
+    Private Sub TBoxMDMV_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtBoxNumCnt.KeyPress, TBoxMDO.KeyPress, TBoxMDMV.KeyPress, TBoxMDF.KeyPress
+        If Asc(e.KeyChar) <> 8 Then
+            If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then
+                e.Handled = True
+            End If
+
+        End If
+    End Sub
 End Class
