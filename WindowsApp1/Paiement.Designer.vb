@@ -41,6 +41,7 @@ Partial Class Paiement
         Me.LabelSuccursale = New System.Windows.Forms.Label()
         Me.TextBoxNIP = New System.Windows.Forms.TextBox()
         Me.LabelNIP = New System.Windows.Forms.Label()
+        Me.LabelFacture = New System.Windows.Forms.Label()
         Me.GroupBoxPrélèvement = New System.Windows.Forms.GroupBox()
         Me.GroupBoxChèque = New System.Windows.Forms.GroupBox()
         Me.GroupBoxPayement = New System.Windows.Forms.GroupBox()
@@ -539,6 +540,7 @@ Partial Class Paiement
     Friend WithEvents LabelDateEx As Label
     Friend WithEvents TextBoxCVV As TextBox
     Friend WithEvents LabelCvv As Label
+    Friend WithEvents LabelFacture As Label
     Friend WithEvents GroupBoxFacture As GroupBox
     Friend WithEvents TextBoxNSuccursale As TextBox
     Friend WithEvents TextBoxNInstitution As TextBox
